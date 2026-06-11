@@ -1,0 +1,150 @@
+# FuzzCraft — Project Charter
+**Author:** FuzzyMelon94  
+**Working Title:** FuzzCraft  
+**Status:** Active — Pre-Production  
+**Last Updated:** 2026-06-11  
+---
+## 1. Vision
+FuzzCraft is a personal, long-term modpack for a casual friend group of ~7 players. It is designed to be a "forever pack" — something that grows and evolves over time rather than a fixed, versioned release. The north star is **FTB Ultimate**: everyone can do their own thing, pursue their own progression, and then rally together for group adventures and boss nights.
+The pack leans toward **tech and automation** as its primary pillar, with magic, exploration, and adventure as strong secondary pillars. It is not a competitive or balance-focused pack — if something is overpowered and fun, it's in. Tweaks happen in config, not by exclusion.
+---
+## 2. Technical Foundation
+| Property | Decision | Notes |
+|---|---|---|
+| **Loader** | NeoForge (preferred) | Fabric acceptable where NeoForge coverage is weak |
+| **Minecraft Version** | 1.21.1 (target) | Not locked — version bumps permitted as ecosystem matures |
+| **Java Version** | 21+ | Hard minimum |
+| **Server Hardware** | HP Mini PC (home network) | Runs via Pterodactyl + Wings on Ubuntu Server |
+| **Server Overhead** | Low-stakes background operation | Should run alongside other servers; shut down when resources needed |
+| **Distribution** | Modrinth (primary target) | CurseForge as fallback; packwiz supports both |
+| **Pack Toolchain** | [packwiz](https://packwiz.infra.link) | Used in FuzzCraft-3, carries forward — handles mod versioning, Modrinth/CF sourcing, bootstrap workflow |
+| **Player Updates** | packwiz bootstrap (pre-launch command) | Tested on ATLauncher and Prism Launcher; bootstrap jar + GitHub Pages to serve `pack.toml` |
+| **Version Control** | Git repository | Configs, manifests, datapacks, docs all tracked |
+| **Prior Reference** | FuzzCraft-3 repo | NeoForge `21.1.209` on 1.21.1 — useful reference, not a constraint |
+### Repo Structure
+```
+fuzzcraft/
+├── docs/               # Charter, batch logs, issue log
+├── mods/               # packwiz mod manifests (auto-managed)
+├── config/             # Server & client configs
+├── kubejs/             # Compat/scripting mod, added when needed
+├── datapacks/          # Custom datapacks
+├── resourcepacks/      # Bundled resource packs
+├── shaderpacks/        # Bundled shader packs
+├── pack.toml           # packwiz pack definition
+├── index.toml          # packwiz index (auto-managed)
+└── README.md
+```
+### Player Setup (packwiz bootstrap)
+Players download `packwiz-installer-bootstrap.jar` once and add a pre-launch command to their instance. The launcher fetches and syncs the latest pack on every launch automatically.
+**Pre-launch command (ATLauncher & Prism):**
+```
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://fuzzymelon94.github.io/FuzzCraft/pack.toml
+```
+### Development Workflow
+```bash
+packwiz serve                        # Local dev server for testing
+packwiz mr add [URL|name]            # Add mod from Modrinth
+packwiz cf add [URL|name]            # Add mod from CurseForge
+packwiz update --all                 # Update all mods
+```
+---
+## 3. Design Principles
+- **No progression gates.** Quests guide and reward — they never lock content.
+- **Casual-first balance.** Overpowered mods are fine. If the group doesn't like something, it gets disabled or ignored — not excluded upfront.
+- **Config over removal.** Problems are solved by tweaking configs before reaching for mod removal.
+- **Compat mod available.** A core compat/scripting mod (e.g. KubeJS) will be added when cross-mod work is needed. Custom recipes, loot tweaks, and datapack work are all in scope.
+- **Storage-conscious world gen.** Chunk pregeneration is player-centred (base radius only), not world-border blasts. Storage impact on the host machine is a real constraint.
+- **Batched, tested additions.** Mods are added in batches. Each batch must be stable and launchable before the next begins.
+---
+## 4. Pack Categories & Mod Direction
+### Batch 1 — Foundation *(start here)*
+Performance, compatibility, essential QoL, and chunk management. The goal is a clean, launchable instance before any content mods are added.
+- Performance: Embeddium / Sodium-adjacent, memory fixes, crash reporting
+- Chunk loading: FTB Chunks (claim + forceload)
+- Chunk pregen: Chunky + Chunky Offline — player-centred radius jobs, run during idle
+- Essential QoL: minimap, inventory sorting, recipe viewer (JEI/REI)
+- Misc utilities: WTHIT / Jade (block info), basic lighting fixes
+### Batch 2 — Tech & Automation
+The primary content pillar. Should feel complete as a standalone tech experience.
+- **Create** — core automation, contraptions, trains
+- **Immersive Engineering** — multiblock tech, wiring, power
+- **ComputerCraft (CC: Tweaked)** — turtles, automation scripting *(specifically requested)*
+- **Tools & Weapons:** Tinker's Construct + Tetra as the target pair — both offer modular/upgradable tools with different philosophies and complement each other well. If either isn't stable at batch time, evaluate alternatives with the same vibe (modular tools, material progression, unbreakable-but-upgradable)
+- **Storage:** Applied Energistics 2 (AE2) as primary; Storage Drawers as visual complement *(pencilled in — monitor FPS impact)*
+- **Backpacks:** Sophisticated Backpacks (primary); Traveller's Backpack (alternative/companion)
+- Supporting tech mods to be confirmed during batch
+### Batch 3 — Magic & Farming
+Non-tech players get a full gameplay loop.
+- **Botania** — confirmed
+- **Ars Nouveau** — confirmed
+- **Thaumcraft successor** — Thaumcraft itself is abandoned; candidates include *Theurgy*, *Arcane* mods, or equivalent. To be evaluated during batch.
+- **Farmer's Delight** — confirmed, plus food ecosystem addons
+- Supporting magic and food mods to be confirmed during batch
+### Batch 4 — Exploration, Dimensions & Combat
+Group adventure content. Dimensions are a primary social driver — "adventure nights" are a core use case.
+**Adventure dimensions:**
+- **Twilight Forest** — confirmed
+- 2–3 additional adventure dimensions (candidates: Aether, Blue Skies, The Undergarden, Regions Unexplored)
+- Each dimension should have enough content to generate or support a questline
+**Utility dimensions:**
+- Personal/pocket dimensions (upgradable)
+- Configurable mining dimension
+**Overworld:**
+- Biome variety (Terralith or equivalent)
+- Structure mods (dungeons, ruins, villages)
+**Combat:**
+- Mob variety / difficulty scaling
+- Weapon/equipment mods to be confirmed during batch
+### Batch 5 — Building, Decoration & Questing
+Polish layer. Decoration mods for the builders in the group, and FTB Quests to tie the whole pack together.
+- Decoration mods (to be confirmed with friend group input)
+- **FTB Quests** — no gating, structured as:
+  - Per-major-mod questlines (Create, IE, Botania, Ars Nouveau, Twilight Forest, etc.)
+  - Grouped tutorial quests for smaller mods where they fit sensibly
+  - Standalone mod introductions where grouping doesn't make sense
+---
+## 5. Questing Philosophy
+Quests serve as a **guided tutorial and reward system**, not a progression gate. Specifically:
+- Nothing is locked behind quest completion
+- Major mods (Create, IE, Botania, Ars Nouveau, TF, AE2, CC) get their own dedicated questlines
+- Smaller mods are grouped by theme where sensible, or given standalone intro quests
+- Quest rewards should feel meaningful but not mandatory
+- New players should be able to pick up the pack and understand what to work toward without needing external wikis
+---
+## 6. Chunk Management Strategy
+- **FTB Chunks** handles claiming and forceloading per-player
+- **Chunky** handles pregeneration — jobs are targeted at player base coordinates, not a world border
+- Default pregen radius: ~300–500 blocks around each claimed base area (storage-conscious)
+- Pregen jobs run during server idle time (Chunky Offline / scheduled)
+- New player onboarding includes a Chunky job for their base as a standard step
+- World size is monitored — no automatic large-radius generation
+---
+## 7. Batch Progress Tracker
+| Batch | Name | Status | Notes |
+|---|---|---|---|
+| 1 | Foundation | ⬜ Not started | — |
+| 2 | Tech & Automation | ⬜ Not started | Awaiting Batch 1 |
+| 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
+| 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
+| 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
+---
+## 8. Issue & Debug Log
+*Issues are logged here as they arise across all batches. Format: date, batch, description, resolution.*
+| Date | Batch | Issue | Resolution |
+|---|---|---|---|
+| — | — | No issues logged yet | — |
+---
+## 9. Handoff Protocol
+Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
+- Relevant sections of this charter
+- Specific mod list for the batch (to be confirmed)
+- Any known compat concerns going in
+- Success criteria (pack launches, no crashes, core features functional)
+On completion, the batch conversation produces a summary that is folded back into this charter (progress tracker + issue log updated).
+**Workflow:**
+```
+Charter (this doc) → Batch Handoff Doc → Implementation Chat → Summary → Charter updated
+```
+---
+*FuzzCraft is a personal project by FuzzyMelon94. Not affiliated with any modpack platform or mod author.*

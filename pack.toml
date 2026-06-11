@@ -1,0 +1,11 @@
+name = "FuzzCraft 4"
+author = "FuzzyMelon94"
+version = "0.0.1"
+
+[pack]
+mc-version = "1.21.1"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = ""
