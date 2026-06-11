@@ -124,7 +124,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | Batch | Name | Status | Notes |
 |---|---|---|---|
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
-| 2 | Tech & Automation | ⬜ Not started | Awaiting Batch 1 |
+| 2 | Tech & Automation | 🔄 In Progress | Mods added (branch: batch/2-tech-automation). Local testing pending. |
 | 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
 | 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
