@@ -123,7 +123,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 ## 7. Batch Progress Tracker
 | Batch | Name | Status | Notes |
 |---|---|---|---|
-| 1 | Foundation | ✅ Complete | 22 mods. Iris+Sodium (NeoForge alpha) for shaders; client-side only. FTB Chunks FORCED_ALL ally mode. Prism+server tested 2026-06-11. |
+| 1 | Foundation | ✅ Complete | 21 mods (v0.1.0). Iris+Sodium 0.6.13 for shaders; client-side only. FTB Chunks FORCED_ALL ally mode. Default Options for pack control defaults. SP+server tested and passing 2026-06-11. |
 | 2 | Tech & Automation | ⬜ Not started | Awaiting Batch 1 |
 | 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
