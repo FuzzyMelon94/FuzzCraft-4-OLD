@@ -1,0 +1,37 @@
+hash-format = "sha256"
+
+[[files]]
+file = ".claude/settings.local.json"
+hash = "4226437288e8e42de762edd3f861e304879bcb71f8f334953d20eb9a833aadaa"
+
+[[files]]
+file = "README.md"
+hash = "0907d64800eaaa3d8d70e4f416961820727226cb3e34d3517cb156e7055fd4b2"
+
+[[files]]
+file = "config/.gitkeep"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "datapacks/.gitkeep"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "docs/charter.md"
+hash = "7ca5c83e36351d4423467fd9198e9635cd9bf86f8dde709f4ecb9b636426c93e"
+
+[[files]]
+file = "kubejs/.gitkeep"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "mods/.gitkeep"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "resourcepacks/.gitkeep"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "shaderpacks/.gitkeep"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
