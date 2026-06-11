@@ -1,0 +1,21 @@
+{
+	max_claimed_chunks: 1000,
+	max_force_loaded_chunks: 50,
+	ally_mode: "FORCED_ALL",
+	no_wilderness: false,
+	disable_protection: false,
+	def_block_edit: "PRIVATE",
+	def_block_interact: "ALLIES",
+	def_entity_interact: "ALLIES",
+	def_nonliving_entity_attack: "ALLIES",
+	def_block_edit_interact: "ALLIES",
+	def_claim_visibility: "PUBLIC",
+	def_player_visibility: "PUBLIC",
+	def_allow_fake_players: true,
+	def_allow_explosions: false,
+	def_mob_griefing: false,
+	def_pvp: true,
+	piston_protection: true,
+	flowing_fluid_protection: false,
+	fire_spread_protection: false
+}
