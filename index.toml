@@ -1,44 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".claude/settings.local.json"
-hash = "a2d234fbfdf22e7d1b5001e3ac0ee0d1714313706e067c87def09774489846cb"
-
-[[files]]
-file = "README.md"
-hash = "0907d64800eaaa3d8d70e4f416961820727226cb3e34d3517cb156e7055fd4b2"
-
-[[files]]
-file = "config/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
 file = "config/ftbchunks-world.snbt"
 hash = "6515140a68db07b0a3bd773c7849ee1dab37cabee8af9e211707276a9c5fdb66"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
 hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
-
-[[files]]
-file = "config/server.properties"
-hash = "d9f97f84630f02352bd06c46ebef04ec23d314ab6791a6a4256b36af123f982e"
-
-[[files]]
-file = "datapacks/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "docs/charter.md"
-hash = "b78b9d977ef44f029a91c0d292012d4312aeab046d513e74447ddf7561d3d18a"
-
-[[files]]
-file = "kubejs/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "mods/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "mods/appleskin.pw.toml"
@@ -149,11 +117,3 @@ metafile = true
 file = "mods/sodium.pw.toml"
 hash = "e8964aa3252bc02d75abbeac52b4d8deb621e56bc6b549e3127b0f2bc4a76fc2"
 metafile = true
-
-[[files]]
-file = "resourcepacks/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = "shaderpacks/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"

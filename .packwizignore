@@ -1,0 +1,14 @@
+# Claude Code local config
+.claude/
+
+# Git housekeeping
+.gitignore
+.gitattributes
+**/.gitkeep
+
+# Repo documentation (not Minecraft files)
+docs/
+README.md
+
+# server.properties lives in the server root, not config/ — kept in repo for reference only
+config/server.properties
