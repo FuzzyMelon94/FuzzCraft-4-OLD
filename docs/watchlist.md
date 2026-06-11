@@ -6,7 +6,6 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 |---|---|---|---|---|
 | [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options) + [SodiumOptionsAPI](https://modrinth.com/mod/sodium-options-api) | Not yet ported to Sodium 0.6.x API | Stock Sodium video settings screen | 1 | — |
 | [Configured](https://modrinth.com/mod/configured) | No NeoForge 1.21.1 build available | Edit configs manually via files | 1 | — |
-| [FTB Chunks + JourneyMap integration](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-journeymap) | No 1.21.1 build available | FTB Chunks built-in chunk map | 1 | — |
 
 ---
 

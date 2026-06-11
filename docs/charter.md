@@ -135,7 +135,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 |---|---|---|---|
 | 2026-06-11 | 1 | Oculus (NeoForge shader mod) has no builds past 1.20.1 | Switched to Iris Shaders, which is now officially multiloader with NeoForge 1.21.1 support. Iris requires Sodium; swapped Embeddium for Sodium (NeoForge alpha builds). Sodium alpha is considered stable in practice — players can substitute Embeddium client-side if needed. |
 | 2026-06-11 | 1 | Sodium 0.8.x (Ruby rewrite) incompatible with Iris and Sodium ecosystem mods | Sodium 0.8.12-alpha.4 caused mixin crashes in Reese's Sodium Options, SodiumOptionsAPI, and Iris. Iris 1.8.12 pins Sodium 0.6.13. Downgraded Sodium to 0.6.13 (latest stable NeoForge build); removed Reese's + SodiumOptionsAPI (not yet ported to 0.6.x-compatible API either). Re-evaluate when Iris supports 0.8.x. |
-| 2026-06-11 | 1 | No FTB Chunks + JourneyMap integration addon available for 1.21.1 | FTB Chunks has its own in-game chunk map as a workaround. Monitor for integration mod availability; switch to it when released. Xaero's Minimap is a fallback option if FTB Chunks map is insufficient long-term. |
+| 2026-06-11 | 1 | No FTB Chunks + JourneyMap integration addon available for 1.21.1 | Resolved: JourneyMap Integration (modrinth: M1ZKbfkJ) covers FTB Chunks claim overlay on JourneyMap. Added v1.21.1-1.9 in v0.1.1. |
 ---
 ## 9. Handoff Protocol
 Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
