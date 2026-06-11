@@ -12,3 +12,6 @@ README.md
 
 # server.properties lives in the server root, not config/ — kept in repo for reference only
 config/server.properties
+
+# server-side startup script — not a pack file
+start.sh
