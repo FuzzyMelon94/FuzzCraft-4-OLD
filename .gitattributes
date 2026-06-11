@@ -1,0 +1,7 @@
+# Normalize line endings
+* text=auto
+
+# packwiz manifests and config — always LF
+*.toml text eol=lf
+*.json text eol=lf
+*.md   text eol=lf

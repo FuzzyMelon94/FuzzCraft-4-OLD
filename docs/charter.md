@@ -133,7 +133,8 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 *Issues are logged here as they arise across all batches. Format: date, batch, description, resolution.*
 | Date | Batch | Issue | Resolution |
 |---|---|---|---|
-| — | — | No issues logged yet | — |
+| 2026-06-11 | 1 | Oculus (NeoForge shader mod) has no builds past 1.20.1 | Switched to Iris Shaders, which is now officially multiloader with NeoForge 1.21.1 support. Iris requires Sodium; swapped Embeddium for Sodium (NeoForge alpha builds). Sodium alpha is considered stable in practice — players can substitute Embeddium client-side if needed. |
+| 2026-06-11 | 1 | No FTB Chunks + JourneyMap integration addon available for 1.21.1 | FTB Chunks has its own in-game chunk map as a workaround. Monitor for integration mod availability; switch to it when released. Xaero's Minimap is a fallback option if FTB Chunks map is insufficient long-term. |
 ---
 ## 9. Handoff Protocol
 Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
