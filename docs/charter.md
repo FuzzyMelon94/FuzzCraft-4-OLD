@@ -39,7 +39,7 @@ fuzzcraft/
 Players download `packwiz-installer-bootstrap.jar` once and add a pre-launch command to their instance. The launcher fetches and syncs the latest pack on every launch automatically.
 **Pre-launch command (ATLauncher & Prism):**
 ```
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://fuzzymelon94.github.io/FuzzCraft/pack.toml
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://fuzzymelon94.github.io/FuzzCraft-4/pack.toml
 ```
 ### Development Workflow
 ```bash
@@ -123,7 +123,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 ## 7. Batch Progress Tracker
 | Batch | Name | Status | Notes |
 |---|---|---|---|
-| 1 | Foundation | ⬜ Not started | — |
+| 1 | Foundation | ✅ Complete | 22 mods. Iris+Sodium (NeoForge alpha) for shaders; client-side only. FTB Chunks FORCED_ALL ally mode. Prism+server tested 2026-06-11. |
 | 2 | Tech & Automation | ⬜ Not started | Awaiting Batch 1 |
 | 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
@@ -134,6 +134,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | Date | Batch | Issue | Resolution |
 |---|---|---|---|
 | 2026-06-11 | 1 | Oculus (NeoForge shader mod) has no builds past 1.20.1 | Switched to Iris Shaders, which is now officially multiloader with NeoForge 1.21.1 support. Iris requires Sodium; swapped Embeddium for Sodium (NeoForge alpha builds). Sodium alpha is considered stable in practice — players can substitute Embeddium client-side if needed. |
+| 2026-06-11 | 1 | Reese's Sodium Options + SodiumOptionsAPI crash on video settings open (`mixins.sodiumoptionsapi.json couldn't be applied`) | Both mods built against Sodium 0.6.x internals; pack uses Sodium 0.8.12-alpha.4 (Ruby rewrite). Removed both mods — only affect video settings UI layout, no gameplay impact. Re-add when 0.8.x-compatible builds are published. |
 | 2026-06-11 | 1 | No FTB Chunks + JourneyMap integration addon available for 1.21.1 | FTB Chunks has its own in-game chunk map as a workaround. Monitor for integration mod availability; switch to it when released. Xaero's Minimap is a fallback option if FTB Chunks map is insufficient long-term. |
 ---
 ## 9. Handoff Protocol
