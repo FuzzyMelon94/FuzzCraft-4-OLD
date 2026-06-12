@@ -1,7 +1,7 @@
 # FuzzCraft 4 — Batch 2 Testing: Tech & Automation
 
 ## Summary
-**Pack version:** 0.2.0
+**Pack version:** 0.1.2
 **Test date:** <fill in>
 **Tester:** <fill in>
 **Play mode:** Single player
