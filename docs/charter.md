@@ -52,7 +52,7 @@ packwiz update --all                 # Update all mods
 ## 3. Design Principles
 - **No progression gates.** Quests guide and reward — they never lock content.
 - **Casual-first balance.** Overpowered mods are fine. If the group doesn't like something, it gets disabled or ignored — not excluded upfront.
-- **Config over removal.** Problems are solved by tweaking configs before reaching for mod removal.
+- **Config over removal.** Problems are solved by tweaking configs before reaching for mod removal. Deferred config and recipe work is tracked in `docs/configs.md` for the final QoL pass.
 - **Compat mod available.** A core compat/scripting mod (e.g. KubeJS) will be added when cross-mod work is needed. Custom recipes, loot tweaks, and datapack work are all in scope.
 - **Storage-conscious world gen.** Chunk pregeneration is player-centred (base radius only), not world-border blasts. Storage impact on the host machine is a real constraint.
 - **Batched, tested additions.** Mods are added in batches. Each batch must be stable and launchable before the next begins.
@@ -124,7 +124,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | Batch | Name | Status | Notes |
 |---|---|---|---|
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
-| 2 | Tech & Automation | ⬜ Not started | Awaiting Batch 1 |
+| 2 | Tech & Automation | ✅ Complete | ~65 mods (v0.2.1–0.2.4). Create + IE + CC + AE2 + full companion suite. Removed Create: Liquid Fuel (redundant — C&A Straw covers blaze burner fluid input). Shader shadow artefacts on contraptions logged (known Iris/Create limitation). SP tested 2026-06-12. Server test to follow post-merge. |
 | 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
 | 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
@@ -136,6 +136,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | 2026-06-11 | 1 | Oculus (NeoForge shader mod) has no builds past 1.20.1 | Switched to Iris Shaders, which is now officially multiloader with NeoForge 1.21.1 support. Iris requires Sodium; swapped Embeddium for Sodium (NeoForge alpha builds). Sodium alpha is considered stable in practice — players can substitute Embeddium client-side if needed. |
 | 2026-06-11 | 1 | Sodium 0.8.x (Ruby rewrite) incompatible with Iris and Sodium ecosystem mods | Sodium 0.8.12-alpha.4 caused mixin crashes in Reese's Sodium Options, SodiumOptionsAPI, and Iris. Iris 1.8.12 pins Sodium 0.6.13. Downgraded Sodium to 0.6.13 (latest stable NeoForge build); removed Reese's + SodiumOptionsAPI (not yet ported to 0.6.x-compatible API either). Re-evaluate when Iris supports 0.8.x. |
 | 2026-06-11 | 1 | No FTB Chunks + JourneyMap integration addon available for 1.21.1 | Resolved: JourneyMap Integration (modrinth: M1ZKbfkJ) covers FTB Chunks claim overlay on JourneyMap. Added v1.21.1-1.9 in v0.1.1. |
+| 2026-06-12 | 2 | Moving Create contraptions show shadow artefacts when a shaderpack is active (Iris + Create interaction) | Known engine limitation — Create contraptions are rendered as entities, which causes shadow mis-alignment in most shaderpacks. Create Better FPS reduces it but doesn't eliminate it. No fix available; revisit if a Create/Iris update addresses contraption rendering. |
 ---
 ## 9. Handoff Protocol
 Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
