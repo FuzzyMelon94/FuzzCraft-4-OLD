@@ -23,20 +23,44 @@ fuzzcraft-4/
 
 ---
 
+## Versioning
+
+Pack version follows `MAJOR.MINOR.PATCH` targeting `1.0.0` as the full release.
+
+| Segment | Rule |
+|---|---|
+| **Major** | Stays 0 until the pack is complete and released as 1.0.0 |
+| **Minor** | Increments once per batch — B1 = 0.1.x, B2 = 0.2.x, B3 = 0.3.x, etc. |
+| **Patch** | Increments for each distinct action within the batch branch |
+
+**Patch increment triggers** (in order, within a batch):
+- `.0` — branch created, version bumped at branch start
+- `.1` — all mods for the batch added
+- `.2+` — each fix, config change, or meaningful change made during testing
+
+Bump the version in `pack.toml` and commit with `chore: bump to x.y.z` at each step. Do not batch multiple version bumps into one commit.
+
+At the end of a batch, the test file should record the full version range tested (e.g. `0.2.1–0.2.4`) so saves can be matched to the state they were created on.
+
+---
+
 ## Batch Workflow
 
 Each batch lives on its own branch (`batch/N-short-name`), is tested locally, then merged to `main` when stable. Pages serves from `main` — nothing reaches players until merged.
 
 1. Create branch: `git checkout -b batch/N-short-name`
-2. Add mods via `packwiz mr add` / `packwiz cf add`
-3. Commit as you go — don't batch everything into one end-of-session commit
-4. Update `docs/watchlist.md` with anything deferred
-5. Update `docs/charter.md` progress tracker (In Progress → Complete, add notes)
-6. Create `docs/testing/batchN.md` for SP testing
-7. Add batch multiplayer deferred tests to `docs/testing/multiplayer.md`
-8. Once SP testing passes, merge to `main`
-9. Pull on server, run server test pass
-10. Close out: bump pack version in `pack.toml`, final charter update, commit
+2. Bump `pack.toml` version to `0.N.0` — commit `chore: bump to 0.N.0`
+3. Add mods via `packwiz mr add` / `packwiz cf add`
+4. Bump to `0.N.1` — commit `chore: bump to 0.N.1 (mods added)`
+5. Commit as you go — don't batch everything into one end-of-session commit
+6. Update `docs/watchlist.md` with anything deferred
+7. Update `docs/charter.md` progress tracker (In Progress → Complete, add notes)
+8. Create `docs/testing/batchN.md` for SP testing (include current version)
+9. Add batch multiplayer deferred tests to `docs/testing/multiplayer.md`
+10. Bump version for each fix made during testing — `0.N.2`, `0.N.3`, etc.
+11. Once SP testing passes, merge to `main`
+12. Pull on server, run server test pass
+13. Close out: final charter update, note version range tested in test file, commit
 
 ### Commit conventions
 
