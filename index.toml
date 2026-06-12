@@ -132,6 +132,11 @@ hash = "68d6016fa3707c434b3aca5db041c7518c70feb53d0183faa2502cc6efd4c827"
 metafile = true
 
 [[files]]
+file = "mods/botany-pots-mystical-agriculture-compat.pw.toml"
+hash = "5c2fa4f520f5c30212e22ef41fdd7d562363a3c17e16214c42faec6662db5bf8"
+metafile = true
+
+[[files]]
 file = "mods/botany-pots-tiers.pw.toml"
 hash = "8e758ed38737dd631d0b82306d0c29c534ae9cc5e1afb865f30e7bc875ed5b20"
 metafile = true
@@ -472,6 +477,11 @@ hash = "139243c0b47a2d89147289b8d9ef91178c1c2511f3060e00e3699d0e3adb226b"
 metafile = true
 
 [[files]]
+file = "mods/lets-do-herbalbrews.pw.toml"
+hash = "513e9da3100c93614934751c179fbd800f4a409e12a7ba5d44cd09407d211bb0"
+metafile = true
+
+[[files]]
 file = "mods/lets-do-meadow.pw.toml"
 hash = "98929c2d2368656d039c75d32612333edf4838ce95b84c7191d01021e3cde6fb"
 metafile = true
@@ -507,6 +517,11 @@ hash = "6bc414cc0f2d4c078fe83f384d786343f701f371d657c5279b5b0df1595804bd"
 metafile = true
 
 [[files]]
+file = "mods/mystical-agriculture.pw.toml"
+hash = "de6da439c5a425d5c8588515d54d524dbfb56b45950da56db964c239cf7f20a4"
+metafile = true
+
+[[files]]
 file = "mods/neovitae.pw.toml"
 hash = "e540a2665a17712563796b1a774c22dd48eae8473d421a2416914e8521c7ad93"
 metafile = true
@@ -524,6 +539,11 @@ metafile = true
 [[files]]
 file = "mods/pams-harvestcraft-2-food-extended.pw.toml"
 hash = "5fe860bdef3f16ae211dbe360061f8225b68e3b5a3b699ffeb5d8926536bd91b"
+metafile = true
+
+[[files]]
+file = "mods/pams-harvestcraft-2-trees.pw.toml"
+hash = "697e5d429406179e06f02a1f4fe9e337df56adf36cee6c35e9f08b6bcd0cade6"
 metafile = true
 
 [[files]]
