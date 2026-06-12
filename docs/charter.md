@@ -132,7 +132,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 |---|---|---|---|
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
 | 2 | Tech & Automation | ✅ Complete | ~65 mods (v0.2.1–0.2.4). Create + IE + CC + AE2 + full companion suite. Removed Create: Liquid Fuel (redundant — C&A Straw covers blaze burner fluid input). Shader shadow artefacts on contraptions logged (known Iris/Create limitation). SP tested 2026-06-12. Server test to follow post-merge. |
-| 3 | Magic & Farming | 🔄 In progress | Branch batch/3-magic-farming |
+| 3 | Magic & Farming | 🔄 In progress | ~46 mods (v0.3.1). Ars Nouveau + addons, Theurgy, Neo Vitae (experimental), Botania watchlisted (no 1.21.1 port). Full food ecosystem: FD + Pam's suite + Let's Do series + Botany Pots + Mystical Agriculture. Fishing: Aquaculture + Lava Fishing. Create integrations throughout. SP testing in progress. |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
 | 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
 | 6 | QoL & Final Compat | ⬜ Not started | Awaiting Batch 5 |

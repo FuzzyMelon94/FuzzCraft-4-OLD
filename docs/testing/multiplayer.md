@@ -80,3 +80,37 @@ Tests that require two or more connected players. Run each batch's section after
 ---
 
 *Add a new `## Batch N — <Name>` section here after each batch's single-player test passes.*
+
+---
+
+## Batch 3 — Magic & Farming
+
+### Productive Bees
+
+- [ ] Two players each have a hive running — confirm output rates are consistent and neither hive interferes with the other
+- [ ] No crashes or desyncs when both players open Productive Bees GUIs simultaneously
+
+### Modern Chickens
+
+- [ ] Two players each have resource chickens — no cross-player item desyncs when chickens lay items
+- [ ] Breeding a resource chicken while a second player is nearby — no dupe or loss
+
+### Ars Énergistique
+
+- [ ] Two players accessing the same AE2 network with Source automation active — confirm no inventory desyncs
+- [ ] Source Cable throughput is consistent under simultaneous access from both players
+
+### Botany Pots & Mystical Agriculture
+
+- [ ] Forceloaded chunk with Botany Pots and Mystical Agriculture crops running — owner logs off, second player confirms crops continue ticking and items are deposited
+- [ ] TPS stable with both running alongside at least one Create contraption
+
+### Fermentation (Vinery / Brewery)
+
+- [ ] Fermentation barrel in a forceloaded chunk — owner logs off, second player confirms fermentation progresses
+- [ ] Both players can retrieve finished products from the same barrel without conflict
+
+### General Server Health
+
+- [ ] TPS stable at or near 20 with Productive Bees, Botany Pots, Mystical Agriculture crops, and a Create contraption all running simultaneously
+- [ ] No WARN/ERROR in server console during a 20-minute session
