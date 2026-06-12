@@ -52,7 +52,7 @@ packwiz update --all                 # Update all mods
 ## 3. Design Principles
 - **No progression gates.** Quests guide and reward — they never lock content.
 - **Casual-first balance.** Overpowered mods are fine. If the group doesn't like something, it gets disabled or ignored — not excluded upfront.
-- **Config over removal.** Problems are solved by tweaking configs before reaching for mod removal.
+- **Config over removal.** Problems are solved by tweaking configs before reaching for mod removal. Deferred config and recipe work is tracked in `docs/configs.md` for the final QoL pass.
 - **Compat mod available.** A core compat/scripting mod (e.g. KubeJS) will be added when cross-mod work is needed. Custom recipes, loot tweaks, and datapack work are all in scope.
 - **Storage-conscious world gen.** Chunk pregeneration is player-centred (base radius only), not world-border blasts. Storage impact on the host machine is a real constraint.
 - **Batched, tested additions.** Mods are added in batches. Each batch must be stable and launchable before the next begins.
@@ -124,7 +124,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | Batch | Name | Status | Notes |
 |---|---|---|---|
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
-| 2 | Tech & Automation | 🔄 In Progress | Mods added (branch: batch/2-tech-automation). Local testing pending. |
+| 2 | Tech & Automation | ✅ Complete | ~65 mods (v0.2.1–0.2.4). Create + IE + CC + AE2 + full companion suite. Removed Create: Liquid Fuel (redundant — C&A Straw covers blaze burner fluid input). Shader shadow artefacts on contraptions logged (known Iris/Create limitation). SP tested 2026-06-12. Server test to follow post-merge. |
 | 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
 | 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
