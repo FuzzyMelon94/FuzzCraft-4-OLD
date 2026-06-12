@@ -332,13 +332,18 @@ hash = "bb335808d1873c81f83ec9cf4ca15e8820cfcbd6354beb331a01dc7c2c711ca9"
 metafile = true
 
 [[files]]
+file = "mods/ends-delight.pw.toml"
+hash = "fc2742e86220ba39d0638c16118108ce1e6be56fbf742664a0818465c2790791"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight-extended.pw.toml"
 hash = "e01930025d424c64e87372dc3e0c0caaa1c238d23521f32adea8b3c21c8dcd65"
 metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "9aab64fbec4cc794817026caf84e7d0dff14ba3892da94aa0e00d23c84560499"
+hash = "efc2c4fe9e2cc169aff61a6b7a41ea9bc7a22a90aadf0776b22de647ddf3cef6"
 metafile = true
 
 [[files]]
@@ -497,6 +502,11 @@ hash = "4e3aaef188d1f975c6ebd539f50021768851f7fc4638079ee72179ec33bf487f"
 metafile = true
 
 [[files]]
+file = "mods/modern-chickens.pw.toml"
+hash = "78fde0a04ecdec26ff3bf8e77900eb09b449b3f6dd2bb4d4e3ed63bfd0b7067f"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "c8ac0bf19049381f3f05aa46bfea8f2a742d340a3285ecfb7118eab6327cff99"
 metafile = true
@@ -524,6 +534,11 @@ metafile = true
 [[files]]
 file = "mods/neovitae.pw.toml"
 hash = "e540a2665a17712563796b1a774c22dd48eae8473d421a2416914e8521c7ad93"
+metafile = true
+
+[[files]]
+file = "mods/oceans-delight.pw.toml"
+hash = "7bf7c8369bd28212a1e294c60310ccb72f1eb773630970e6ab106ae666766cd3"
 metafile = true
 
 [[files]]
@@ -572,6 +587,11 @@ hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
 metafile = true
 
 [[files]]
+file = "mods/productivebees.pw.toml"
+hash = "7aa8bf129e51bda25386e18ebcd0db7eae278e95227406e8101a320cacf2f9b6"
+metafile = true
+
+[[files]]
 file = "mods/silent-gear.pw.toml"
 hash = "087ba9ed2ea4bfbf8e8ec6fafae467f4b4e8d262f46f8066e3f84dc5e231ec21"
 metafile = true
@@ -584,6 +604,11 @@ metafile = true
 [[files]]
 file = "mods/silents-gems.pw.toml"
 hash = "88409b83fd1a3c90a52ded3e8de9951573c147113772cb40ecf2d4f5af1e874a"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "18ca1d438084a8578f4b75f12233db58ca1deec55f117fb875afa21f2c021559"
 metafile = true
 
 [[files]]

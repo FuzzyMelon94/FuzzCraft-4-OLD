@@ -103,6 +103,13 @@ Polish layer. Decoration mods for the builders in the group, and FTB Quests to t
   - Per-major-mod questlines (Create, IE, Botania, Ars Nouveau, Twilight Forest, etc.)
   - Grouped tutorial quests for smaller mods where they fit sensibly
   - Standalone mod introductions where grouping doesn't make sense
+- Deferred food/storage addons: Crate Delight, Storage Delight, [Let's Do] Beachparty
+### Batch 6 — QoL & Final Compat Pass
+Final polish pass once all content is in. No new content mods — focus on quality of life, cross-mod compat smoothing, and config work deferred from earlier batches.
+- QoL mods (RightClickHarvest, etc. — tracked in watchlist)
+- Recipe and compat pass: review configs.md deferred items, KubeJS custom recipes where needed
+- Review watchlisted mods for ports (Botania, Tinkers', Thermal, etc.)
+- Final review of Almost Unified, tag unification, and JEI display cleanup
 ---
 ## 5. Questing Philosophy
 Quests serve as a **guided tutorial and reward system**, not a progression gate. Specifically:
@@ -125,9 +132,10 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 |---|---|---|---|
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
 | 2 | Tech & Automation | ✅ Complete | ~65 mods (v0.2.1–0.2.4). Create + IE + CC + AE2 + full companion suite. Removed Create: Liquid Fuel (redundant — C&A Straw covers blaze burner fluid input). Shader shadow artefacts on contraptions logged (known Iris/Create limitation). SP tested 2026-06-12. Server test to follow post-merge. |
-| 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
+| 3 | Magic & Farming | 🔄 In progress | Branch batch/3-magic-farming |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
 | 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
+| 6 | QoL & Final Compat | ⬜ Not started | Awaiting Batch 5 |
 ---
 ## 8. Issue & Debug Log
 *Issues are logged here as they arise across all batches. Format: date, batch, description, resolution.*

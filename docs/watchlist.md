@@ -11,6 +11,7 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [Thermal Series](https://www.curseforge.com/minecraft/mc-mods/thermal-expansion) | No 1.21.1 port yet (stuck on 1.20.1) | Ender IO + Powah! | 2 | — |
 | [Industrial Foregoing](https://modrinth.com/mod/industrial-foregoing) | Deferred — revisit for mob farming discussion | Mob Grinding Utils (also deferred) | 4 | — |
 | [Botania](https://modrinth.com/mod/botania) | No 1.21.1 NeoForge port yet — port in progress, no ETA | None — Ars Nouveau covers the magic pillar for now | 3 | — |
+| [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) | Deferred to QoL batch | — | 6 | — |
 | [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
 | [Create: Sweets & Treats](https://modrinth.com/mod/create-sweets-and-treats) | No 1.21.1 NeoForge port (stuck on 1.20.1) | Create Confectionery covers chocolate/candy content | 3 | — |
 
