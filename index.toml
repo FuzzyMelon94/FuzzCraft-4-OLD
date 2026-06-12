@@ -83,7 +83,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "6d3a1c92eee4dd671253c41ec000ae48064a33c45263d6adce5cad466395169d"
+hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
 metafile = true
 
 [[files]]
@@ -147,6 +147,11 @@ hash = "75ee5511e4bb37c0f13486e2a550bea43dcf630f38201b4c61a1ae284cbccf94"
 metafile = true
 
 [[files]]
+file = "mods/brewin-and-chewin.pw.toml"
+hash = "0236c16fae038f834245ad6c9b05f385f75db2e82630bdbf71a4b1a2e6def57d"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "209446eb003bb59111833db0e0328657a9ffe7d85d6016ddf3ecfd5a2f7e13c5"
 metafile = true
@@ -164,6 +169,16 @@ metafile = true
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
+metafile = true
+
+[[files]]
+file = "mods/compat-delight.pw.toml"
+hash = "c2fa573c0956c12092a57877b9198290fb15ba1c8cf89a6e7268a69a85ff4bd3"
+metafile = true
+
+[[files]]
+file = "mods/cooking-for-blockheads.pw.toml"
+hash = "9edfcf5022b68ae0234b2d5c15b710fc3f27407d84aeeb917615dffbd42c8b92"
 metafile = true
 
 [[files]]
@@ -189,6 +204,11 @@ metafile = true
 [[files]]
 file = "mods/create-compat-core.pw.toml"
 hash = "13be8eebf17185c925e660512d5e4b22e47c3f744f021cd254b7abc11a3bb378"
+metafile = true
+
+[[files]]
+file = "mods/create-confectionery.pw.toml"
+hash = "85bfeee744eff6e3cb9146da32407874d569237298072c4455224566e322e476"
 metafile = true
 
 [[files]]
@@ -263,7 +283,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "4b0ca63279620ec9ba4c63820a9d4f9ceea9b717227137ea19e5c420c820f858"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
@@ -297,8 +317,18 @@ hash = "ef7868aa3a029cdb7a9a46fc3f55ae12c4bc86cb5d92ae889ed554acfa229c45"
 metafile = true
 
 [[files]]
+file = "mods/delight-lib.pw.toml"
+hash = "c4fb5bf78ad912a20ff50767f4e5cb64fd84f04d58db0c79bc728b643acc4038"
+metafile = true
+
+[[files]]
 file = "mods/enderio.pw.toml"
 hash = "bb335808d1873c81f83ec9cf4ca15e8820cfcbd6354beb331a01dc7c2c711ca9"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight-extended.pw.toml"
+hash = "e01930025d424c64e87372dc3e0c0caaa1c238d23521f32adea8b3c21c8dcd65"
 metafile = true
 
 [[files]]
@@ -422,6 +452,36 @@ hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
 metafile = true
 
 [[files]]
+file = "mods/lets-do-addon-compat.pw.toml"
+hash = "2478c8520ff2a5cbf5d4644007c5f751bfbe41a3603352bcb68849e817bbad5f"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-bakery-farmcharm-compat.pw.toml"
+hash = "bcc419e665600b7ae3351478c159477c6a4b3d59b08e7da73499dbc929812385"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-brewery-farmcharm-compat.pw.toml"
+hash = "70ce15946e4233feb55c10b5958db355a3e209c592c19fa273176d894423f9cb"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-farm-charm.pw.toml"
+hash = "139243c0b47a2d89147289b8d9ef91178c1c2511f3060e00e3699d0e3adb226b"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-meadow.pw.toml"
+hash = "98929c2d2368656d039c75d32612333edf4838ce95b84c7191d01021e3cde6fb"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-vinery.pw.toml"
+hash = "535e8e9c6bc184e9771cf4e35795c8f162d89abeb5b9aed9c2ea2988c710776f"
+metafile = true
+
+[[files]]
 file = "mods/mechanicals-lib.pw.toml"
 hash = "4e3aaef188d1f975c6ebd539f50021768851f7fc4638079ee72179ec33bf487f"
 metafile = true
@@ -434,6 +494,11 @@ metafile = true
 [[files]]
 file = "mods/modonomicon.pw.toml"
 hash = "90e374f5744d552d2a14d8dec41247810c0ef9994d958f9a57d359bb03103115"
+metafile = true
+
+[[files]]
+file = "mods/more-delight.pw.toml"
+hash = "7b00b0ef46a798a4a46fe541314c63cfd62017190cd554e855cc21ef44e32635"
 metafile = true
 
 [[files]]
