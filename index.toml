@@ -82,6 +82,11 @@ hash = "79145ab2f9345a30867eb8d910bb7ec9f78ff62a721e336a37c19230f95e6a72"
 metafile = true
 
 [[files]]
+file = "mods/aquaculture.pw.toml"
+hash = "6b26155807b2f3825db22e5be51a9ab330c8a70500a702740726053cb4678349"
+metafile = true
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
 metafile = true
@@ -244,6 +249,11 @@ metafile = true
 [[files]]
 file = "mods/create-enchantment-industry.pw.toml"
 hash = "166d312672116bc62648572337c66018be6e794eb12e25fb2b508f686fdd58e5"
+metafile = true
+
+[[files]]
+file = "mods/create-fishing-bobber-detector.pw.toml"
+hash = "4c6f2232e99ddc3361bbd19fe7ec73a67c3650f732cb7c300ffc354dc672f893"
 metafile = true
 
 [[files]]
@@ -459,6 +469,11 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
+metafile = true
+
+[[files]]
+file = "mods/lavafishing.pw.toml"
+hash = "126618596791ca4d1682b335c79ba99b7e096476ab94ce59d3ae1afedadfbf7b"
 metafile = true
 
 [[files]]
