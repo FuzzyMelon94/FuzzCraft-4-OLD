@@ -647,6 +647,11 @@ hash = "ad913fb22740cb4cfd0db00a085f9dc96f8813d4350e64e575bb6eb9fa1512f2"
 metafile = true
 
 [[files]]
+file = "mods/spark.pw.toml"
+hash = "593fa7b30ab016aa45be07bd6bef3a9f160ed0f24689850d60bf84995d69b843"
+metafile = true
+
+[[files]]
 file = "mods/spartan-weaponry-unofficial.pw.toml"
 hash = "c0c8df528c516f4e95e13b256b89a038c3e680771f814769ca36eec22976d120"
 metafile = true
