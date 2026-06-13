@@ -2,8 +2,8 @@
 
 ## Summary
 **Pack version:** 0.3.1
-**Test date:** <tester fills in>
-**Tester:** <tester fills in>
+**Test date:** 2026-06-13
+**Tester:** Tom
 **Play mode:** Single player
 
 ## Known Issues
