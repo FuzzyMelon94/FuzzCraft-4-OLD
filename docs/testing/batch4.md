@@ -80,14 +80,14 @@
 
 ---
 
-## 5. Deferred — Requires Server / Multiplayer
+## 4. Deferred — Requires Server / Multiplayer
 
 - Chunk gen performance under concurrent player load (multiple players exploring new biomes simultaneously)
 - BetterNether stability under server-side world gen (unofficial port — worth a specific check)
 
 ---
 
-## 6. Tester Notes
+## 5. Tester Notes
 
 1. BYG and BetterNether saplings don't work with Dynamic Trees. BetterNether has no DT compat addon (none exists); dtbwg may not cover all BWG tree types — this is a known compat gap, not fixable without a dedicated addon. Deferred.
 2. Falling trees disabled via config (`enableFallingTrees = false`, `enableFallingTreeDamage = false` in `dynamictrees-server.toml`). Trees still use DT models and branch-chopping — just no felling animation.
