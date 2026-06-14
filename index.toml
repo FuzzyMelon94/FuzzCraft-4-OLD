@@ -9,6 +9,10 @@ file = "config/defaultoptions/options.txt"
 hash = "6e8eafbcdf5195b3bd3fb62f2a084f30fbfe226c4473a80c47a538aee62ecba3"
 
 [[files]]
+file = "config/dynamictrees-server.toml"
+hash = "ab63f9f6ef23a11678630fcdf2775a1c4ee6fbf7fcdedad166151bef50d135b8"
+
+[[files]]
 file = "config/ftbchunks-world.snbt"
 hash = "6515140a68db07b0a3bd773c7849ee1dab37cabee8af9e211707276a9c5fdb66"
 
