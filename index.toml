@@ -121,6 +121,11 @@ hash = "147498b3f5c442089d56acf64d7fe812d0b5dbb1eba201a5624a125aa03b3a17"
 metafile = true
 
 [[files]]
+file = "mods/bclib-neoforge.pw.toml"
+hash = "c74a9bf5a716c5b27b9d46cdcd946eb05b2f80b69aaa9d46f4376f38bc49ca47"
+metafile = true
+
+[[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "e1f4a53e3e52b534add5dd018597fefd345d9bd6350b9c46ef0ec281fc62af8e"
 metafile = true
@@ -793,6 +798,16 @@ metafile = true
 [[files]]
 file = "mods/when-dungeons-arise.pw.toml"
 hash = "7e6948368276f2c49d5bccf52cbf80930d0daca75b4dfbc5530479f1d3f95cf8"
+metafile = true
+
+[[files]]
+file = "mods/worldweaver-neoforge.pw.toml"
+hash = "355ebac0e6f61e2633de37d66bcafc53a7cb7fe842efd9b2fa15d7892b68c6f3"
+metafile = true
+
+[[files]]
+file = "mods/wunderlib-neoforge.pw.toml"
+hash = "2db6150114a149ac922dda026392b401969e31bd4b93e28c44296a9ec712bd65"
 metafile = true
 
 [[files]]

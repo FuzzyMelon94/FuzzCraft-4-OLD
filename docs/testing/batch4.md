@@ -9,7 +9,7 @@
 ## Known Issues
 - **Dynamic Trees — BWG compat** upgraded from BETA02 to 1.1.0. Should be more stable but watch for odd tree generation in BYG biomes.
 - **Terralith pinned to 2.5.8** — 2.6.2 caused a feature order cycle with BWG 2.6.0. Do not update Terralith until this is resolved upstream.
-- **BetterNether NeoForge** is an unofficial port. Generally stable but worth flagging any Nether-specific crashes or world gen errors in logs.
+- **BetterNether NeoForge** is an unofficial port. Required deps (WunderLib, BCLib, WorldWeaver/WOver) were manually added — not auto-detected by packwiz. Worth flagging any Nether-specific crashes or world gen errors in logs.
 ---
 
 ## 1. Launch & Stability
