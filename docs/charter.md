@@ -2,7 +2,7 @@
 **Author:** FuzzyMelon94  
 **Working Title:** FuzzCraft  
 **Status:** Active — Pre-Production  
-**Last Updated:** 2026-06-11  
+**Last Updated:** 2026-06-14  
 ---
 ## 1. Vision
 FuzzCraft is a personal, long-term modpack for a casual friend group of ~7 players. It is designed to be a "forever pack" — something that grows and evolves over time rather than a fixed, versioned release. The north star is **FTB Ultimate**: everyone can do their own thing, pursue their own progression, and then rally together for group adventures and boss nights.
@@ -81,7 +81,28 @@ Non-tech players get a full gameplay loop.
 - **Thaumcraft successor** — Thaumcraft itself is abandoned; candidates include *Theurgy*, *Arcane* mods, or equivalent. To be evaluated during batch.
 - **Farmer's Delight** — confirmed, plus food ecosystem addons
 - Supporting magic and food mods to be confirmed during batch
-### Batch 4 — Exploration, Dimensions & Combat
+### Batch 4 — World Gen & Combat
+Overworld exploration layer. Biomes, terrain, structures, mob variety, and combat depth.
+**World gen:**
+- Terralith + Tectonic (terrain/biome overhaul)
+- Oh The Biomes We've Gone (BYG) — replaces BoP
+- Dynamic Trees + Terralith/BYG compat
+- BetterNether NeoForge (Nether biomes/structures)
+**End gen:**
+- Nullscape + BetterEnd NeoForge + YUNG's Better End Island
+**Structures:**
+- Full YUNG's suite (Dungeons, Mineshafts, Strongholds, Desert Temples, Jungle Temples, Ocean Monuments, Nether Fortresses, Witch Huts, End Island, Bridges)
+- ChoiceTheorem's Overhauled Village (CTOV) + Farmer's Delight / Savage & Ravage / Friends & Foes compat datapacks
+- Towns and Towers, Dungeons and Taverns, When Dungeons Arise
+- Blossom Blade, Tidal Towns, Better Archeology
+- Sparse Structures (density control)
+**Mobs & combat:**
+- Alex's Mobs, Friends & Foes, Born in Chaos, Galosphere, Ribbits
+- Savage & Ravage (pack AI + champion mobs — config pass planned)
+- Artifacts (Curios-based trinkets), Epic Knights + Addon, Waystones
+- Bountiful (bounty boards)
+- Curios slot config pass: 2× back, 4× ring, 4× charm minimum
+### Batch 5 — Dimensions
 Group adventure content. Dimensions are a primary social driver — "adventure nights" are a core use case.
 **Adventure dimensions:**
 - **Twilight Forest** — confirmed
@@ -90,13 +111,7 @@ Group adventure content. Dimensions are a primary social driver — "adventure n
 **Utility dimensions:**
 - Personal/pocket dimensions (upgradable)
 - Configurable mining dimension
-**Overworld:**
-- Biome variety (Terralith or equivalent)
-- Structure mods (dungeons, ruins, villages)
-**Combat:**
-- Mob variety / difficulty scaling
-- Weapon/equipment mods to be confirmed during batch
-### Batch 5 — Building, Decoration & Questing
+### Batch 6 — Building, Decoration & Questing
 Polish layer. Decoration mods for the builders in the group, and FTB Quests to tie the whole pack together.
 - Decoration mods (to be confirmed with friend group input)
 - **FTB Quests** — no gating, structured as:
@@ -104,7 +119,7 @@ Polish layer. Decoration mods for the builders in the group, and FTB Quests to t
   - Grouped tutorial quests for smaller mods where they fit sensibly
   - Standalone mod introductions where grouping doesn't make sense
 - Deferred food/storage addons: Crate Delight, Storage Delight, [Let's Do] Beachparty
-### Batch 6 — QoL & Final Compat Pass
+### Batch 7 — QoL & Final Compat Pass
 Final polish pass once all content is in. No new content mods — focus on quality of life, cross-mod compat smoothing, and config work deferred from earlier batches.
 - QoL mods (RightClickHarvest, etc. — tracked in watchlist)
 - Recipe and compat pass: review configs.md deferred items, KubeJS custom recipes where needed
@@ -133,9 +148,10 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
 | 2 | Tech & Automation | ✅ Complete | ~65 mods (v0.2.1–0.2.4). Create + IE + CC + AE2 + full companion suite. Removed Create: Liquid Fuel (redundant — C&A Straw covers blaze burner fluid input). Shader shadow artefacts on contraptions logged (known Iris/Create limitation). SP tested 2026-06-12. Server test to follow post-merge. |
 | 3 | Magic & Farming | ✅ Complete | ~47 mods (v0.3.1–0.3.3). Ars Nouveau + addons, Theurgy, Neo Vitae (experimental), Botania watchlisted (no 1.21.1 port). Full food ecosystem: FD + Pam's suite + Let's Do series + Botany Pots + Mystical Agriculture. Fishing: Aquaculture + Lava Fishing. Create integrations throughout. Removed: Sodium Dynamic Lights (module conflict), Compat Delight (broken against FD 1.3.x). Added Spark profiler. Caramel recipe gap in Create Confectionery deferred to B6. SP tested 2026-06-13. Server test to follow post-merge. |
-| 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
-| 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
-| 6 | QoL & Final Compat | ⬜ Not started | Awaiting Batch 5 |
+| 4 | World Gen & Combat | 🔄 In Progress | Branch: batch/4a-world-gen-combat. v0.4.0. |
+| 5 | Dimensions | ⬜ Not started | Awaiting Batch 4 |
+| 6 | Building & Questing | ⬜ Not started | Awaiting Batch 5 |
+| 7 | QoL & Final Compat | ⬜ Not started | Awaiting Batch 6 |
 ---
 ## 8. Issue & Debug Log
 *Issues are logged here as they arise across all batches. Format: date, batch, description, resolution.*
