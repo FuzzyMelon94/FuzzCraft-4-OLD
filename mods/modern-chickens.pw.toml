@@ -1,0 +1,13 @@
+name = "Modern Chickens"
+filename = "ModernChickens-1.21.1-2.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fQcPH7ab/versions/5bccLADA/ModernChickens-1.21.1-2.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "e6f4425e14a2cd2dc85e6208140d3a6165d310940d8c83f27b3c23b8c26b3906c8e533ea7c1a66a510af087afa5303545cb43f1d58c97515f2f6e0f1d52ebd70"
+
+[update]
+[update.modrinth]
+mod-id = "fQcPH7ab"
+version = "5bccLADA"

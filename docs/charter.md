@@ -103,6 +103,13 @@ Polish layer. Decoration mods for the builders in the group, and FTB Quests to t
   - Per-major-mod questlines (Create, IE, Botania, Ars Nouveau, Twilight Forest, etc.)
   - Grouped tutorial quests for smaller mods where they fit sensibly
   - Standalone mod introductions where grouping doesn't make sense
+- Deferred food/storage addons: Crate Delight, Storage Delight, [Let's Do] Beachparty
+### Batch 6 — QoL & Final Compat Pass
+Final polish pass once all content is in. No new content mods — focus on quality of life, cross-mod compat smoothing, and config work deferred from earlier batches.
+- QoL mods (RightClickHarvest, etc. — tracked in watchlist)
+- Recipe and compat pass: review configs.md deferred items, KubeJS custom recipes where needed
+- Review watchlisted mods for ports (Botania, Tinkers', Thermal, etc.)
+- Final review of Almost Unified, tag unification, and JEI display cleanup
 ---
 ## 5. Questing Philosophy
 Quests serve as a **guided tutorial and reward system**, not a progression gate. Specifically:
@@ -125,9 +132,10 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 |---|---|---|---|
 | 1 | Foundation | ✅ Complete | 23 mods (v0.1.2). Iris+Sodium 0.6.13; FTB Chunks FORCED_ALL; JourneyMap Integration for chunk overlay; Default Options (sprint/sneak swap, no bobbing); Balm. SP+server tested 2026-06-11. jmi-client.toml colours to be tuned later. |
 | 2 | Tech & Automation | ✅ Complete | ~65 mods (v0.2.1–0.2.4). Create + IE + CC + AE2 + full companion suite. Removed Create: Liquid Fuel (redundant — C&A Straw covers blaze burner fluid input). Shader shadow artefacts on contraptions logged (known Iris/Create limitation). SP tested 2026-06-12. Server test to follow post-merge. |
-| 3 | Magic & Farming | ⬜ Not started | Awaiting Batch 2 |
+| 3 | Magic & Farming | ✅ Complete | ~47 mods (v0.3.1–0.3.3). Ars Nouveau + addons, Theurgy, Neo Vitae (experimental), Botania watchlisted (no 1.21.1 port). Full food ecosystem: FD + Pam's suite + Let's Do series + Botany Pots + Mystical Agriculture. Fishing: Aquaculture + Lava Fishing. Create integrations throughout. Removed: Sodium Dynamic Lights (module conflict), Compat Delight (broken against FD 1.3.x). Added Spark profiler. Caramel recipe gap in Create Confectionery deferred to B6. SP tested 2026-06-13. Server test to follow post-merge. |
 | 4 | Exploration & Combat | ⬜ Not started | Awaiting Batch 3 |
 | 5 | Building & Questing | ⬜ Not started | Awaiting Batch 4 |
+| 6 | QoL & Final Compat | ⬜ Not started | Awaiting Batch 5 |
 ---
 ## 8. Issue & Debug Log
 *Issues are logged here as they arise across all batches. Format: date, batch, description, resolution.*
@@ -137,6 +145,9 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | 2026-06-11 | 1 | Sodium 0.8.x (Ruby rewrite) incompatible with Iris and Sodium ecosystem mods | Sodium 0.8.12-alpha.4 caused mixin crashes in Reese's Sodium Options, SodiumOptionsAPI, and Iris. Iris 1.8.12 pins Sodium 0.6.13. Downgraded Sodium to 0.6.13 (latest stable NeoForge build); removed Reese's + SodiumOptionsAPI (not yet ported to 0.6.x-compatible API either). Re-evaluate when Iris supports 0.8.x. |
 | 2026-06-11 | 1 | No FTB Chunks + JourneyMap integration addon available for 1.21.1 | Resolved: JourneyMap Integration (modrinth: M1ZKbfkJ) covers FTB Chunks claim overlay on JourneyMap. Added v1.21.1-1.9 in v0.1.1. |
 | 2026-06-12 | 2 | Moving Create contraptions show shadow artefacts when a shaderpack is active (Iris + Create interaction) | Known engine limitation — Create contraptions are rendered as entities, which causes shadow mis-alignment in most shaderpacks. Create Better FPS reduces it but doesn't eliminate it. No fix available; revisit if a Create/Iris update addresses contraption rendering. |
+| 2026-06-13 | 3 | Crash on launch — `lambdynlights_api` (bundled by Ars Nouveau JarInJar) and `sodiumdynamiclights` (standalone mod) both export `dev.lambdaurora.lambdynlights.api`, causing Java module resolution failure | Removed Sodium Dynamic Lights from the pack. LambDynamicLights API remains available via Ars Nouveau's bundled dep. |
+| 2026-06-13 | 3 | Crash on launch — Compat Delight 1.0.1.1 references `vectorwing.farmersdelight.common.block.ShepherdsPieBlock` which was removed in Farmer's Delight 1.3.x, causing `NoClassDefFoundError` | Removed Compat Delight. FD compat covered by Slice & Dice and Farmer's Delight: Extended. |
+| 2026-06-13 | 3 | Create Confectionery caramel has a circular recipe (Caramel ↔ Caramel Bucket ↔ Bar of Caramel, no entry point). Non-blocker. Pam's HarvestCraft also has a `Caramel` item — a KubeJS recipe bridging Pam's caramel into Create Confectionery's caramel fluid may resolve this. | Deferred to B6 compat pass. |
 ---
 ## 9. Handoff Protocol
 Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
