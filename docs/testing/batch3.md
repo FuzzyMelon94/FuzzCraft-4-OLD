@@ -16,45 +16,78 @@
 
 ## 1. Launch & Stability
 
-- [ ] Game launches without crashes
-- [ ] No errors in the log on a fresh world load
-- [ ] All mod GUIs open without crashes (spot-check: JEI, Jade, FTB Chunks, AE2 terminal)
-- [ ] No obvious TPS issues in a fresh world with default world gen
+- [x] Game launches without crashes
+- [x] No errors in the log on a fresh world load
+- [x] All mod GUIs open without crashes (spot-check: JEI, Jade, FTB Chunks, AE2 terminal)
+- [x] No obvious TPS issues in a fresh world with default world gen
 
 ---
 
 ## 2. Regression — Batches 1 & 2
 
-- [ ] JourneyMap loads, chunk claims visible on map
-- [ ] JEI recipe viewer functional
-- [ ] Create contraption assembles and runs (windmill + millstone)
-- [ ] AE2 ME Terminal accessible and shows stored items
-- [ ] Immersive Engineering multiblock (e.g. Crusher) assembles correctly
-- [ ] CC: Tweaked — open a computer, run a basic program
+- [x] JourneyMap loads, chunk claims visible on map
+- [x] JEI recipe viewer functional
+- [x] Create contraption assembles and runs (windmill + millstone)
+- [x] AE2 ME Terminal accessible and shows stored items
+- [x] Immersive Engineering multiblock (e.g. Crusher) assembles correctly
+- [x] CC: Tweaked — open a computer, run a basic program
 
 ---
 
 ## 3. Ars Nouveau
 
-- [ ] Arcane Compendium (guidebook) opens and is readable
-- [ ] Craft a spell book and inscribe a basic spell (e.g. Launch or Ignite)
-- [ ] Cast spell successfully
+- [x] Arcane Compendium (guidebook) opens and is readable
+- [x] Craft a spell book and inscribe a basic spell (e.g. Launch or Ignite)
+- [x] Cast spell successfully
 - [ ] Source Jar fills from a Source Berry bush or Mana Bloom
+  1. Craft a Source Jar (check JEI — needs Source Gems)
+  2. Place it on the ground
+  3. Find a Source Berry bush nearby (blue berries, generates in most biomes) — or plant a Mana Bloom flower within ~10 blocks
+  4. Watch the jar — it should fill passively over time; hover with Jade to confirm
 - [ ] Summon a familiar
+  1. Open the Arcane Compendium, navigate to Familiars for the full list
+  2. Craft a **Starbuncle Charm** (check JEI)
+  3. Right-click the ground with it to summon a Starbuncle (small orange lizard)
+  4. It should idle near you and respond to items
 - [ ] **Ars Additions** — Starbuncle can be summoned and pathfinds to items
+  1. If not already summoned above, summon a Starbuncle via Starbuncle Charm
+  2. Drop a few items on the ground nearby
+  3. Starbuncle should pathfind to the items and pick them up
 - [ ] **Ars Énergistique** — Source Cable connects to AE2 network (basic connection test)
+  1. Craft a Source Cable (check JEI — part of Ars Énergistique)
+  2. Place it adjacent to an ME Controller or AE2 cable
+  3. It should visually connect; open the ME Terminal to confirm the network is still alive
 - [ ] **Ars Elemental** — new spell glyphs appear in JEI
+  1. Open JEI and search `ars_elemental` or browse the Ars Elemental creative tab
+  2. Confirm new glyphs (e.g. extra damage/projectile types) are present
 - [ ] **Create Ars Nouveau** — Sorcerer Blaze Burner crafts and accepts Source as fuel
+  1. Craft a Sorcerer's Blaze Burner (check JEI)
+  2. Place it and connect a Source Jar or Source Cable to it
+  3. Confirm it accepts Source as a fuel source (flame should appear)
 - [ ] **Create: Ars Nouveau Compat** — Ars Nouveau items appear in Create machine recipes in JEI
+  1. In JEI, search for an Ars Nouveau item (e.g. Source Gem)
+  2. Check its uses — there should be Create machine recipes (milling, pressing, etc.) listed
 
 ---
 
 ## 4. Theurgy
 
 - [ ] Theurgy guidebook (Modonomicon) opens and is readable
+  1. Press `E` to open inventory, find the Theurgy book in the Theurgy tab, or search JEI for `Theurgy Book` / `Hermetica`
+  2. The Modonomicon should open — confirm pages render and are navigable
+  3. **Follow the book for all steps below** — Theurgy is a guided progression mod and the book is the primary reference
 - [ ] Craft a Sal Ammoniac Crystal and a Mercury Catalyst
+  1. Check JEI for `Sal Ammoniac Crystal` — it involves calcination (heating) of salt or related materials in a Calcination Oven
+  2. Check JEI for `Mercury Catalyst` — involves a similar alchemical process
+  3. The Hermetica book has a Spagyrics chapter that walks through both step by step
 - [ ] Run a basic Spagyrics operation (any purification or separation process)
+  1. Set up a Calcination Oven (JEI for recipe and structure)
+  2. Process any material listed in the Spagyrics chapter of the Hermetica
+  3. Confirm output is produced without error
 - [ ] Reformation Array — set up and transmute a resource
+  1. Check the Hermetica for the Reformation Array chapter
+  2. Build the multiblock structure as shown
+  3. Attempt any listed transmutation recipe
 - [ ] No crashes or visual errors in the Theurgy GUIs
 
 ---
@@ -62,9 +95,21 @@
 ## 5. Neo Vitae ⚠️
 
 - [ ] Craft a basic Blood Altar (tier 1)
+  1. Search JEI for `Blood Altar` — the block recipe uses standard materials
+  2. Place it on the ground (it's a standalone block at tier 1, no multiblock needed yet)
 - [ ] Fill the altar with LP (take self-damage near the altar)
+  1. Stand next to the altar
+  2. Take damage — punch a cactus, jump off a small ledge, or hit yourself with a tool
+  3. LP (Life Points) should transfer from you to the altar; watch the altar's blood pool fill
+  4. Keep health above 2–3 hearts — the altar won't drain you to death at tier 1 but be cautious
 - [ ] Craft a basic Blood Orb
+  1. Fill the altar with enough LP (check the altar GUI or Jade tooltip for current level)
+  2. Place a crafting ingredient in the altar's slot (check JEI for Weak Blood Orb recipe)
+  3. Right-click the altar to begin — the orb should materialise when enough LP is consumed
 - [ ] Craft and use a basic Sigil
+  1. Check JEI for a tier-1 Sigil (e.g. Sigil of the Green Grove or Water Sigil)
+  2. Craft it using the altar + LP as above
+  3. Right-click with the Sigil to activate its effect
 - [ ] No crashes when interacting with the altar
 - [ ] No runaway damage loops or instant-death bugs
 
@@ -79,7 +124,7 @@
 - [ ] Pam's Trees — fruit tree spawns in a biome; fruit drops from leaves
 - [ ] **Cooking for Blockheads** — place a kitchen block, open it, confirm recipe filtering works with available ingredients
 - [ ] **Brewin' And Chewin'** — craft a fermenting barrel and begin a fermentation recipe
-- [ ] **More Delight / Compat Delight** — spot-check a recipe from each in JEI
+- [ ] **More Delight** — spot-check a recipe in JEI (search `moredelight`)
 - [ ] **Farmer's Delight: Extended** — at least one Create+FD crossover recipe visible in JEI (e.g. milling a FD crop)
 - [ ] **Create Slice & Dice** — Deployer or Mechanical Saw processes a FD cutting recipe
 
