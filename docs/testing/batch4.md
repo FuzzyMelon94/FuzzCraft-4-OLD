@@ -1,7 +1,7 @@
 # FuzzCraft 4 — Batch 4 Testing: World Gen & Combat
 
 ## Summary
-**Pack version:** 0.4.5–0.4.7–
+**Pack version:** 0.4.5–0.4.9–
 **Test date:** 2026-06-14
 **Tester:** Tom
 **Play mode:** Single player
@@ -70,14 +70,59 @@
 
 ---
 
-## 4. Deferred — Requires Server / Multiplayer
+## 4. Structures
+
+> Use `/locate` commands to find structures quickly — e.g. `/locate structure minecraft:stronghold`. For modded structures, use tab-complete after `/locate structure` to find the relevant namespace.
+
+### Launch & Stability
+
+- [ ] Game launches without crashes with all structure mods active
+- [ ] No world gen errors in log on a fresh world load
+- [ ] No `Feature order cycle` or `BiomeModifier` errors in log (structure mods are a common trigger)
+
+### YUNG's Suite
+
+- [ ] YUNG's Better Dungeons — find a dungeon (`/locate structure minecraft:monster_room`); should look more detailed with multiple room types, traps, and loot variety
+- [ ] YUNG's Better Mineshafts — find a mineshaft (`/locate structure minecraft:mineshaft`); should feel more natural and cave-like, less grid-y
+- [ ] YUNG's Better Strongholds — locate a stronghold (`/locate structure minecraft:stronghold`); should be significantly larger and more complex
+- [ ] YUNG's Better Desert Temples — locate one (`/locate structure minecraft:desert_pyramid`); should have new traps and internal rooms
+- [ ] YUNG's Better Jungle Temples — locate one (`/locate structure minecraft:jungle_pyramid`); should have more puzzle rooms
+- [ ] YUNG's Better Ocean Monuments — locate one (`/locate structure minecraft:ocean_monument`); should feel more labyrinthine
+- [ ] YUNG's Better Nether Fortresses — enter the Nether and locate a fortress (`/locate structure minecraft:fortress`); should be considerably larger
+- [ ] YUNG's Better Witch Huts — locate one (`/locate structure minecraft:swamp_hut`); spot-check appearance
+- [ ] YUNG's Bridges — explore overworld rivers and paths; natural-looking bridges should appear connecting terrain
+
+### Villages & Settlements
+
+- [ ] CTOV — villages look more varied and biome-appropriate (CTOV adds biome-specific village styles); check a plains village, a taiga village, and a desert village if possible
+- [ ] Towns and Towers — watchtowers and outposts visible in the world; distinct from vanilla pillager outposts
+- [ ] Tidal Towns — locate an ocean/coastal area and look for underwater or coastal settlements
+
+### Dungeons & Structures
+
+- [ ] When Dungeons Arise — locate a large structure (`/locate structure whendungeonsarise:*` — tab-complete for options); should be a substantial standalone dungeon
+- [ ] Dungeons and Taverns — find a tavern or inn in the world; check for loot and interior detail
+- [ ] Blossom Blade — find a cherry/blossom-themed structure (explore cherry groves or general surface); spot-check appearance
+- [ ] Better Archeology — find a trail ruins or suspicious sand site; BetterArcheology should add new structure variants and loot to dig sites
+
+### Sparse Structures
+
+- [ ] Structures don't feel completely overwhelming in density — Sparse Structures should be reducing frequency of vanilla structures; explore a reasonable area and check it doesn't feel like structures on every chunk
+
+### Nether Structures
+
+- [ ] YUNG's Better Nether Fortresses generates without errors in the Nether (logged separately above — just confirm no new errors after structures batch)
+
+---
+
+## 6. Deferred — Requires Server / Multiplayer
 
 - Chunk gen performance under concurrent player load (multiple players exploring new biomes simultaneously)
 - BetterNether stability under server-side world gen (unofficial port — worth a specific check)
 
 ---
 
-## 5. Tester Notes
+## 7. Tester Notes
 
 1. BYG and BetterNether saplings don't work with Dynamic Trees. BetterNether has no DT compat addon (none exists); dtbwg may not cover all BWG tree types — this is a known compat gap, not fixable without a dedicated addon. Deferred.
 2. Falling trees disabled via config (`enableFallingTrees = false`, `enableFallingTreeDamage = false` in `dynamictrees-server.toml`). Trees still use DT models and branch-chopping — just no felling animation.
