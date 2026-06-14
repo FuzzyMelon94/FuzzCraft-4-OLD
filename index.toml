@@ -142,7 +142,7 @@ metafile = true
 
 [[files]]
 file = "mods/betternether-neoforge.pw.toml"
-hash = "bb2f1a753e0ceb51e17d401991dc5d17f4b80c49a6262557c2980b3e5f55a548"
+hash = "44d2dd64515e60adf92b87c157d095d39c91609ca7077413a1cef7f0b207b2ca"
 metafile = true
 
 [[files]]
