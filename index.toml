@@ -21,6 +21,10 @@ file = "config/ftbteams-server.snbt"
 hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
+file = "config/sparsestructures.json5"
+hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
+
+[[files]]
 file = "mods/advancedperipherals.pw.toml"
 hash = "b2890f92c87f48cb45a0d8053f69afdbee6ce828c07cd0d7d4c3fd7c201e3eb0"
 metafile = true
