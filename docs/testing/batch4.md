@@ -2,14 +2,13 @@
 
 ## Summary
 **Pack version:** 0.4.1–
-**Test date:** <tester fills in>
-**Tester:** <tester fills in>
+**Test date:** 2026-06-14
+**Tester:** Tom
 **Play mode:** Single player
 
 ## Known Issues
 - **Dynamic Trees — BYG compat** is a BETA release (1.1.0-BETA02). Watch for odd tree generation in BYG biomes.
 - **BetterNether NeoForge** is an unofficial port. Generally stable but worth flagging any Nether-specific crashes or world gen errors in logs.
-- Terralith packwiz flagged a version inconsistency (2.6.2 vs 2.5.8) — 2.5.8 is the correct stable 1.21.x build, not a concern.
 
 ---
 
