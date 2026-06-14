@@ -417,7 +417,7 @@ metafile = true
 
 [[files]]
 file = "mods/feature-recycler.pw.toml"
-hash = "dfea23fdac9822913ae8f1c8751e9f0978ad4398ed8f9e45ca1a69c71025e979"
+hash = "b616b04a821d076ceb6a85aef27a6de26da8df7804528a093618d93c144e91d0"
 metafile = true
 
 [[files]]
@@ -542,7 +542,7 @@ metafile = true
 
 [[files]]
 file = "mods/lets-do-addon-compat.pw.toml"
-hash = "2478c8520ff2a5cbf5d4644007c5f751bfbe41a3603352bcb68849e817bbad5f"
+hash = "a6ace79990bde158df27ee8716ae35e0db8b38b53522b9d0ea7b4409048fd859"
 metafile = true
 
 [[files]]
