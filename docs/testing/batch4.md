@@ -1,13 +1,14 @@
 # FuzzCraft 4 — Batch 4 Testing: World Gen & Combat
 
 ## Summary
-**Pack version:** 0.4.2–
+**Pack version:** 0.4.5–
 **Test date:** 2026-06-14
 **Tester:** Tom
 **Play mode:** Single player
 
 ## Known Issues
-- **Dynamic Trees removed** — DT + DT-Terralith + DT-BWG + DT-Plus caused a feature order cycle crash (Terralith + BWG biome conflict). All four mods removed at v0.4.2. Vanilla tree gen in effect.
+- **Dynamic Trees — BWG compat** upgraded from BETA02 to 1.1.0. Should be more stable but watch for odd tree generation in BYG biomes.
+- **Terralith pinned to 2.5.8** — 2.6.2 caused a feature order cycle with BWG 2.6.0. Do not update Terralith until this is resolved upstream.
 - **BetterNether NeoForge** is an unofficial port. Generally stable but worth flagging any Nether-specific crashes or world gen errors in logs.
 
 ---
@@ -30,6 +31,15 @@
 - [ ] BYG biomes visible (e.g. Maple Forest, Cika Mountains, Howling Peaks)
 - [ ] Terrain shape feels varied — large mountains, deep valleys, interesting coastlines (Tectonic)
 - [ ] Biome transitions look natural — no jarring seams between Terralith and BYG biomes
+
+### Dynamic Trees
+
+- [ ] Trees in the overworld use Dynamic Trees models (no standard flat-top vanilla trees)
+- [ ] Chopping the base of a tree causes the whole tree to fall
+- [ ] Replanting works — sapling grows dynamically over time
+- [ ] BYG biome trees render correctly (DT–BWG compat)
+- [ ] Terralith biome trees render correctly (DT–Terralith compat)
+- [ ] No runaway chunk update spam in F3 debug (watch `C:` chunk updates while near trees)
 
 ### Nether
 
