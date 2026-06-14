@@ -91,9 +91,9 @@
 	#Allowed Values: VANILLA, THICKNESS, VOLUME
 	axeDamageMode = "THICKNESS"
 	#If enabled then trees will fall over when harvested
-	enableFallingTrees = false
+	enableFallingTrees = true
 	#If enabled then trees will harm living entities when falling
-	enableFallingTreeDamage = false
+	enableFallingTreeDamage = true
 	#Multiplier for damage incurred by a falling tree
 	# Default: 1.0
 	# Range: 0.0 ~ 100.0

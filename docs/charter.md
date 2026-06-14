@@ -86,7 +86,7 @@ Overworld exploration layer. Biomes, terrain, structures, mob variety, and comba
 **World gen:**
 - Terralith + Tectonic (terrain/biome overhaul)
 - Oh The Biomes We've Gone (BYG) — replaces BoP
-- ~~Dynamic Trees + Terralith/BYG compat~~ — removed (see issue log)
+- Dynamic Trees + Terralith/BYG compat (DT-Terralith 1.3.0, DT-BWG 1.1.0)
 - BetterNether NeoForge (Nether biomes/structures)
 **End gen:**
 - Nullscape + BetterEnd NeoForge + YUNG's Better End Island
@@ -164,7 +164,8 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | 2026-06-13 | 3 | Crash on launch — `lambdynlights_api` (bundled by Ars Nouveau JarInJar) and `sodiumdynamiclights` (standalone mod) both export `dev.lambdaurora.lambdynlights.api`, causing Java module resolution failure | Removed Sodium Dynamic Lights from the pack. LambDynamicLights API remains available via Ars Nouveau's bundled dep. |
 | 2026-06-13 | 3 | Crash on launch — Compat Delight 1.0.1.1 references `vectorwing.farmersdelight.common.block.ShepherdsPieBlock` which was removed in Farmer's Delight 1.3.x, causing `NoClassDefFoundError` | Removed Compat Delight. FD compat covered by Slice & Dice and Farmer's Delight: Extended. |
 | 2026-06-13 | 3 | Create Confectionery caramel has a circular recipe (Caramel ↔ Caramel Bucket ↔ Bar of Caramel, no entry point). Non-blocker. Pam's HarvestCraft also has a `Caramel` item — a KubeJS recipe bridging Pam's caramel into Create Confectionery's caramel fluid may resolve this. | Deferred to B6 compat pass. |
-| 2026-06-14 | 4 | Feature order cycle crash on world gen — `IllegalStateException: Feature order cycle found` involving vanilla, Terralith, and BYG biomes. Caused by Dynamic Trees + DT-Terralith + DT-BWG injecting features into biomes in conflicting order; Lithostitched present but didn't resolve it. | Removed all four DT mods (dynamictrees, dynamictreesplus, dynamic-trees-terralith, dynamic-trees-bwg) at v0.4.2. Revisit DT for a future batch if a stable compat path emerges. |
+| 2026-06-14 | 4 | Feature order cycle crash on world gen — `IllegalStateException: Feature order cycle found` involving vanilla, Terralith, and BYG biomes. Root cause was Terralith 2.6.2 + BWG 2.6.0 incompatibility (not Dynamic Trees as initially suspected). Feature Recycler did not resolve it. | Downgraded Terralith to 2.5.8 at v0.4.4. Do not update Terralith until 2.6.x + BWG 2.6.x is confirmed compatible. DT re-added at v0.4.5 with dtbwg upgraded BETA02 → 1.1.0. |
+| 2026-06-14 | 4 | BYG and BetterNether saplings incompatible with Dynamic Trees. | No compat addon exists for BetterNether; dtbwg does not cover all BWG tree types. Known gap — deferred, no fix available. |
 ---
 ## 9. Handoff Protocol
 Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
