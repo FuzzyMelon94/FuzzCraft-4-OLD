@@ -140,7 +140,7 @@
 
 - [ ] Hybrid Aquatic — explore an ocean; new fish and aquatic creatures should be visible
 - [ ] Upgrade Aquatic — check for improved vanilla aquatic mobs (salmon, cod, dolphins) with new behaviours or variants
-- [ ] More Axolotl Variants — find axolotls in a lush cave; should show colour variants beyond the vanilla five
+
 
 ### Combat Difficulty ⚠️
 
