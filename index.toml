@@ -21,6 +21,14 @@ file = "config/ftbteams-server.snbt"
 hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
+file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
+hash = "702ce649fb80e450ea8867359e90a044a97ec19e064c5ea39d7bcd60f2aad8d9"
+
+[[files]]
+file = "config/paxi/datapacks/ctov-friends-and-foes-compat-2.0.jar"
+hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
+
+[[files]]
 file = "config/sparsestructures.json5"
 hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
 
@@ -807,6 +815,11 @@ metafile = true
 [[files]]
 file = "mods/patchouli.pw.toml"
 hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
+metafile = true
+
+[[files]]
+file = "mods/paxi.pw.toml"
+hash = "215d597764d5c5db89e700fc3495b72dc0a7f09c975de19dc8c580bde3469a5e"
 metafile = true
 
 [[files]]

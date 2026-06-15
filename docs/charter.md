@@ -101,7 +101,7 @@ Overworld exploration layer. Biomes, terrain, structures, mob variety, and comba
 - Savage & Ravage (pack AI + champion mobs — config pass planned)
 - Artifacts (Curios-based trinkets), Epic Knights + Addon, Waystones
 - Bountiful (bounty boards)
-- Curios slot config pass: 2× back, 4× ring, 4× charm minimum
+- Curios slot config pass: 2× back, 4× ring, 4× charm minimum *(deferred to B7)*
 ### Batch 5 — Dimensions
 Group adventure content. Dimensions are a primary social driver — "adventure nights" are a core use case.
 **Adventure dimensions:**
@@ -122,6 +122,7 @@ Polish layer. Decoration mods for the builders in the group, and FTB Quests to t
 ### Batch 7 — QoL & Final Compat Pass
 Final polish pass once all content is in. No new content mods — focus on quality of life, cross-mod compat smoothing, and config work deferred from earlier batches.
 - QoL mods (RightClickHarvest, Torch Master, Particle Effects, etc. — tracked in watchlist)
+- Curios slot config pass: 2× back, 4× ring, 4× charm minimum (deferred from B4)
 - Recipe and compat pass: review configs.md deferred items, KubeJS custom recipes where needed
 - **KubeJS difficulty scaling** — listen for vanilla advancements (e.g. "Suit Up", "Diamonds!") and ramp up mob difficulty mods (Legendary Monsters rarity, Mutant Monsters spawn rates) progressively. Replaces manual config bumping.
 - Review watchlisted mods for ports (Botania, Tinkers', Thermal, Alex's Mobs, Savage & Ravage, etc.)
