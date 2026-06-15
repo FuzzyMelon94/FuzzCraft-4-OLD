@@ -1,8 +1,8 @@
 # FuzzCraft 4 — Batch 4 Testing: World Gen & Combat
 
 ## Summary
-**Pack version:** 0.4.5–0.4.18–
-**Test date:** 2026-06-14
+**Pack version:** 0.4.5–0.4.27
+**Test date:** 2026-06-14–2026-06-15
 **Tester:** Tom
 **Play mode:** Single player
 
@@ -119,69 +119,59 @@
 
 ### Launch & Stability
 
-- [ ] Game launches without crashes with all mob mods active
-- [ ] No errors in log on a fresh world load
-- [ ] No missing texture errors or entity registration errors in log
+- [x] Game launches without crashes with all mob mods active
+- [x] No errors in log on a fresh world load
+- [x] No missing texture errors or entity registration errors in log
 
 ### Mob Variety
 
-- [ ] Alex's Mobs ⚠️ (unofficial port) — spot wildlife in the overworld; grizzly bears, raccoons, etc. should appear naturally. Check for any Citadel-related errors in log
-- [ ] Born in Chaos — encounter enhanced vanilla mob variants in the overworld (darker skeletons, larger zombies, etc.); check they don't crash on spawn
-- [ ] Galosphere — find Allay-adjacent content in the overworld; spot-check new mobs in appropriate biomes
-- [ ] Ribbits — find a swamp or jungle; new frog/toad variants should appear
-- [ ] Critters & Companions — small ambient creatures (ferrets, koi, etc.) should appear in appropriate biomes
-- [ ] Creeper Overhaul — find creepers in different biomes; should have biome-specific appearances (jungle creeper, desert creeper, etc.)
-- [ ] Golem Overhaul — create or find an iron golem; should have a visually distinct variant based on biome
-- [ ] Enderman Overhaul — enter the End or find an Enderman; should have visual variants depending on dimension/biome
-- [ ] Nyf's Spiders — find a cave spider or spider; should exhibit new climbing and web behaviours
-- [ ] Guard Villagers — find a village; armed guard villagers should be patrolling
+- [x] Alex's Mobs ⚠️ (unofficial port) — spot wildlife in the overworld; grizzly bears, raccoons, etc. should appear naturally. Check for any Citadel-related errors in log
+- [x] Born in Chaos — encounter enhanced vanilla mob variants in the overworld (darker skeletons, larger zombies, etc.); check they don't crash on spawn
+- [x] Galosphere — find Allay-adjacent content in the overworld; spot-check new mobs in appropriate biomes
+- [x] Ribbits — find a swamp or jungle; new frog/toad variants should appear
+- [x] Critters & Companions — small ambient creatures (ferrets, koi, etc.) should appear in appropriate biomes
+- [x] Creeper Overhaul — find creepers in different biomes; should have biome-specific appearances (jungle creeper, desert creeper, etc.)
+- [x] Golem Overhaul — create or find an iron golem; should have a visually distinct variant based on biome
+- [x] Enderman Overhaul — enter the End or find an Enderman; should have visual variants depending on dimension/biome
+- [x] Nyf's Spiders — find a cave spider or spider; should exhibit new climbing and web behaviours
+- [x] Guard Villagers — find a village; armed guard villagers should be patrolling
 
 ### Aquatic
 
-- [ ] Hybrid Aquatic — explore an ocean; new fish and aquatic creatures should be visible
 - [ ] Upgrade Aquatic — check for improved vanilla aquatic mobs (salmon, cod, dolphins) with new behaviours or variants
-
-
-### Combat Difficulty ⚠️
-
-> These three mods stack — expect the world to feel noticeably more dangerous than vanilla. Flag anything that feels completely unplayable rather than just hard.
-
-- [ ] Legendary Monsters — fight several overworld mobs; some should occasionally spawn with glowing outlines and enhanced abilities (speed, fire aura, etc.)
-- [ ] Mutant Monsters — explore at night for a while; Mutant Zombie or Mutant Skeleton should eventually spawn as a rare elite encounter. Check it doesn't crash
-- [ ] Rotten Creatures — encounter new undead variants (drowned-adjacent, skeleton variants); check no spawn errors in log
 
 ### Farming & Animals
 
-- [ ] Animal Feeding Trough — craft a feeding trough and place near animals; animals in range should feed and breed passively
-- [ ] Just Enough Breeding — open JEI and look up an animal (e.g. cow); breeding items should now show in JEI
+- [x] Animal Feeding Trough — craft a feeding trough and place near animals; animals in range should feed and breed passively
+- [x] Just Enough Breeding — open JEI and look up an animal (e.g. cow); breeding items should now show in JEI
 
 ### Combat & Equipment
 
-- [ ] Epic Knights — find or craft Epic Knights armour/shield; equip and check it renders correctly with Better Combat animations
-- [ ] Epic Knights Addon — additional weapons visible in JEI; craft one and check it functions
-- [ ] Artifacts — find a dungeon chest or trade for an Artifact trinket; equip in a Curios slot and verify the effect works
-- [ ] Better Combat — equip any two-handed or dual-wield weapon; attack animations should be distinct from vanilla swipe
+- [x] Epic Knights — find or craft Epic Knights armour/shield; equip and check it renders correctly with Better Combat animations
+- [x] Epic Knights Addon — additional weapons visible in JEI; craft one and check it functions
+- [x] Artifacts — find a dungeon chest or trade for an Artifact trinket; equip in a Curios slot and verify the effect works
+- [x] Better Combat — equip any two-handed or dual-wield weapon; attack animations should be distinct from vanilla swipe
 
 ### Utility
 
-- [ ] Waystones — find a waystone in a village or structure; right-click to activate, then teleport to it from elsewhere
+- [x] Waystones — find a waystone in a village or structure; right-click to activate, then teleport to it from elsewhere
 - [ ] Bountiful — find a bounty board in a village; collect a bounty, fulfil it, and claim the reward
-- [ ] Lootr ⚠️ — open a dungeon/structure chest; it should be instanced (each player gets their own loot, chest doesn't deplete for others). Verify in creative with two accounts or check the chest tooltip says "Looted"
-- [ ] In Control! — no active rules yet, but confirm no errors in log on load (it should silently do nothing until rules are configured)
+- [x] Lootr ⚠️ — open a dungeon/structure chest; it should be instanced (each player gets their own loot, chest doesn't deplete for others). Verify in creative with two accounts or check the chest tooltip says "Looted"
+- [x] In Control! — no active rules yet, but confirm no errors in log on load (it should silently do nothing until rules are configured)
 
 ### Visuals
 
-- [ ] EMF + ETF — mob models should look enhanced where Fresh Animations applies (limb movement, idle animations on passive mobs like cows and sheep)
-- [ ] Fresh Animations — passive mobs should have smoother, more lifelike idle and movement animations compared to vanilla
-- [ ] Entity Culling — no visual impact to verify, but confirm no rendering errors or invisible entity issues
+- [x] EMF + ETF — mob models should look enhanced where Fresh Animations applies (limb movement, idle animations on passive mobs like cows and sheep)
+- [x] Fresh Animations — passive mobs should have smoother, more lifelike idle and movement animations compared to vanilla
+- [x] Entity Culling — no visual impact to verify, but confirm no rendering errors or invisible entity issues
 
 ### CTOV Compat Datapacks ⚠️
 
 > These datapacks are tagged for 1.20.1 but should be forward-compatible. Watch for any structure generation errors.
 
-- [ ] Find a village — check for Farmer's Delight-themed additions (small crop gardens, cooking stations integrated into village buildings)
-- [ ] Check a village near a plains/taiga biome — Friends & Foes content (bees, copper golems) should appear in village contexts
-- [ ] No datapack errors in log on world load
+- [x] Find a village — check for Farmer's Delight-themed additions (small crop gardens, cooking stations integrated into village buildings)
+- [x] Check a village near a plains/taiga biome — Friends & Foes content (bees, copper golems) should appear in village contexts
+- [x] No datapack errors in log on world load
 
 ---
 
