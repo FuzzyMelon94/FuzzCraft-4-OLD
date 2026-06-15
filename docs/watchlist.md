@@ -24,6 +24,7 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [Bosses Rise](https://modrinth.com/mod/bossesrise) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
 | [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
 | [Create: Sweets & Treats](https://modrinth.com/mod/create-sweets-and-treats) | No 1.21.1 NeoForge port (stuck on 1.20.1) | Create Confectionery covers chocolate/candy content | 3 | — |
+| [Hybrid Aquatic](https://modrinth.com/mod/hybrid-aquatic) | Uses Lithostitched "inline definitions" format incompatible with Lithostitched 1.6.x — worldgen modifier parse crash on world create. Remove when HA updates to support 1.6+. | Upgrade Aquatic + Critters & Companions cover aquatic content | 4 | — |
 
 ---
 
