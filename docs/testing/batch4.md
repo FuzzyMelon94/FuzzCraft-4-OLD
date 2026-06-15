@@ -1,7 +1,7 @@
 # FuzzCraft 4 — Batch 4 Testing: World Gen & Combat
 
 ## Summary
-**Pack version:** 0.4.5–0.4.9–
+**Pack version:** 0.4.5–0.4.18–
 **Test date:** 2026-06-14
 **Tester:** Tom
 **Play mode:** Single player
@@ -76,42 +76,112 @@
 
 ### Launch & Stability
 
-- [ ] Game launches without crashes with all structure mods active
-- [ ] No world gen errors in log on a fresh world load
-- [ ] No `Feature order cycle` or `BiomeModifier` errors in log (structure mods are a common trigger)
+- [x] Game launches without crashes with all structure mods active
+- [x] No world gen errors in log on a fresh world load
+- [x] No `Feature order cycle` or `BiomeModifier` errors in log (structure mods are a common trigger)
 
 ### YUNG's Suite
 
-- [ ] YUNG's Better Dungeons — find a dungeon (`/locate structure minecraft:monster_room`); should look more detailed with multiple room types, traps, and loot variety
-- [ ] YUNG's Better Mineshafts — find a mineshaft (`/locate structure minecraft:mineshaft`); should feel more natural and cave-like, less grid-y
-- [ ] YUNG's Better Strongholds — locate a stronghold (`/locate structure minecraft:stronghold`); should be significantly larger and more complex
-- [ ] YUNG's Better Desert Temples — locate one (`/locate structure minecraft:desert_pyramid`); should have new traps and internal rooms
-- [ ] YUNG's Better Jungle Temples — locate one (`/locate structure minecraft:jungle_pyramid`); should have more puzzle rooms
-- [ ] YUNG's Better Ocean Monuments — locate one (`/locate structure minecraft:ocean_monument`); should feel more labyrinthine
-- [ ] YUNG's Better Nether Fortresses — enter the Nether and locate a fortress (`/locate structure minecraft:fortress`); should be considerably larger
-- [ ] YUNG's Better Witch Huts — locate one (`/locate structure minecraft:swamp_hut`); spot-check appearance
+- [x] YUNG's Better Dungeons — find a dungeon (`/locate structure minecraft:monster_room`); should look more detailed with multiple room types, traps, and loot variety
+- [x] YUNG's Better Mineshafts — find a mineshaft (`/locate structure minecraft:mineshaft`); should feel more natural and cave-like, less grid-y
+- [x] YUNG's Better Strongholds — locate a stronghold (`/locate structure minecraft:stronghold`); should be significantly larger and more complex
+- [x] YUNG's Better Desert Temples — locate one (`/locate structure minecraft:desert_pyramid`); should have new traps and internal rooms
+- [x] YUNG's Better Jungle Temples — locate one (`/locate structure minecraft:jungle_pyramid`); should have more puzzle rooms
+- [x] YUNG's Better Ocean Monuments — locate one (`/locate structure minecraft:ocean_monument`); should feel more labyrinthine
+- [x] YUNG's Better Nether Fortresses — enter the Nether and locate a fortress (`/locate structure minecraft:fortress`); should be considerably larger
+- [x] YUNG's Better Witch Huts — locate one (`/locate structure minecraft:swamp_hut`); spot-check appearance
 - [ ] YUNG's Bridges — explore overworld rivers and paths; natural-looking bridges should appear connecting terrain
 
 ### Villages & Settlements
 
-- [ ] CTOV — villages look more varied and biome-appropriate (CTOV adds biome-specific village styles); check a plains village, a taiga village, and a desert village if possible
-- [ ] Towns and Towers — watchtowers and outposts visible in the world; distinct from vanilla pillager outposts
-- [ ] Tidal Towns — locate an ocean/coastal area and look for underwater or coastal settlements
+- [x] CTOV — villages look more varied and biome-appropriate (CTOV adds biome-specific village styles); check a plains village, a taiga village, and a desert village if possible
+- [x] Towns and Towers — watchtowers and outposts visible in the world; distinct from vanilla pillager outposts
+- [x] Tidal Towns — locate an ocean/coastal area and look for underwater or coastal settlements
 
 ### Dungeons & Structures
 
-- [ ] When Dungeons Arise — locate a large structure (`/locate structure whendungeonsarise:*` — tab-complete for options); should be a substantial standalone dungeon
-- [ ] Dungeons and Taverns — find a tavern or inn in the world; check for loot and interior detail
-- [ ] Blossom Blade — find a cherry/blossom-themed structure (explore cherry groves or general surface); spot-check appearance
-- [ ] Better Archeology — find a trail ruins or suspicious sand site; BetterArcheology should add new structure variants and loot to dig sites
+- [x] When Dungeons Arise — locate a large structure (`/locate structure whendungeonsarise:*` — tab-complete for options); should be a substantial standalone dungeon
+- [x] Dungeons and Taverns — find a tavern or inn in the world; check for loot and interior detail
+- [x] Blossom Blade — find a cherry/blossom-themed structure (explore cherry groves or general surface); spot-check appearance
+- [x] Better Archeology — find a trail ruins or suspicious sand site; BetterArcheology should add new structure variants and loot to dig sites
 
 ### Sparse Structures
 
-- [ ] Structures don't feel completely overwhelming in density — Sparse Structures should be reducing frequency of vanilla structures; explore a reasonable area and check it doesn't feel like structures on every chunk
+- [x] Structures don't feel completely overwhelming in density — Sparse Structures should be reducing frequency of vanilla structures; explore a reasonable area and check it doesn't feel like structures on every chunk
 
 ### Nether Structures
 
-- [ ] YUNG's Better Nether Fortresses generates without errors in the Nether (logged separately above — just confirm no new errors after structures batch)
+- [x] YUNG's Better Nether Fortresses generates without errors in the Nether (logged separately above — just confirm no new errors after structures batch)
+
+---
+
+## 5. Mobs & Combat
+
+### Launch & Stability
+
+- [ ] Game launches without crashes with all mob mods active
+- [ ] No errors in log on a fresh world load
+- [ ] No missing texture errors or entity registration errors in log
+
+### Mob Variety
+
+- [ ] Alex's Mobs ⚠️ (unofficial port) — spot wildlife in the overworld; grizzly bears, raccoons, etc. should appear naturally. Check for any Citadel-related errors in log
+- [ ] Born in Chaos — encounter enhanced vanilla mob variants in the overworld (darker skeletons, larger zombies, etc.); check they don't crash on spawn
+- [ ] Galosphere — find Allay-adjacent content in the overworld; spot-check new mobs in appropriate biomes
+- [ ] Ribbits — find a swamp or jungle; new frog/toad variants should appear
+- [ ] Critters & Companions — small ambient creatures (ferrets, koi, etc.) should appear in appropriate biomes
+- [ ] Creeper Overhaul — find creepers in different biomes; should have biome-specific appearances (jungle creeper, desert creeper, etc.)
+- [ ] Golem Overhaul — create or find an iron golem; should have a visually distinct variant based on biome
+- [ ] Enderman Overhaul — enter the End or find an Enderman; should have visual variants depending on dimension/biome
+- [ ] Nyf's Spiders — find a cave spider or spider; should exhibit new climbing and web behaviours
+- [ ] Guard Villagers — find a village; armed guard villagers should be patrolling
+
+### Aquatic
+
+- [ ] Hybrid Aquatic — explore an ocean; new fish and aquatic creatures should be visible
+- [ ] Upgrade Aquatic — check for improved vanilla aquatic mobs (salmon, cod, dolphins) with new behaviours or variants
+- [ ] More Axolotl Variants — find axolotls in a lush cave; should show colour variants beyond the vanilla five
+
+### Combat Difficulty ⚠️
+
+> These three mods stack — expect the world to feel noticeably more dangerous than vanilla. Flag anything that feels completely unplayable rather than just hard.
+
+- [ ] Legendary Monsters — fight several overworld mobs; some should occasionally spawn with glowing outlines and enhanced abilities (speed, fire aura, etc.)
+- [ ] Mutant Monsters — explore at night for a while; Mutant Zombie or Mutant Skeleton should eventually spawn as a rare elite encounter. Check it doesn't crash
+- [ ] Rotten Creatures — encounter new undead variants (drowned-adjacent, skeleton variants); check no spawn errors in log
+
+### Farming & Animals
+
+- [ ] Animal Feeding Trough — craft a feeding trough and place near animals; animals in range should feed and breed passively
+- [ ] Just Enough Breeding — open JEI and look up an animal (e.g. cow); breeding items should now show in JEI
+
+### Combat & Equipment
+
+- [ ] Epic Knights — find or craft Epic Knights armour/shield; equip and check it renders correctly with Better Combat animations
+- [ ] Epic Knights Addon — additional weapons visible in JEI; craft one and check it functions
+- [ ] Artifacts — find a dungeon chest or trade for an Artifact trinket; equip in a Curios slot and verify the effect works
+- [ ] Better Combat — equip any two-handed or dual-wield weapon; attack animations should be distinct from vanilla swipe
+
+### Utility
+
+- [ ] Waystones — find a waystone in a village or structure; right-click to activate, then teleport to it from elsewhere
+- [ ] Bountiful — find a bounty board in a village; collect a bounty, fulfil it, and claim the reward
+- [ ] Lootr ⚠️ — open a dungeon/structure chest; it should be instanced (each player gets their own loot, chest doesn't deplete for others). Verify in creative with two accounts or check the chest tooltip says "Looted"
+- [ ] In Control! — no active rules yet, but confirm no errors in log on load (it should silently do nothing until rules are configured)
+
+### Visuals
+
+- [ ] EMF + ETF — mob models should look enhanced where Fresh Animations applies (limb movement, idle animations on passive mobs like cows and sheep)
+- [ ] Fresh Animations — passive mobs should have smoother, more lifelike idle and movement animations compared to vanilla
+- [ ] Entity Culling — no visual impact to verify, but confirm no rendering errors or invisible entity issues
+
+### CTOV Compat Datapacks ⚠️
+
+> These datapacks are tagged for 1.20.1 but should be forward-compatible. Watch for any structure generation errors.
+
+- [ ] Find a village — check for Farmer's Delight-themed additions (small crop gardens, cooking stations integrated into village buildings)
+- [ ] Check a village near a plains/taiga biome — Friends & Foes content (bees, copper golems) should appear in village contexts
+- [ ] No datapack errors in log on world load
 
 ---
 
