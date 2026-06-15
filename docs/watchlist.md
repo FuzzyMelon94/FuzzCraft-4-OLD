@@ -11,6 +11,8 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [Thermal Series](https://www.curseforge.com/minecraft/mc-mods/thermal-expansion) | No 1.21.1 port yet (stuck on 1.20.1) | Ender IO + Powah! | 2 | — |
 | [Industrial Foregoing](https://modrinth.com/mod/industrial-foregoing) | Deferred — revisit for mob farming discussion | Mob Grinding Utils (also deferred) | 4 | — |
 | [Botania](https://modrinth.com/mod/botania) | No 1.21.1 NeoForge port yet — port in progress, no ETA | None — Ars Nouveau covers the magic pillar for now | 3 | — |
+| [Alex's Mobs](https://modrinth.com/mod/alexs-mobs) | No 1.21.1 port yet (stuck on 1.20.1) | Born in Chaos + Galosphere + Ribbits cover mob variety for now | 4 | — |
+| [Savage & Ravage](https://modrinth.com/mod/savage-and-ravage) | No 1.21.1 port yet (stuck on 1.20.1) | None — champion mob AI deferred | 4 | — |
 | [The Endergetic Expansion](https://modrinth.com/mod/endergetic) | No 1.21.1 port yet (latest is 1.20.1 NeoForge) | Nullscape + BetterEnd cover End gen for now | 4 | — |
 | [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) | Deferred to QoL batch | — | 6 | — |
 | [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
