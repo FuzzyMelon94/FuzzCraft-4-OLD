@@ -11,9 +11,20 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [Thermal Series](https://www.curseforge.com/minecraft/mc-mods/thermal-expansion) | No 1.21.1 port yet (stuck on 1.20.1) | Ender IO + Powah! | 2 | — |
 | [Industrial Foregoing](https://modrinth.com/mod/industrial-foregoing) | Deferred — revisit for mob farming discussion | Mob Grinding Utils (also deferred) | 4 | — |
 | [Botania](https://modrinth.com/mod/botania) | No 1.21.1 NeoForge port yet — port in progress, no ETA | None — Ars Nouveau covers the magic pillar for now | 3 | — |
-| [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) | Deferred to QoL batch | — | 6 | — |
+| [Alex's Mobs](https://modrinth.com/mod/alexs-mobs) | No 1.21.1 port yet (stuck on 1.20.1) | Born in Chaos + Galosphere + Ribbits cover mob variety for now | 4 | — |
+| [Savage & Ravage](https://modrinth.com/mod/savage-and-ravage) | No 1.21.1 port yet (stuck on 1.20.1) | None — champion mob AI deferred | 4 | — |
+| [The Endergetic Expansion](https://modrinth.com/mod/endergetic) | No 1.21.1 port yet (latest is 1.20.1 NeoForge) | Nullscape + BetterEnd cover End gen for now | 4 | — |
+| [RightClickHarvest](https://modrinth.com/mod/rightclickharvest) | Deferred to QoL batch | — | 7 | — |
+| [Torch Master](https://modrinth.com/mod/torchmaster) | Deferred to QoL batch | — | 7 | — |
+| [Particle Effects](https://modrinth.com/mod/particle-effects) | Deferred to QoL batch | — | 7 | — |
+| [Naturally Trimmed](https://modrinth.com/mod/naturally-trimmed) | Deferred to QoL batch | — | 7 | — |
+| [Trimmable Tools](https://modrinth.com/datapack/trimmable-tools) | Datapack — deferred to QoL batch | — | 7 | — |
+| [More Axolotl Variants](https://modrinth.com/mod/mavm) | Fabric-only build despite NeoForge listing on Modrinth; Connector not worth the risk given Sodium/Iris FFAPI bundles | None | 4 | — |
+| [Bosses of Mass Destruction](https://modrinth.com/mod/bosses-of-mass-destruction-forge) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
+| [Bosses Rise](https://modrinth.com/mod/bossesrise) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
 | [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
 | [Create: Sweets & Treats](https://modrinth.com/mod/create-sweets-and-treats) | No 1.21.1 NeoForge port (stuck on 1.20.1) | Create Confectionery covers chocolate/candy content | 3 | — |
+| [Hybrid Aquatic](https://modrinth.com/mod/hybrid-aquatic) | Uses Lithostitched "inline definitions" format incompatible with Lithostitched 1.6.x — worldgen modifier parse crash on world create. Remove when HA updates to support 1.6+. | Upgrade Aquatic + Critters & Companions cover aquatic content | 4 | — |
 
 ---
 

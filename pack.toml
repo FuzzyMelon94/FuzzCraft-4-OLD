@@ -1,13 +1,16 @@
 name = "FuzzCraft 4"
 author = "FuzzyMelon94"
-version = "0.3.3"
+version = "0.4.27"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ef73e6df0419314d8821a8d1c3bb13820d72a13a47274d3342839c6b94a2a3b1"
+hash = "d96dab0fbbebc393191a431707021cfbd645bc08c5be6b071b2f8691fe3c27c2"
 
 [versions]
 minecraft = "1.21.1"
 neoforge = "21.1.233"
+
+[options]
+datapack-folder = "config/paxi/datapacks"
