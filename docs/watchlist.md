@@ -19,6 +19,7 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [Particle Effects](https://modrinth.com/mod/particle-effects) | Deferred to QoL batch | — | 7 | — |
 | [Naturally Trimmed](https://modrinth.com/mod/naturally-trimmed) | Deferred to QoL batch | — | 7 | — |
 | [Trimmable Tools](https://modrinth.com/datapack/trimmable-tools) | Datapack — deferred to QoL batch | — | 7 | — |
+| [More Axolotl Variants](https://modrinth.com/mod/mavm) | Fabric-only build despite NeoForge listing on Modrinth; Connector not worth the risk given Sodium/Iris FFAPI bundles | None | 4 | — |
 | [Bosses of Mass Destruction](https://modrinth.com/mod/bosses-of-mass-destruction-forge) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
 | [Bosses Rise](https://modrinth.com/mod/bossesrise) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
 | [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
