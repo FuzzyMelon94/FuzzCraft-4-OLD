@@ -198,6 +198,16 @@ hash = "6d6592921805a740571094baab543ee8e3a954d6ff4df78bd4c000a49e0a6d84"
 metafile = true
 
 [[files]]
+file = "mods/bosses-of-mass-destruction-forge.pw.toml"
+hash = "30ffe79b0347aa0c24e2c6ad917457f1ccae75423b96c8d30c7c8c372fb90cc5"
+metafile = true
+
+[[files]]
+file = "mods/bossesrise.pw.toml"
+hash = "d20e603af6e9156021a1b8db31edd187a089b2b21cd7f70fa7eb7507bf81dbf9"
+metafile = true
+
+[[files]]
 file = "mods/botany-pots-mystical-agriculture-compat.pw.toml"
 hash = "5c2fa4f520f5c30212e22ef41fdd7d562363a3c17e16214c42faec6662db5bf8"
 metafile = true
@@ -238,6 +248,11 @@ hash = "af5be21b70b778bd919a8d10807895fad40671c9701519dbf95bc74f139fec3f"
 metafile = true
 
 [[files]]
+file = "mods/cerbons-api.pw.toml"
+hash = "479dab388743fb59d3399d2d87a0a7dc0819a4184b74f734fa9cc1eecdd6f6f6"
+metafile = true
+
+[[files]]
 file = "mods/chunky.pw.toml"
 hash = "1d5cc2b6dcfd1fc3adba4566b1c29b57ff1175316678c1f22e63cbc3e28a5ba0"
 metafile = true
@@ -265,6 +280,11 @@ metafile = true
 [[files]]
 file = "mods/corgilib.pw.toml"
 hash = "2b8c5286980b8d864085d02a6b2153cefa401a965833139ffac8e7661a322f7c"
+metafile = true
+
+[[files]]
+file = "mods/cosmos-library.pw.toml"
+hash = "348119089be48a6c3c63993d28005262fed38937538dc266a50cf7b341138c72"
 metafile = true
 
 [[files]]
@@ -428,6 +448,16 @@ hash = "c4fb5bf78ad912a20ff50767f4e5cb64fd84f04d58db0c79bc728b643acc4038"
 metafile = true
 
 [[files]]
+file = "mods/dimensional-dungeons.pw.toml"
+hash = "9264c185d29abc76263359eddf04f6ac5cc8405fda958e5f78c99d9f33d2de78"
+metafile = true
+
+[[files]]
+file = "mods/dimensional-pockets-ii.pw.toml"
+hash = "c40e5aa68e58a34a64c7e3d3637556e2a0c2d4485624d4f1b4264378427d09f3"
+metafile = true
+
+[[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "b9244dca740d333c22f3425991fdd2fd40d3ae12384079a40a6fb7d4bca18a18"
 metafile = true
@@ -493,13 +523,18 @@ hash = "276a01bd8812a9bd3619952524c976829e4fc93c2824e0af963cdfa2c407b331"
 metafile = true
 
 [[files]]
+file = "mods/farmers-cutting-twilight-forest.pw.toml"
+hash = "9f042434fe2b7fb10addc596849c71f05307d173a1937b3886519095b10bf354"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight-extended.pw.toml"
 hash = "e01930025d424c64e87372dc3e0c0caaa1c238d23521f32adea8b3c21c8dcd65"
 metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "efc2c4fe9e2cc169aff61a6b7a41ea9bc7a22a90aadf0776b22de647ddf3cef6"
+hash = "9aab64fbec4cc794817026caf84e7d0dff14ba3892da94aa0e00d23c84560499"
 metafile = true
 
 [[files]]
@@ -933,6 +968,11 @@ hash = "1d277d4c4d8f3abc49176d3b029584b70d92dcb9b89cf2cf6094e674fe9885c8"
 metafile = true
 
 [[files]]
+file = "mods/supernovas-mining-dimension.pw.toml"
+hash = "f2770ebe678019a4006d24483dc0a5e521c5a85c21ffb5d29aba7de366e1e4e7"
+metafile = true
+
+[[files]]
 file = "mods/tectonic.pw.toml"
 hash = "cd5c8c1f6183f5c2ca899daed14f272890566002dfcb2d9f9a59dfbfac0bc8f6"
 metafile = true
@@ -945,6 +985,11 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+metafile = true
+
+[[files]]
+file = "mods/the-twilight-forest.pw.toml"
+hash = "9088f93a00bc3242f0239a7115bdcbc4480e19c6120f5396fb3af27d77abda3e"
 metafile = true
 
 [[files]]
