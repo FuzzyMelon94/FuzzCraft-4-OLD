@@ -36,7 +36,7 @@
 - [x] Trees in the overworld use Dynamic Trees models (no standard flat-top vanilla trees)
 - [x] Chopping the base of a tree causes the whole tree to fall
 - [x] Replanting works — sapling grows dynamically over time
-- [ ] BYG biome trees render correctly (DT–BWG compat)
+- [x] BYG biome trees render correctly (DT–BWG compat)
 - [x] Terralith biome trees render correctly (DT–Terralith compat)
 - [x] No runaway chunk update spam in F3 debug (watch `C:` chunk updates while near trees)
 
@@ -58,7 +58,7 @@
 
 ### Nullscape
 
-- [ ] The End void feels denser/more atmospheric (Nullscape adds void particles, ambient fog, and island detail — the outer islands should feel less empty)
+- [x] The End void feels denser/more atmospheric (Nullscape adds void particles, ambient fog, and island detail — the outer islands should feel less empty)
 - [x] No world gen errors in log after generating End chunks
 
 ### YUNG's Better End Island ⚠️
@@ -90,7 +90,7 @@
 - [x] YUNG's Better Ocean Monuments — locate one (`/locate structure minecraft:ocean_monument`); should feel more labyrinthine
 - [x] YUNG's Better Nether Fortresses — enter the Nether and locate a fortress (`/locate structure minecraft:fortress`); should be considerably larger
 - [x] YUNG's Better Witch Huts — locate one (`/locate structure minecraft:swamp_hut`); spot-check appearance
-- [ ] YUNG's Bridges — explore overworld rivers and paths; natural-looking bridges should appear connecting terrain
+- [x] YUNG's Bridges — explore overworld rivers and paths; natural-looking bridges should appear connecting terrain
 
 ### Villages & Settlements
 
@@ -138,7 +138,7 @@
 
 ### Aquatic
 
-- [ ] Upgrade Aquatic — check for improved vanilla aquatic mobs (salmon, cod, dolphins) with new behaviours or variants
+- [x] Upgrade Aquatic — check for improved vanilla aquatic mobs (salmon, cod, dolphins) with new behaviours or variants
 
 ### Farming & Animals
 
@@ -155,7 +155,7 @@
 ### Utility
 
 - [x] Waystones — find a waystone in a village or structure; right-click to activate, then teleport to it from elsewhere
-- [ ] Bountiful — find a bounty board in a village; collect a bounty, fulfil it, and claim the reward
+- [x] Bountiful — find a bounty board in a village; collect a bounty, fulfil it, and claim the reward
 - [x] Lootr ⚠️ — open a dungeon/structure chest; it should be instanced (each player gets their own loot, chest doesn't deplete for others). Verify in creative with two accounts or check the chest tooltip says "Looted"
 - [x] In Control! — no active rules yet, but confirm no errors in log on load (it should silently do nothing until rules are configured)
 
@@ -185,5 +185,3 @@
 ## 7. Tester Notes
 
 1. BYG and BetterNether saplings don't work with Dynamic Trees. BetterNether has no DT compat addon (none exists); dtbwg may not cover all BWG tree types — this is a known compat gap, not fixable without a dedicated addon. Deferred.
-2. Falling trees disabled via config (`enableFallingTrees = false`, `enableFallingTreeDamage = false` in `dynamictrees-server.toml`). Trees still use DT models and branch-chopping — just no felling animation.
-
