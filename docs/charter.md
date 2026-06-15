@@ -121,9 +121,10 @@ Polish layer. Decoration mods for the builders in the group, and FTB Quests to t
 - Deferred food/storage addons: Crate Delight, Storage Delight, [Let's Do] Beachparty
 ### Batch 7 — QoL & Final Compat Pass
 Final polish pass once all content is in. No new content mods — focus on quality of life, cross-mod compat smoothing, and config work deferred from earlier batches.
-- QoL mods (RightClickHarvest, etc. — tracked in watchlist)
+- QoL mods (RightClickHarvest, Torch Master, Particle Effects, etc. — tracked in watchlist)
 - Recipe and compat pass: review configs.md deferred items, KubeJS custom recipes where needed
-- Review watchlisted mods for ports (Botania, Tinkers', Thermal, etc.)
+- **KubeJS difficulty scaling** — listen for vanilla advancements (e.g. "Suit Up", "Diamonds!") and ramp up mob difficulty mods (Legendary Monsters rarity, Mutant Monsters spawn rates) progressively. Replaces manual config bumping.
+- Review watchlisted mods for ports (Botania, Tinkers', Thermal, Alex's Mobs, Savage & Ravage, etc.)
 - Final review of Almost Unified, tag unification, and JEI display cleanup
 ---
 ## 5. Questing Philosophy
