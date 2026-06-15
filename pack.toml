@@ -1,12 +1,12 @@
 name = "FuzzCraft 4"
 author = "FuzzyMelon94"
-version = "0.4.25"
+version = "0.4.26"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "249a708838bfa8c7ce259a3734baa37f823e75888f683f477af5d26d1893ba3f"
+hash = "af373d9447560ade73790eb413b6d3ec60992cbfe419d7931f4711abb72c8275"
 
 [versions]
 minecraft = "1.21.1"
