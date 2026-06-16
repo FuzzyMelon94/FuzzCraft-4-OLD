@@ -29,6 +29,7 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [Blue Skies](https://modrinth.com/mod/blue-skies) | No 1.21.1 NeoForge build available (stuck on 1.20.1). | — | 5 | — |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | No 1.21.1 port yet (stuck on 1.20.1). Dev noted 2.1 update will target 1.21.1+. | The Aether base mod covers the dimension | 5 | — |
 | [Aether: Lost Content](https://www.curseforge.com/minecraft/mc-mods/aether-lost-content) | No 1.21.1 port yet (stuck on 1.20.1). | — | 5 | — |
+| [Paradise Lost](https://modrinth.com/mod/paradise-lost) | NeoForge 1.21.1 build is Sinytra Connector only (2.4.1-beta+1.21.1-SINYTRA) — Connector + Sodium/Iris is high risk. Re-add when a native NeoForge build is released. | — | 5 | — |
 
 ---
 
