@@ -17,11 +17,11 @@
 
 ## 1. Launch & Stability
 
-- [ ] Pack launches to main menu without crash
-- [ ] Create a new world — no crash on world gen
-- [ ] Load into the world — no errors in chat, F3 screen shows expected mod count
-- [ ] Check JEI loads and is populated correctly (no missing textures, no crashes on search)
-- [ ] Check Collapsible Groups is working — item groups in JEI should be collapsible
+- [x] Pack launches to main menu without crash
+- [x] Create a new world — no crash on world gen
+- [x] Load into the world — no errors in chat, F3 screen shows expected mod count
+- [x] Check JEI loads and is populated correctly (no missing textures, no crashes on search)
+- [x] Check Collapsible Groups is working — item groups in JEI should be collapsible
 
 ## 2. Regression — Batches 1–6
 
@@ -103,7 +103,68 @@ Do this after applying the Tropicraft cocktail fix from configs.md.
 - [ ] If you've lowered max heap to 8–10GB (recommended in configs.md), note whether GC feels responsive or if there are noticeable pauses
 - [ ] Record peak usage here: ________ MB
 
-## 8. Deferred — Requires Server / Multiplayer
+## 8. Wave 2 — QoL Mods
+
+These mods are added in the follow-up B7b session. Test them in the same play session as the items above.
+
+### Performance & Visual
+- [ ] Dynamic FPS active — minimize the game window, confirm FPS drops significantly (mod is working)
+- [ ] Sound Physics Remastered — enter a cave, confirm audio has reverb/echo effect
+- [ ] Chunks Fade In — travel to unloaded area, confirm chunks fade in rather than popping
+- [ ] Log Begone — open `logs/latest.log` after launch; confirm less spam vs before
+
+### HUD & Tooltips
+- [ ] Overflowing Bars — use a health-boosting item (Artifacts trinket or potion); confirm health bar overflows into a second row rather than capping
+- [ ] Durability Tooltip — hover a tool with damage; confirm durability shown as number in tooltip
+- [ ] Equipment Compare — hold Shift while hovering armour in a chest; confirm stat comparison overlay appears
+- [ ] Enhanced Attack Indicator — open its config (or Options → Accessibility); disable food, item cooldown, sleep progress, and fullness indicators; confirm HUD is cleaner
+- [ ] Legendary Tooltips — hover an Apotheosis-rarity item; confirm tooltip border reflects the rarity tier
+- [ ] Enchantment Descriptions — hover an enchanted book; confirm enchantment effect is described in the tooltip
+- [ ] BetterF3 — open F3; confirm debug screen is coloured and readable
+- [ ] Better Advancements — open advancements screen; confirm improved UI layout
+- [ ] Advancement Plaques — earn any advancement; confirm toast popup is the new styled plaque
+
+### Navigation
+- [ ] Nature's Compass — craft and use; confirm can search for a biome by name
+- [ ] Explorer's Compass — craft and use; confirm can search for a structure by name
+- [ ] Traveler's Titles — walk into a new biome; confirm biome name overlay appears on screen
+- [ ] Nether Portal Fix — enter the Nether through a portal, build a second portal at a different location; confirm they link correctly (important for multiplayer)
+
+### Inventory & Crafting
+- [ ] Crafting Tweaks — open crafting table; confirm rotate/balance/clear buttons are present
+- [ ] TrashSlot — open inventory; confirm trash slot is visible; drop an item in it
+- [ ] Stack Refill — use up the last item in a stack of something in your hotbar; confirm it auto-refills from inventory
+- [ ] Visual Workbench — leave items in a crafting table and walk away; confirm items are rendered on the table surface
+- [ ] Easy Magic — open an enchanting table; confirm option to re-roll available enchantment options
+- [ ] Trade Cycling — open a villager trade UI; confirm can cycle/refresh available trades
+- [ ] Easy Villagers — interact with a villager; confirm simplified trade interface
+- [ ] Carry On — Shift+right-click a chest or mob; confirm you can pick it up and carry it
+  - [ ] Specifically confirm a spawner can be picked up and placed elsewhere (intentional design)
+
+### Gameplay QoL
+- [ ] Double Doors — place two adjacent doors; open one; confirm both open simultaneously
+- [ ] Jump Over Fences — sprint-jump at a fence; confirm you clear it
+- [ ] SwingThrough — swing at a mob through tall grass or leaves; confirm the hit registers
+- [ ] Monsters in the Closet — attempt to sleep; if it fails, confirm nearby monsters are highlighted
+- [ ] Zume — press the zoom key; confirm zoom activates; scroll while zoomed; confirm zoom level changes
+- [ ] VeinMiner — hold the VeinMiner hotkey while mining an ore vein; confirm connected ores break together
+- [ ] GraveStone Mod — die in any way; confirm a grave spawns at death location containing your items
+- [ ] Polymorph — find two recipes with the same ingredient pattern (or check JEI for conflicts); confirm Polymorph output selector appears
+- [ ] Better Days — confirm day/night cycle feels longer; days should be ~2× vanilla length; night shorter proportionally
+- [ ] Crops Love Rain — start raining; confirm crops visibly grow faster during rain
+- [ ] Despawn Tweaks — throw an item on the ground; confirm it stays longer than the vanilla 5-minute despawn
+
+### System / Social
+- [ ] No Chat Reports — join the server; confirm no chat signing warnings in console
+- [ ] AttributeFix — check that modded attributes (Apotheosis, Artifacts) don't cap out or show integer overflow
+- [ ] Yeetus Experimentus — create a new world with experimental features; confirm the warning screen is suppressed
+- [ ] Emoji Type — in chat, type `:` and start typing an emoji name; confirm autocomplete appears
+- [ ] Scribble — place a sign and edit it; confirm coloured text and formatting options are available
+- [ ] KleeSlabs — place a double slab; try to break only the top or bottom half; confirm it works
+- [ ] Yung's Menu Tweaks — check main menu layout is improved (singleplayer/server buttons rearranged)
+- [ ] Create: Power Loader — craft a Power Loader; confirm it chunk-loads the target chunk while powered
+
+## 9. Deferred — Requires Server / Multiplayer
 
 - Verify Curios slot counts are consistent for all players on a server
 - Test Clumps XP behaviour in a multiplayer mob farm context
