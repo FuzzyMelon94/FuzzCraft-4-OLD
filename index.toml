@@ -5,6 +5,34 @@ file = "CLAUDE.md"
 hash = "2f556cb735cae659cbb8b07e53b4026ca6c6cb2d9676d878256753fde0708242"
 
 [[files]]
+file = "config/almostunified/debug.json"
+hash = "e4742020c79a12fbb718d368d7ebc6ca326717c11b508f4ea616e308160b55cf"
+
+[[files]]
+file = "config/almostunified/duplicates.json"
+hash = "94a5a487e8c3bf8fc1a46b9ba5cfdb325c4f92b71f3dc4730d8ba5eb09d92777"
+
+[[files]]
+file = "config/almostunified/placeholders.json"
+hash = "8d0e99a8a78db305dc01ea8a0c96a55b7741dd16e2b407423ef3b132cd086c9b"
+
+[[files]]
+file = "config/almostunified/startup.json"
+hash = "b4ce4d99b37a679b372fd2d5c34113f0b79adfe67a5b830e4fb5a20f47951278"
+
+[[files]]
+file = "config/almostunified/tags.json"
+hash = "5b17584469dc29a5a2dd92297b1ad28cf0168cb3130bba88a5eb48254d7784e5"
+
+[[files]]
+file = "config/almostunified/unification/materials.json"
+hash = "1ba7403cd5dda37c40a080e6c2a3544a9a339dd615dfbaf5960eb6cb3136f564"
+
+[[files]]
+file = "config/curios-server.toml"
+hash = "e7a876f11903bcf67b407b7ccf929ef099061a79912a051cc185ef62fd50ed65"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
 hash = "6e8eafbcdf5195b3bd3fb62f2a084f30fbfe226c4473a80c47a538aee62ecba3"
 
@@ -304,7 +332,7 @@ metafile = true
 
 [[files]]
 file = "mods/collapsible-groups.pw.toml"
-hash = "68d6c6157376d8c70a7957cb944b63310e8d83d4b2e84fe8e8ba6d64d006918e"
+hash = "3b0c5d122d3388da03d6bb2c135f14fd7a3ec70c42ec00743416c223adbfaf40"
 metafile = true
 
 [[files]]
@@ -1095,11 +1123,6 @@ metafile = true
 [[files]]
 file = "mods/rechiseled.pw.toml"
 hash = "b4cb292255e46d058ef9c4a6bcdf562ae539489a31d0b4bea3718042d98e5c86"
-metafile = true
-
-[[files]]
-file = "mods/reeses-sodium-options.pw.toml"
-hash = "61d572ec6e241a8374db15e453074a7ae70485a0caf9082b9b39c608410f643a"
 metafile = true
 
 [[files]]
