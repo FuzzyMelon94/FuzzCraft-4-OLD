@@ -2,8 +2,8 @@
 
 ## Summary
 **Pack version:** 0.5.7
-**Test date:** <tester fills in>
-**Tester:** <tester fills in>
+**Test date:** 2026-06-16
+**Tester:** Tom
 **Play mode:** Single player
 
 ## Known Issues
@@ -15,71 +15,71 @@
 
 ## 1. Launch & Stability
 
-- [ ] Pack launches without crash or error log flood
-- [ ] Title screen and world select load correctly
-- [ ] Create a new world — no worldgen crash on load
-- [ ] Load an existing B5b world — no crash, no missing block errors
+- [x] Pack launches without crash or error log flood
+- [x] Title screen and world select load correctly
+- [x] Create a new world — no worldgen crash on load
+- [x] Load an existing B5b world — no crash, no missing block errors
 
 ## 2. Regression — Batch 5a/5b
 
-- [ ] Twilight Forest portal ignites and dimension loads correctly
-- [ ] The Aether portal ignites and dimension loads correctly
-- [ ] Dimensional Pockets II pocket dimension opens and closes
-- [ ] RFTools Dimensions dimension tab visible in creative / crafting accessible
+- [x] Twilight Forest portal ignites and dimension loads correctly
+- [x] The Aether portal ignites and dimension loads correctly
+- [x] Dimensional Pockets II pocket dimension opens and closes
+- [x] RFTools Dimensions dimension tab visible in creative / crafting accessible
 
 ## 3. The Undergarden
 
-- [ ] Undergarden portal crafted and activated (obsidian frame + catalyst item)
-- [ ] Dimension loads without crash
-- [ ] Biomes visually distinct — gloomy, cave-world aesthetic
-- [ ] Undergarden-specific blocks and mobs spawn correctly (Depthrock, Gloomber, Rotwood, etc.)
-- [ ] Unique ores/resources obtainable (Depthrock Coal, Wigglite, Forgotten items)
-- [ ] Trees present — note whether static (expected) or DT dynamic
-- [ ] Return to Overworld works cleanly (portal or respawn)
+- [x] Undergarden portal crafted and activated (obsidian frame + catalyst item)
+- [x] Dimension loads without crash
+- [x] Biomes visually distinct — gloomy, cave-world aesthetic
+- [x] Undergarden-specific blocks and mobs spawn correctly (Depthrock, Gloomber, Rotwood, etc.)
+- [x] Unique ores/resources obtainable (Depthrock Coal, Wigglite, Forgotten items)
+- [x] Trees present — note whether static (expected) or DT dynamic
+- [x] Return to Overworld works cleanly (portal or respawn)
 
 ## 4. Deeper and Darker
 
-- [ ] Deep Dark generates in the Overworld (find a deep dark biome ~Y -50 or lower, or use `/locate biome minecraft:deep_dark`)
-- [ ] Ancient Cities spawn with Deeper and Darker additions (sculk traps, new structures)
-- [ ] New blocks present in ancient city context (chiseled deepslate variants, echo shards, etc.)
-- [ ] Warden spawns and functions normally
-- [ ] New Deeper and Darker mob(s) spawn in deep dark (if any in 1.4.x)
-- [ ] New equipment/items craftable from dimension drops
-- [ ] No crash when entering/exiting deep dark areas
+- [x] Deep Dark generates in the Overworld (find a deep dark biome ~Y -50 or lower, or use `/locate biome minecraft:deep_dark`)
+- [x] Ancient Cities spawn with Deeper and Darker additions (sculk traps, new structures)
+- [x] New blocks present in ancient city context (chiseled deepslate variants, echo shards, etc.)
+- [x] Warden spawns and functions normally
+- [x] New Deeper and Darker mob(s) spawn in deep dark (if any in 1.4.x)
+- [x] New equipment/items craftable from dimension drops
+- [x] No crash when entering/exiting deep dark areas
 
 ## 5. The Bumblezone
 
-- [ ] Bumblezone portal entry works (find bee nest/hive, trigger portal — check mod wiki for exact method)
-- [ ] Dimension loads without crash
-- [ ] Honey-themed environment visually correct (honeycomb blocks, bee structures)
-- [ ] Bumblezone bees/mobs present and functional
-- [ ] Unique Bumblezone resources obtainable
-- [ ] Return to Overworld works cleanly
+- [x] Bumblezone portal entry works (find bee nest/hive, trigger portal — check mod wiki for exact method)
+- [x] Dimension loads without crash
+- [x] Honey-themed environment visually correct (honeycomb blocks, bee structures)
+- [x] Bumblezone bees/mobs present and functional
+- [x] Unique Bumblezone resources obtainable
+- [x] Return to Overworld works cleanly
 
 ## 6. Tropicraft
 
-- [ ] Tropicraft portal crafted and activated (bamboo/pineapple + cocktail ritual — check mod wiki)
-- [ ] Tropics dimension loads without crash
-- [ ] Beach/jungle biomes visually correct — palm trees, sand, tropical water
-- [ ] Tropicraft mobs spawn (Tropicreeper, Iguana, etc.)
-- [ ] Unique Tropicraft resources obtainable (bamboo items, shells, tropical fish variants)
-- [ ] Return to Overworld works cleanly
+- [x] Tropicraft portal crafted and activated (bamboo/pineapple + cocktail ritual — check mod wiki)
+- [x] Tropics dimension loads without crash
+- [x] Beach/jungle biomes visually correct — palm trees, sand, tropical water
+- [x] Tropicraft mobs spawn (Tropicreeper, Iguana, etc.)
+- [x] Unique Tropicraft resources obtainable (bamboo items, shells, tropical fish variants)
+- [x] Return to Overworld works cleanly
 
 ## 7. Stellaris
 
-- [ ] Stellaris rocket/launch mechanic accessible (check JEI for launch item or pad recipe)
-- [ ] Space dimension / planet loads without crash
-- [ ] Planets visually distinct from each other (at least two visited)
-- [ ] Space mobs and bosses present and functional
-- [ ] Unique Stellaris resources obtainable
-- [ ] Return to Overworld works cleanly
-- [ ] Potentials (auto-dep) — no errors in log; check if it adds any visible progression/skill system
+- [x] Stellaris rocket/launch mechanic accessible (check JEI for launch item or pad recipe)
+- [x] Space dimension / planet loads without crash
+- [x] Planets visually distinct from each other (at least two visited)
+- [x] Space mobs and bosses present and functional
+- [x] Unique Stellaris resources obtainable
+- [x] Return to Overworld works cleanly
+- [x] Potentials (auto-dep) — no errors in log; check if it adds any visible progression/skill system
 
 ## 8. Cross-mod Spot Checks
 
-- [ ] JEI shows recipes for all five B5c mods — no broken recipe pages
-- [ ] Waystones can be placed in Undergarden, Tropics, and Bumblezone (or confirm dimensions are flagged as non-waystone)
-- [ ] No obvious Almost Unified conflicts on new material types (Wigglite, Tropicraft metals, Stellaris ores, etc.)
+- [x] JEI shows recipes for all five B5c mods — no broken recipe pages
+- [x] Waystones can be placed in Undergarden, Tropics, and Bumblezone (or confirm dimensions are flagged as non-waystone)
+- [x] No obvious Almost Unified conflicts on new material types (Wigglite, Tropicraft metals, Stellaris ores, etc.)
 
 ## 9. Deferred — Requires Server / Multiplayer
 
@@ -91,4 +91,10 @@
 
 ## 10. Tester Notes
 
-<!-- Freeform — broken things, surprises, anything to feed back -->
+**Tropicraft portal recipe — JEI misleading due to Almost Unified**
+JEI shows Pam's HarvestCraft Pina Colada as the output for the Tropicraft cocktail recipe (AU tag unification collision). The actual working recipe is: pineapple cubes (pineapple → crafting table) + coconut chunks + bamboo mug — shapeless craft. The resulting item is `tropicraft:cocktail` with the Pina Colada data component, not a Pam's item. `/give @s tropicraft:cocktail` produces a blank non-interactable item (missing drink data component — must be crafted). Portal triggered correctly with the crafted drink. **Needs AU config fix before release** — logged in charter.
+1. The following trees are also static (no dynamic tree support):
+  - Undergarden
+  - Deeper and Darker
+  - The Bumblezone
+2. Need to add proper quest instructions to get into each of the dimensions - some are quirky or have multiple steps
