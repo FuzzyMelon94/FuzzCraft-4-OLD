@@ -172,6 +172,17 @@ Tests that require two or more connected players. Run each batch's section after
 - [ ] Two players trigger and enter the Bumblezone portal — dimension loads for both
 - [ ] Bumblezone resources obtainable by both players without conflict
 
+### Tropicraft (B5c)
+
+- [ ] Two players enter the Tropics simultaneously — dimension loads for both, biomes correct
+- [ ] Tropicraft mobs behave correctly with multiple players present
+
+### Stellaris (B5c)
+
+- [ ] Two players launch and enter the space dimension simultaneously — no crash
+- [ ] Players on different planets simultaneously — TPS stable, no cross-dimension desync
+- [ ] Boss encounter with two players — confirm no entity or aggro desync
+
 ### General Dimension Server Health
 
 - [ ] TPS stable with at least two dimension threads active (players in different dimensions simultaneously)

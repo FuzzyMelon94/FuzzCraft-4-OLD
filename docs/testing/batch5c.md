@@ -56,19 +56,39 @@
 - [ ] Unique Bumblezone resources obtainable
 - [ ] Return to Overworld works cleanly
 
-## 6. Cross-mod Spot Checks
+## 6. Tropicraft
 
-- [ ] JEI shows recipes for Undergarden, Deeper and Darker, and Bumblezone items (no broken recipe pages)
-- [ ] Waystones can be placed in Undergarden and Bumblezone (or confirm dimension is flagged as non-waystone)
-- [ ] No obvious Almost Unified conflicts on new material types (Wigglite etc.)
+- [ ] Tropicraft portal crafted and activated (bamboo/pineapple + cocktail ritual — check mod wiki)
+- [ ] Tropics dimension loads without crash
+- [ ] Beach/jungle biomes visually correct — palm trees, sand, tropical water
+- [ ] Tropicraft mobs spawn (Tropicreeper, Iguana, etc.)
+- [ ] Unique Tropicraft resources obtainable (bamboo items, shells, tropical fish variants)
+- [ ] Return to Overworld works cleanly
 
-## 7. Deferred — Requires Server / Multiplayer
+## 7. Stellaris
+
+- [ ] Stellaris rocket/launch mechanic accessible (check JEI for launch item or pad recipe)
+- [ ] Space dimension / planet loads without crash
+- [ ] Planets visually distinct from each other (at least two visited)
+- [ ] Space mobs and bosses present and functional
+- [ ] Unique Stellaris resources obtainable
+- [ ] Return to Overworld works cleanly
+- [ ] Potentials (auto-dep) — no errors in log; check if it adds any visible progression/skill system
+
+## 8. Cross-mod Spot Checks
+
+- [ ] JEI shows recipes for all five B5c mods — no broken recipe pages
+- [ ] Waystones can be placed in Undergarden, Tropics, and Bumblezone (or confirm dimensions are flagged as non-waystone)
+- [ ] No obvious Almost Unified conflicts on new material types (Wigglite, Tropicraft metals, Stellaris ores, etc.)
+
+## 9. Deferred — Requires Server / Multiplayer
 
 - Combined B5a + B5b + B5c server test pass (planned post-B5c merge)
-  - All three B5c dimensions load on the server
+  - All five B5c dimensions load on the server
   - Multiplayer portal sync (two players entering/exiting dimensions simultaneously)
   - Bumblezone portal behaviour when multiple players are near bee nests
+  - Stellaris multiplayer (two players on different planets simultaneously)
 
-## 8. Tester Notes
+## 10. Tester Notes
 
 <!-- Freeform — broken things, surprises, anything to feed back -->
