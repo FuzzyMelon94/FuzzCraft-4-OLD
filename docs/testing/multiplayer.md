@@ -135,3 +135,44 @@ Tests that require two or more connected players. Run each batch's section after
 
 - [ ] TPS stable at or near 20 with Productive Bees, Botany Pots, Mystical Agriculture crops, and a Create contraption all running simultaneously
 - [ ] No WARN/ERROR in server console during a 20-minute session
+
+---
+
+## Batch 5 — Dimensions (combined 5a + 5b + 5c server pass)
+
+*Run after B5c merges to main. Covers Twilight Forest, Aether cluster, and Underground/Quirky dimensions together.*
+
+### Connection & Pack Sync
+
+- [ ] Server updated to post-B5c main; all clients sync without mod mismatch kick
+- [ ] No error flood in server console on startup
+
+### Twilight Forest (B5a)
+
+- [ ] Two players enter TF simultaneously — dimension loads for both, no desync
+- [ ] Boss fight with two players — Naga, Lich, or Hydra; confirm no crash or entity desync
+
+### The Aether (B5b)
+
+- [ ] Two players enter the Aether simultaneously — dimension loads for both
+- [ ] Aether mobs and structures visible and consistent across both clients
+
+### The Undergarden (B5c)
+
+- [ ] Two players enter the Undergarden simultaneously — no crash, both see correct biomes
+- [ ] Undergarden mobs behave correctly in multiplayer (no entity spam or desync)
+
+### Deeper and Darker (B5c)
+
+- [ ] Two players in the same deep dark biome — no server crash, Warden aggro works correctly for both
+- [ ] Ancient City loot chests openable by both players (Lootr integration if applicable)
+
+### The Bumblezone (B5c)
+
+- [ ] Two players trigger and enter the Bumblezone portal — dimension loads for both
+- [ ] Bumblezone resources obtainable by both players without conflict
+
+### General Dimension Server Health
+
+- [ ] TPS stable with at least two dimension threads active (players in different dimensions simultaneously)
+- [ ] No WARN/ERROR in server console during multi-dimension session
