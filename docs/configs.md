@@ -2,6 +2,14 @@
 
 Some notes regarding the configs of various mods as I work through the testing and spot things that might need attention.
 
+## Additions
+Some mods I think would be good to add, for optimisation, performance, QoL, and so on.
+
+- [Collapsible Groups](https://www.curseforge.com/minecraft/mc-mods/collapsible-groups) - makes JEI a lot cleaner, appears to have some built-in support for mods, should also be configurable. Check for a Modrinth housed alternative. 
+
+
+## Mods
+
 ### Bosses of Mass Destruction
 - No in-game guidebook — boss trigger mechanics are not obvious to new players
 - B6 quest pass: BOMD needs dedicated quest coverage explaining how to locate and trigger each boss (locator items, structure hunting, etc.)
