@@ -1,0 +1,13 @@
+name = "Cosmos Library"
+filename = "cosmoslibrary-neoforge-1.21.1-11.11.9.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aDO1mrjk/versions/gQUTbFbu/cosmoslibrary-neoforge-1.21.1-11.11.9.0.jar"
+hash-format = "sha512"
+hash = "637458afd4d45fc06749ac3a743a5c7bc3bfa222330269056eb21c4ad9ce9db9034d40bddd62a863f9dfb289e6ba93693db5e6643159501fe941c5988615e45c"
+
+[update]
+[update.modrinth]
+mod-id = "aDO1mrjk"
+version = "gQUTbFbu"

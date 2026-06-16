@@ -1,0 +1,13 @@
+name = "Dimensional Pockets II"
+filename = "dimensionalpocketsii-neoforge-1.21.1-10.10.2.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/pJpI01oW/versions/X9WlBScD/dimensionalpocketsii-neoforge-1.21.1-10.10.2.0.jar"
+hash-format = "sha512"
+hash = "d2eb7ff6f4b7a7294b91c3aebb1a0fb80f4dd0d18c6cfd0f0b9e56d38f8c2b4a5a96cbf26896aaea56244ff864f1b70314558606973ffe30fab29ac10028a02f"
+
+[update]
+[update.modrinth]
+mod-id = "pJpI01oW"
+version = "X9WlBScD"
