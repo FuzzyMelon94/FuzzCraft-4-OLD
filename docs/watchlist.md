@@ -22,7 +22,8 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [More Axolotl Variants](https://modrinth.com/mod/mavm) | Fabric-only build despite NeoForge listing on Modrinth; Connector not worth the risk given Sodium/Iris FFAPI bundles | None | 4 | — |
 | [Bosses of Mass Destruction](https://modrinth.com/mod/bosses-of-mass-destruction-forge) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
 | [Bosses Rise](https://modrinth.com/mod/bossesrise) | Deferred to Dimensions batch — boss content fits better there | — | 5 | — |
-| [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
+| [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | 0.6.1 |
+| [[Let's Do] Candlelight](https://modrinth.com/mod/lets-do-candlelight) | No 1.21.1 NeoForge port (stuck on 1.20.1) — fine dining / food display mod. Re-evaluate in B7 QoL pass. | — | 6 | — |
 | [Create: Sweets & Treats](https://modrinth.com/mod/create-sweets-and-treats) | No 1.21.1 NeoForge port (stuck on 1.20.1) | Create Confectionery covers chocolate/candy content | 3 | — |
 | [Hybrid Aquatic](https://modrinth.com/mod/hybrid-aquatic) | Uses Lithostitched "inline definitions" format incompatible with Lithostitched 1.6.x — worldgen modifier parse crash on world create. Remove when HA updates to support 1.6+. | Upgrade Aquatic + Critters & Companions cover aquatic content | 4 | — |
 | [Ad Astra](https://modrinth.com/mod/ad-astra) | No official 1.21.1 NeoForge port — devs haven't responded to port requests on GitHub. Unofficial port exists but not worth the risk. Stellaris (added B5c) fills the space dimension gap. Re-evaluate if an official port lands. | Stellaris | 5 | — |
