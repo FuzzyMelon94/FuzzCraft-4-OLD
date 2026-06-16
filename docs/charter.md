@@ -111,13 +111,9 @@ Group adventure content. Dimensions are a primary social driver — "adventure n
 **Utility dimensions:**
 - Personal/pocket dimensions (upgradable)
 - Configurable mining dimension
-### Batch 6 — Building, Decoration & Questing
-Polish layer. Decoration mods for the builders in the group, and FTB Quests to tie the whole pack together.
+### Batch 6 — Building & Decoration
+Polish layer. Decoration mods for the builders in the group,
 - Decoration mods (to be confirmed with friend group input)
-- **FTB Quests** — no gating, structured as:
-  - Per-major-mod questlines (Create, IE, Botania, Ars Nouveau, Twilight Forest, etc.)
-  - Grouped tutorial quests for smaller mods where they fit sensibly
-  - Standalone mod introductions where grouping doesn't make sense
 - Deferred food/storage addons: Crate Delight, Storage Delight, [Let's Do] Beachparty
 ### Batch 7 — QoL & Final Compat Pass
 Final polish pass once all content is in. No new content mods — focus on quality of life, cross-mod compat smoothing, and config work deferred from earlier batches.
@@ -127,6 +123,12 @@ Final polish pass once all content is in. No new content mods — focus on quali
 - **KubeJS difficulty scaling** — listen for vanilla advancements (e.g. "Suit Up", "Diamonds!") and ramp up mob difficulty mods (Legendary Monsters rarity, Mutant Monsters spawn rates) progressively. Replaces manual config bumping.
 - Review watchlisted mods for ports (Botania, Tinkers', Thermal, Alex's Mobs, Savage & Ravage, etc.)
 - Final review of Almost Unified, tag unification, and JEI display cleanup
+### Batch 8 — Questing
+FTB Quests to tie the whole pack together.
+- **FTB Quests** — no gating, structured as:
+  - Per-major-mod questlines (Create, IE, Botania, Ars Nouveau, Twilight Forest, etc.)
+  - Grouped tutorial quests for smaller mods where they fit sensibly
+  - Standalone mod introductions where grouping doesn't make sense
 ---
 ## 5. Questing Philosophy
 Quests serve as a **guided tutorial and reward system**, not a progression gate. Specifically:
