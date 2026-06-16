@@ -25,7 +25,7 @@ Mods we want to add (or upgrade to) once they become available. Includes cases w
 | [[Let's Do] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | Deferred to decoration batch — more decorative than functional | None needed | 5 | — |
 | [Create: Sweets & Treats](https://modrinth.com/mod/create-sweets-and-treats) | No 1.21.1 NeoForge port (stuck on 1.20.1) | Create Confectionery covers chocolate/candy content | 3 | — |
 | [Hybrid Aquatic](https://modrinth.com/mod/hybrid-aquatic) | Uses Lithostitched "inline definitions" format incompatible with Lithostitched 1.6.x — worldgen modifier parse crash on world create. Remove when HA updates to support 1.6+. | Upgrade Aquatic + Critters & Companions cover aquatic content | 4 | — |
-| [Ad Astra](https://modrinth.com/mod/ad-astra) | No official 1.21.1 NeoForge port — devs haven't responded to port requests on GitHub. Unofficial port exists but not worth the risk. | — | 5 | — |
+| [Ad Astra](https://modrinth.com/mod/ad-astra) | No official 1.21.1 NeoForge port — devs haven't responded to port requests on GitHub. Unofficial port exists but not worth the risk. Stellaris (added B5c) fills the space dimension gap. Re-evaluate if an official port lands. | Stellaris | 5 | — |
 | [Blue Skies](https://modrinth.com/mod/blue-skies) | No 1.21.1 NeoForge build available (stuck on 1.20.1). | — | 5 | — |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | No 1.21.1 port yet (stuck on 1.20.1). Dev noted 2.1 update will target 1.21.1+. | The Aether base mod covers the dimension | 5 | — |
 | [Aether: Lost Content](https://www.curseforge.com/minecraft/mc-mods/aether-lost-content) | No 1.21.1 port yet (stuck on 1.20.1). | — | 5 | — |

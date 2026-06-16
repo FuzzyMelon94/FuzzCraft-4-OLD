@@ -2,7 +2,7 @@
 **Author:** FuzzyMelon94  
 **Working Title:** FuzzCraft  
 **Status:** Active — Pre-Production  
-**Last Updated:** 2026-06-14  
+**Last Updated:** 2026-06-16  
 ---
 ## 1. Vision
 FuzzCraft is a personal, long-term modpack for a casual friend group of ~7 players. It is designed to be a "forever pack" — something that grows and evolves over time rather than a fixed, versioned release. The north star is **FTB Ultimate**: everyone can do their own thing, pursue their own progression, and then rally together for group adventures and boss nights.
@@ -153,7 +153,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | 4 | World Gen & Combat | ✅ Complete | ~55 mods (v0.4.5–0.4.27). Terralith 2.5.8 pinned (2.6.x feature order cycle with BWG 2.6.0). Full world gen: BYG, Tectonic, Dynamic Trees + compat, BetterNether (unofficial port), Nullscape, BetterEnd, YUNG's full suite, CTOV + compat datapacks, WDA, DaT, Blossom Blade, Tidal Towns, Better Archeology, Sparse Structures. Mob/combat: Born in Chaos, Galosphere, Ribbits, Critters & Companions, Creeper/Golem/Enderman Overhaul, Nyf's Spiders, Guard Villagers, Legendary Monsters, Mutant Monsters, Rotten Creatures, Epic Knights + Addon, Artifacts, Better Combat, Waystones, Bountiful, Lootr, In Control!, EMF+ETF+Fresh Animations. Hybrid Aquatic removed — Lithostitched "inline definitions" incompatibility (world create crash); watchlisted for future port. Upgrade Aquatic retained for aquatic coverage. Difficulty/feel deferred to first real playthrough (docs/testing/playthrough1.md). SP tested 2026-06-14–2026-06-15. Server test to follow post-merge. |
 | 5a | Dimensions — Flagship + Bosses + Utility | ✅ SP Tested | ~16 mods (v0.5.1–0.5.3). TF, Dimensional Dungeons, BOMD, Bosses Rise, Dimensional Pockets II, RFTools Dimensions + Utility. TF/DT compat gap noted. BOMD + RFTools quest gaps logged in configs.md. Server test to follow post-merge. |
 | 5b | Dimensions — Aether Cluster | ✅ SP Tested | The Aether v1.5.10 + Deep Aether + Aether Villages + Aether's Delight + Farmer's Cutting: The Aether datapack + owo-lib dep (v0.5.5). Paradise Lost: Connector-only build for NeoForge — watchlisted. Server test to follow post-merge. |
-| 5c | Dimensions — Underground & Quirky | ⬜ Not started | Undergarden, Deeper and Darker, The Bumblezone. Awaiting B5b |
+| 5c | Dimensions — Underground & Quirky | ✅ SP Tested | Undergarden 0.9.6 + Deeper and Darker 1.4.1 + The Bumblezone 7.15.0 + Tropicraft 9.8.1 + Stellaris 1.4.23 + Potentials dep (v0.5.7–0.5.8). DT compat gap confirmed (no addon for any B5c mods). No Farmer's Cutting datapacks for B5c mods. Stellaris fills Ad Astra gap. AU/Tropicraft cocktail JEI issue logged (configs.md). Server test to follow post-merge. |
 | 6 | Building & Questing | ⬜ Not started | Awaiting Batch 5 |
 | 7 | QoL & Final Compat | ⬜ Not started | Awaiting Batch 6 |
 ---
@@ -174,6 +174,7 @@ Quests serve as a **guided tutorial and reward system**, not a progression gate.
 | 2026-06-15 | 4 | packwiz bootstrapper cache (`packwiz.json`) had stale `onlyOtherSide: true` for Lithostitched from when it was `side = "server"` — mod wouldn't download to client despite pw.toml being fixed. | Delete `packwiz.json` from the instance to force a full re-sync. Bootstrapper also unreliable at removing mods — manual jar deletion needed when a mod is removed from the pack. Must restart `packwiz serve` after removing a mod so the in-memory index updates. |
 | 2026-06-16 | 5a | Twilight Forest trees are not compatible with Dynamic Trees — TF trees generate as vanilla static trees inside the TF dimension rather than DT dynamic trees. | Known limitation — no DT compat addon exists for TF. Non-blocking; both mods work correctly in their own domains. |
 | 2026-06-16 | 5b | The Aether trees are not compatible with Dynamic Trees — same pattern as TF. Aether trees generate as vanilla static trees in the Aether dimension. | Known limitation — no DT compat addon exists for The Aether. Non-blocking. |
+| 2026-06-16 | 5c | Almost Unified tag unification causes JEI to display Pam's HarvestCraft Pina Colada as the output for the Tropicraft cocktail recipe. The correct item is `tropicraft:cocktail` (crafted with pineapple cubes + coconut chunks + bamboo mug). Portal works correctly with the crafted item, but the JEI mismatch would mislead players. | Needs Almost Unified config exclusion for `tropicraft:cocktail` — deferred to B7 compat pass (or B6 if time permits). |
 ---
 ## 9. Handoff Protocol
 Each batch is implemented in its own conversation using a handoff doc generated from this charter. The handoff doc contains:
