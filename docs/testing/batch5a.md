@@ -37,7 +37,7 @@
 
 - [x] Twilight Forest portal crafts and activates (place a 2×2 pool of water, surround with flowers/natural blocks, throw diamond in)
 - [x] Portal teleports to Twilight Forest dimension
-- [x]] TF dimension generates correctly — trees, biomes, structures visible
+- [x] TF dimension generates correctly — trees, biomes, structures visible
 - [x] Naga boss spawns (Naga Courtyard structure) — engage if found
 - [x] Lich Tower visible at a distance or found
 - [x] JEI shows TF recipes
@@ -97,13 +97,13 @@ Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensi
 
 - [x] RFTools Dimensions guidebook/manual accessible in JEI
 - [x] Dimension Builder and Dimension Tab craftable (check JEI)
-- [ ] Craft at least one ore module and one terrain module
-- [ ] Build and power a Dimension Builder, insert modules, create a dimension tab
-- [ ] Activate Dimension Builder and enter the created dimension without crash
-- [ ] Dimension generates with configured ores visible
-- [ ] Mine ores — drops correct
-- [ ] Return to overworld without issue
-- [ ] Dimension persists after re-entry (power maintained)
+- [x] Craft at least one ore module and one terrain module
+- [x] Build and power a Dimension Builder, insert modules, create a dimension tab
+- [x] Activate Dimension Builder and enter the created dimension without crash
+- [x] Dimension generates with configured ores visible
+- [x] Mine ores — drops correct
+- [x] Return to overworld without issue
+- [x] Dimension persists after re-entry (power maintained)
 
 ---
 
@@ -112,7 +112,7 @@ Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensi
 - Boss night with full group (BOMD + Bosses Rise) — test aggro, multi-player arena behaviour
 - Dimensional Dungeons with multiple players — verify per-player Lootr chests work correctly in the dungeon dimension
 - Dimensional Pockets II — verify pocket dims are player-isolated (Player A can't enter Player B's pocket)
-- Supernova's Mining Dimension — verify mob spawn rates under server load
+- RFTools Dimensions — verify mob spawn rates under server load
 
 ---
 
@@ -122,3 +122,4 @@ Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensi
 1. Note, the Twilight Forest doesn't appear to work with Dynamic Trees (fine, just a note)
 2. Bosses Rise: Do we know if the loot would drop enough for each player in the boss fight?
 3. BoMD: No guidebook - not sure if there actually is one... Not an issue, note in the config file (or wherever makes sense) that we'll need to set up quests to detail how to trigger the bosses.
+4. Seems there's no "return" device setup when going to the RF Dimensions, so will also need to add a quest step that leaves the player with a method of doing so (e.g. when a matter transmitter is built, reward the player with a porter they can bind)

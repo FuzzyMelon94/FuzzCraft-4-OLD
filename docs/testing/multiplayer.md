@@ -83,6 +83,27 @@ Tests that require two or more connected players. Run each batch's section after
 
 ---
 
+## Batch 5a — Flagship + Bosses + Utility
+
+### Bosses Rise
+- [ ] Bosses Rise boss killed with multiple players present — confirm loot drops for each player (Lootr covers chests, but entity kill drops may not scale; verify no one gets left out)
+
+### Bosses of Mass Destruction
+- [ ] Boss fight with full group — confirm aggro behaviour and arena doesn't crash under multi-player load
+
+### Dimensional Dungeons
+- [ ] Two players enter the dungeon dimension — confirm Lootr chests give independent loot per player
+- [ ] Block protection holds for both players (neither can break dungeon walls)
+
+### Dimensional Pockets II
+- [ ] Player A enters their pocket dimension — Player B cannot follow (pocket dims should be player-isolated)
+
+### RFTools Dimensions
+- [ ] Both players can travel to the same RFTools dimension via the Matter Transmitter/Receiver setup
+- [ ] Mining in the dimension with two players simultaneously — no desync or TPS drop
+
+---
+
 ## Batch 3 — Magic & Farming
 
 ### Productive Bees
