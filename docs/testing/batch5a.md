@@ -16,34 +16,34 @@
 
 ## 1. Launch & Stability
 
-- [ ] Pack launches without crashes
-- [ ] No errors in log related to B5a mods (TF, BOMD, Bosses Rise, Dim Pockets II, Supernova Mining, Dim Dungeons)
-- [ ] New world creates without errors
+- [x] Pack launches without crashes
+- [x] No errors in log related to B5a mods (TF, BOMD, Bosses Rise, Dim Pockets II, Supernova Mining, Dim Dungeons)
+- [x] New world creates without errors
 
 ---
 
 ## 2. Regression — Batch 1–4
 
-- [ ] JourneyMap opens, chunk overlay visible
-- [ ] JEI opens, recipes browse correctly
-- [ ] Create contraption (e.g. mechanical arm or belt) functions
-- [ ] AE2 network comes up without errors
-- [ ] Ars Nouveau spellbook craftable
-- [ ] Terralith/BYG biomes generating (check F3 biome name in a new world)
+- [x] JourneyMap opens, chunk overlay visible
+- [x] JEI opens, recipes browse correctly
+- [x] Create contraption (e.g. mechanical arm or belt) functions
+- [x] AE2 network comes up without errors
+- [x] Ars Nouveau spellbook craftable
+- [x] Terralith/BYG biomes generating (check F3 biome name in a new world)
 
 ---
 
 ## 3. Twilight Forest
 
-- [ ] Twilight Forest portal crafts and activates (place a 2×2 pool of water, surround with flowers/natural blocks, throw diamond in)
-- [ ] Portal teleports to Twilight Forest dimension
-- [ ] TF dimension generates correctly — trees, biomes, structures visible
-- [ ] Naga boss spawns (Naga Courtyard structure) — engage if found
-- [ ] Lich Tower visible at a distance or found
-- [ ] JEI shows TF recipes
-- [ ] Farmer's Cutting: TF — TF plants/crops can be harvested with FD tools (right-click harvest a TF plant if one is found)
-- [ ] Return portal works (or craft a new overworld portal)
-- [ ] No world-gen crashes when exploring TF chunks
+- [x] Twilight Forest portal crafts and activates (place a 2×2 pool of water, surround with flowers/natural blocks, throw diamond in)
+- [x] Portal teleports to Twilight Forest dimension
+- [x]] TF dimension generates correctly — trees, biomes, structures visible
+- [x] Naga boss spawns (Naga Courtyard structure) — engage if found
+- [x] Lich Tower visible at a distance or found
+- [x] JEI shows TF recipes
+- [x] Farmer's Cutting: TF — TF plants/crops can be harvested with FD tools (right-click harvest a TF plant if one is found)
+- [x] Return portal works (or craft a new overworld portal)
+- [x] No world-gen crashes when exploring TF chunks
 
 Note on progression: if `progression = true` (default), some structures will be locked until their prerequisite boss is defeated. This is working as intended unless you decide to disable it.
 
@@ -82,23 +82,28 @@ Note on progression: if `progression = true` (default), some structures will be 
 
 ## 7. Dimensional Pockets II
 
-- [ ] Pocket dimension block/item craftable (check JEI)
-- [ ] Enter personal pocket dimension without crash
-- [ ] Pocket dimension is empty/blank as expected
-- [ ] Place blocks and items inside — persists on re-entry
-- [ ] Exit pocket dimension and re-enter — content preserved
-- [ ] Modular upgrades (crafting station, etc.) craftable and placeable inside
+- [x] Pocket dimension block/item craftable (check JEI)
+- [x] Enter personal pocket dimension without crash
+- [x] Pocket dimension is empty/blank as expected
+- [x] Place blocks and items inside — persists on re-entry
+- [x] Exit pocket dimension and re-enter — content preserved
+- [x] Modular upgrades (crafting station, etc.) craftable and placeable inside
 
 ---
 
-## 8. Supernova's Mining Dimension
+## 8. RFTools Dimensions ⚠️
 
-- [ ] Mining dimension portal/entry item craftable (check JEI)
-- [ ] Enter mining dimension without crash
-- [ ] Dimension generates with standard ores visible
-- [ ] Mine ores — drops correct (no tag/loot issues)
+Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensions. Deps: McJtyLib, RFTools Base.
+
+- [ ] RFTools Dimensions guidebook/manual accessible in JEI
+- [ ] Dimension Builder and Dimension Tab craftable (check JEI)
+- [ ] Craft at least one ore module and one terrain module
+- [ ] Build and power a Dimension Builder, insert modules, create a dimension tab
+- [ ] Activate Dimension Builder and enter the created dimension without crash
+- [ ] Dimension generates with configured ores visible
+- [ ] Mine ores — drops correct
 - [ ] Return to overworld without issue
-- [ ] Mob spawns in mining dimension (default config — InControl! may affect this)
+- [ ] Dimension persists after re-entry (power maintained)
 
 ---
 
@@ -113,3 +118,5 @@ Note on progression: if `progression = true` (default), some structures will be 
 
 ## Tester Notes
 <!-- Broken things, surprises, feedback -->
+
+1. Note, the Twilight Forest doesn't appear to work with Dynamic Trees (fine, just a note)
