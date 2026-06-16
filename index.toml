@@ -129,7 +129,7 @@ metafile = true
 
 [[files]]
 file = "mods/armor-statues.pw.toml"
-hash = "d6c17b9756d8b9491b1813a3a999f78918e268809f904e4739719a7eed82719b"
+hash = "3cf27ac264fd2fba14dec1c6055284f03b3dfe65d79adb265cb1e02a29ffd92a"
 metafile = true
 
 [[files]]
@@ -1194,7 +1194,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "e4ced1c70be45fd8e734418769c36f8af66b62d46c5171e931b7195cd84de434"
+hash = "084ba00d5d41d76f4975935f3ada0fb1fce41bce59dd3901f54684c3588cb9f6"
 metafile = true
 
 [[files]]
