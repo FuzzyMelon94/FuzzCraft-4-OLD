@@ -34,12 +34,8 @@ No pack-level config changes needed — memory profile is already well-managed b
 
 ### Almost Unified — Tropicraft Cocktail
 - AU tag unification causes JEI to show Pam's HarvestCraft Pina Colada as the output for the Tropicraft cocktail recipe
-- **Fix (apply after first B7 game launch generates the config):**
-  1. Open `config/almostunified/unify.json` in your running instance
-  2. Find the `ignoredItems` array (create it as `"ignoredItems": []` if missing)
-  3. Add `"tropicraft:cocktail"` to the array
-  4. Copy the full file into `config/almostunified/unify.json` in the repo and commit it
-- The portal mechanic works correctly with the crafted item; this is a JEI display issue that would confuse players
+- **Fixed in B7:** `"tropicraft:cocktail"` added to `ignored_items` in `config/almostunified/unification/materials.json`. Full AU config set committed to repo.
+- The portal mechanic works correctly with the crafted item; this was a JEI display issue.
 
 ### Almost Unified — Full Tag Review
 - Run a full JEI audit pass during B7 testing — check for any other AU unifications that produce wrong outputs

@@ -7,7 +7,7 @@
 **Play mode:** Single player
 
 ## Known Issues
-- **Almost Unified / Tropicraft cocktail** — JEI still shows Pam's Pina Colada as the Tropicraft cocktail recipe output. Fix is in configs.md: run the game once to generate `config/almostunified/unify.json`, add `"tropicraft:cocktail"` to `ignoredItems`, commit the file. The Tropicraft portal works correctly regardless.
+- **Almost Unified / Tropicraft cocktail** — fix committed (`tropicraft:cocktail` in `ignored_items`). Verify in testing that JEI now shows the correct cocktail output.
 - **Curios slots** — config is now in `config/curios-server.toml`. Verify in-game that 2 back / 4 ring / 4 charm slots are showing correctly; if not, the config key format may need adjusting after a game run (Curios sometimes requires a first-run config merge).
 - **Hybrid Aquatic** — watchlisted as "re-add candidate" after the Lithostitched fix. Not in the pack yet — test without it first. If you want to test it, add via `packwiz mr add hybrid-aquatic -y` and create a fresh world to confirm no world-create crash.
 - **KubeJS work (caramel bridge, extruder recipes, difficulty scaling)** — all deferred to B8. Caramel circular recipe issue still present.
