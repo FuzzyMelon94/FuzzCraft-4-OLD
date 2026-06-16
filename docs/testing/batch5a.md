@@ -51,32 +51,32 @@ Note on progression: if `progression = true` (default), some structures will be 
 
 ## 4. Bosses of Mass Destruction ⚠️
 
-- [ ] BOMD guidebook/manual accessible in JEI or crafted
-- [ ] At least one BOMD boss structure locatable (use the mod's locator items or explore)
-- [ ] Boss spawns and fight initiates without crash
-- [ ] Boss drops loot
-- [ ] No conflicts with existing mob/spawner mods (Born in Chaos, Legendary Monsters, In Control!)
+- [x] BOMD guidebook/manual accessible in JEI or crafted
+- [x] At least one BOMD boss structure locatable (use the mod's locator items or explore)
+- [x] Boss spawns and fight initiates without crash
+- [x] Boss drops loot
+- [x] No conflicts with existing mob/spawner mods (Born in Chaos, Legendary Monsters, In Control!)
 
 ---
 
 ## 5. Bosses Rise ⚠️
 
-- [ ] Bosses Rise structures generate in the world (check ocean for Kraken ship if accessible)
-- [ ] At least one Bosses Rise boss engageable without crash
-- [ ] Boss fight completes without server crash
-- [ ] Loot drops correctly
+- [x] Bosses Rise structures generate in the world (check ocean for Kraken ship if accessible)
+- [x] At least one Bosses Rise boss engageable without crash
+- [x] Boss fight completes without server crash
+- [x] Loot drops correctly
 
 ---
 
 ## 6. Dimensional Dungeons
 
-- [ ] Dungeon portal crafted/found and activated
-- [ ] Enter dungeon dimension without crash
-- [ ] Dungeon generates rooms correctly
-- [ ] Enemies spawn inside dungeon
-- [ ] Lootr chest loot rolls correctly (check a dungeon chest — loot should be per-player, Lootr style)
-- [ ] Block protection active inside dungeon (can't break walls — expected)
-- [ ] Exit dungeon dimension and return to overworld without issue
+- [x] Dungeon portal crafted/found and activated
+- [x] Enter dungeon dimension without crash
+- [x] Dungeon generates rooms correctly
+- [x] Enemies spawn inside dungeon
+- [x] Lootr chest loot rolls correctly (check a dungeon chest — loot should be per-player, Lootr style)
+- [x] Block protection active inside dungeon (can't break walls — expected)
+- [x] Exit dungeon dimension and return to overworld without issue
 
 ---
 
@@ -93,10 +93,10 @@ Note on progression: if `progression = true` (default), some structures will be 
 
 ## 8. RFTools Dimensions ⚠️
 
-Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensions. Deps: McJtyLib, RFTools Base.
+Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensions. Travel via Matter Transmitter/Receiver (RFTools Utility). Deps: McJtyLib, RFTools Base, RFTools Utility.
 
-- [ ] RFTools Dimensions guidebook/manual accessible in JEI
-- [ ] Dimension Builder and Dimension Tab craftable (check JEI)
+- [x] RFTools Dimensions guidebook/manual accessible in JEI
+- [x] Dimension Builder and Dimension Tab craftable (check JEI)
 - [ ] Craft at least one ore module and one terrain module
 - [ ] Build and power a Dimension Builder, insert modules, create a dimension tab
 - [ ] Activate Dimension Builder and enter the created dimension without crash
@@ -120,3 +120,5 @@ Beta for 1.21.1. Requires RF power infrastructure to create and maintain dimensi
 <!-- Broken things, surprises, feedback -->
 
 1. Note, the Twilight Forest doesn't appear to work with Dynamic Trees (fine, just a note)
+2. Bosses Rise: Do we know if the loot would drop enough for each player in the boss fight?
+3. BoMD: No guidebook - not sure if there actually is one... Not an issue, note in the config file (or wherever makes sense) that we'll need to set up quests to detail how to trigger the bosses.
