@@ -1,7 +1,7 @@
 # FuzzCraft 4 — Batch 7 Testing: QoL & Final Compat
 
 ## Summary
-**Pack version:** 0.7.1–x.x.x
+**Pack version:** 0.7.1–0.7.3 (wave 1: 0.7.1; wave 2: 0.7.2–0.7.3)
 **Test date:** <tester fills in>
 **Tester:** <tester fills in>
 **Play mode:** Single player
