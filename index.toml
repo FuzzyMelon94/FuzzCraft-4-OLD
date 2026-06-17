@@ -50,7 +50,7 @@ hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "12f5a74e45d956d3e5ac38474543c083e3b12fb5f42fe205725eddf75ea23aac"
+hash = "cac2d434e5dfcd9d3e7b647cb4b825cef56a1e9ff0e23bfd4c22eea92b9bad5a"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
@@ -62,7 +62,7 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 
 [[files]]
 file = "config/sparsestructures.json5"
-hash = "6afe911985685055d2c57907ab04dac25f28a2601ba5f6d913941e642b89cba5"
+hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
