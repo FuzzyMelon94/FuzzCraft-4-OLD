@@ -1,0 +1,16 @@
+# FuzzCraft 4 — Curios slot config
+# Deferred from B4. Targets: 2x back, 4x ring, 4x charm minimum.
+
+[Slots]
+
+	["Slots.back"]
+		size = 2
+		operation = "SET"
+
+	["Slots.ring"]
+		size = 4
+		operation = "SET"
+
+	["Slots.charm"]
+		size = 4
+		operation = "SET"
