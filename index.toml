@@ -1400,11 +1400,6 @@ hash = "fffc4ce08823b44a89f5117fc3feabfa4a5ec92abf3ce18debd6017e04331aaf"
 metafile = true
 
 [[files]]
-file = "mods/rrls.pw.toml"
-hash = "b78044fd79ce21750d05dc61b6aede33c4b87cdc16a26f5aff472d4f73ab623c"
-metafile = true
-
-[[files]]
 file = "mods/scribble.pw.toml"
 hash = "3ad87fbb20108d7aa5c89759f64d6695e5ec68553f32976f0710bd0a4d34d85b"
 metafile = true
