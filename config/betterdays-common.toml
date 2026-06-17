@@ -1,0 +1,9 @@
+
+[time]
+	# Speed multiplier for daytime. 0.5 = 2× longer than vanilla days.
+	# Range: 0.0 ~ 24000.0
+	daySpeed = 0.5
+
+	# Speed multiplier for nighttime. 1.0 = vanilla night length.
+	# Range: 0.0 ~ 24000.0
+	nightSpeed = 1.0
