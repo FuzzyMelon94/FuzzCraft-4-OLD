@@ -144,7 +144,7 @@ These mods are added in the follow-up B7b session. Test them in the same play se
 ### Gameplay QoL
 - [ ] Double Doors — place two adjacent doors; open one; confirm both open simultaneously
 - [ ] Jump Over Fences — sprint-jump at a fence; confirm you clear it
-- [ ] SwingThrough — swing at a mob through tall grass or leaves; confirm the hit registers
+- [ ] Cut Through — swing at a mob through tall grass or leaves; confirm the hit registers (SwingThrough was Fabric-only; Cut Through is the native NeoForge equivalent)
 - [ ] Monsters in the Closet — attempt to sleep; if it fails, confirm nearby monsters are highlighted
 - [ ] Zume — press the zoom key; confirm zoom activates; scroll while zoomed; confirm zoom level changes
 - [ ] VeinMiner — hold the VeinMiner hotkey while mining an ore vein; confirm connected ores break together
