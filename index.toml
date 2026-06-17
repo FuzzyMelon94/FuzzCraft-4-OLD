@@ -34,7 +34,7 @@ hash = "e7a876f11903bcf67b407b7ccf929ef099061a79912a051cc185ef62fd50ed65"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "3c95e0b3a926d020ab35ccaa3fa31713a6481e89f7dcf1912183e5f4be073507"
+hash = "6e8eafbcdf5195b3bd3fb62f2a084f30fbfe226c4473a80c47a538aee62ecba3"
 
 [[files]]
 file = "config/dynamictrees-server.toml"
@@ -42,15 +42,15 @@ hash = "91deff11636cdaf66ff3b419b0b43d1aed9bd6b90dc4d3b62684ab9885c336dd"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "44454397646af57a52f84bbc8eade700398c82fa08530f204c247cfdd09e2211"
+hash = "6515140a68db07b0a3bd773c7849ee1dab37cabee8af9e211707276a9c5fdb66"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
-hash = "ad367ec93bc9fccd52124ff20b0ecf4a703d0aed67f95aeb6bd7b6c5c2a04c9f"
+hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "12f5a74e45d956d3e5ac38474543c083e3b12fb5f42fe205725eddf75ea23aac"
+hash = "cac2d434e5dfcd9d3e7b647cb4b825cef56a1e9ff0e23bfd4c22eea92b9bad5a"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
@@ -62,7 +62,7 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 
 [[files]]
 file = "config/sparsestructures.json5"
-hash = "6afe911985685055d2c57907ab04dac25f28a2601ba5f6d913941e642b89cba5"
+hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
