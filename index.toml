@@ -41,6 +41,10 @@ file = "config/dynamictrees-server.toml"
 hash = "91deff11636cdaf66ff3b419b0b43d1aed9bd6b90dc4d3b62684ab9885c336dd"
 
 [[files]]
+file = "config/enhanced_attack_indicator-client.toml"
+hash = "5809f6fca97051d0cc8ad07c7017156b7edf4b6f272eda804b326b600f848e36"
+
+[[files]]
 file = "config/ftbchunks-world.snbt"
 hash = "6515140a68db07b0a3bd773c7849ee1dab37cabee8af9e211707276a9c5fdb66"
 
