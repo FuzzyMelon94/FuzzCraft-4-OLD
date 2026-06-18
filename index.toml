@@ -46,11 +46,11 @@ hash = "5809f6fca97051d0cc8ad07c7017156b7edf4b6f272eda804b326b600f848e36"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "6515140a68db07b0a3bd773c7849ee1dab37cabee8af9e211707276a9c5fdb66"
+hash = "44454397646af57a52f84bbc8eade700398c82fa08530f204c247cfdd09e2211"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
-hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
+hash = "ad367ec93bc9fccd52124ff20b0ecf4a703d0aed67f95aeb6bd7b6c5c2a04c9f"
 
 [[files]]
 file = "config/gravestone-server.toml"
@@ -70,7 +70,7 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 
 [[files]]
 file = "config/sparsestructures.json5"
-hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
+hash = "6afe911985685055d2c57907ab04dac25f28a2601ba5f6d913941e642b89cba5"
 
 [[files]]
 file = "config/travelerstitles-neoforge-1_21.toml"
