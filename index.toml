@@ -407,11 +407,6 @@ hash = "503569d1bccf50d580e517550e8f66574d881deac197f30fedb0a18ebb5d3ff4"
 metafile = true
 
 [[files]]
-file = "mods/collapsible-groups.pw.toml"
-hash = "3b0c5d122d3388da03d6bb2c135f14fd7a3ec70c42ec00743416c223adbfaf40"
-metafile = true
-
-[[files]]
 file = "mods/collective.pw.toml"
 hash = "0dd0604d6a0ec3e4f2466f9de969e6a205df7a1a4ac59e40d4a14d616ffa355a"
 metafile = true
