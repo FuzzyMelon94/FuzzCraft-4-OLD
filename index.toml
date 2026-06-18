@@ -1297,11 +1297,6 @@ hash = "5fe860bdef3f16ae211dbe360061f8225b68e3b5a3b699ffeb5d8926536bd91b"
 metafile = true
 
 [[files]]
-file = "mods/pams-harvestcraft-2-trees.pw.toml"
-hash = "697e5d429406179e06f02a1f4fe9e337df56adf36cee6c35e9f08b6bcd0cade6"
-metafile = true
-
-[[files]]
 file = "mods/particle-effects.pw.toml"
 hash = "2194528e2a36934e31baa83e3937ec27b60e57cb5d7839cf7574a54b752ddde6"
 metafile = true
