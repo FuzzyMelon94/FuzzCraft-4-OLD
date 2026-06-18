@@ -1392,11 +1392,6 @@ hash = "9431c7ba50753e7c340b62d7fbf4a8d18f3cf355d446155731ec30baeed918c7"
 metafile = true
 
 [[files]]
-file = "mods/rftools-dimensions.pw.toml"
-hash = "cda35451a7ecb03ac10b946e33ca7f95955431752b16e3802ed2e76254c194ec"
-metafile = true
-
-[[files]]
 file = "mods/rftools-utility.pw.toml"
 hash = "e3308855a5ecd5fbb8e39a2790f61aaa1755111618bd2a672a91470e62a9520b"
 metafile = true
