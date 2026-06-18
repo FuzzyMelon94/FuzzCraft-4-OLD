@@ -792,11 +792,6 @@ hash = "5aada9e6769a55353ac1217b5288eff8a2e07944c87a5ebe31fd1046ae95b653"
 metafile = true
 
 [[files]]
-file = "mods/every-compat.pw.toml"
-hash = "688cbfbaac97d3c9089bf2afa43bfd920ae8f4d210ad892b8ea52177bed67949"
-metafile = true
-
-[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "0670ca65c7208aa8211883fae30c935f53cad38196aac46723b10e7bbc695113"
 metafile = true
@@ -1509,11 +1504,6 @@ metafile = true
 [[files]]
 file = "mods/stellaris.pw.toml"
 hash = "d8c155733358fc2d5b16c59748808df53f39315886db1f975e90f00b1a9ee3fe"
-metafile = true
-
-[[files]]
-file = "mods/stone-zone.pw.toml"
-hash = "896b8502bc5b521223d4935c364ee65b5023ac18e2041c0c93b26428c4d87499"
 metafile = true
 
 [[files]]
