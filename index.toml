@@ -34,7 +34,7 @@ hash = "e7a876f11903bcf67b407b7ccf929ef099061a79912a051cc185ef62fd50ed65"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "6964ba347d8a159625684f8e298e362b1fc15ff80ac5bc4d8d52a969187148c6"
+hash = "a859cde3713a46ec75ab53de5d01a31bf027fb3c0aae99c6498440e5c7c6d741"
 
 [[files]]
 file = "config/dynamictrees-server.toml"
@@ -46,11 +46,11 @@ hash = "5809f6fca97051d0cc8ad07c7017156b7edf4b6f272eda804b326b600f848e36"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "44454397646af57a52f84bbc8eade700398c82fa08530f204c247cfdd09e2211"
+hash = "6515140a68db07b0a3bd773c7849ee1dab37cabee8af9e211707276a9c5fdb66"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
-hash = "ad367ec93bc9fccd52124ff20b0ecf4a703d0aed67f95aeb6bd7b6c5c2a04c9f"
+hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
 file = "config/gravestone-server.toml"
@@ -58,7 +58,7 @@ hash = "d37470a9acd9368d82dde1b33ed52cdbb201e81d4ea811bc3b0cbc10800ddf33"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "363198a07a55af12f84cd889423319f6a4fff65655bcf5edca89d8362ce54548"
+hash = "fe77d984e82067a482515252a5a4d6a752ddc3b263219a4bfc967ba639eb65c1"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
@@ -70,7 +70,7 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 
 [[files]]
 file = "config/sparsestructures.json5"
-hash = "6afe911985685055d2c57907ab04dac25f28a2601ba5f6d913941e642b89cba5"
+hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
 
 [[files]]
 file = "config/travelerstitles-neoforge-1_21.toml"
