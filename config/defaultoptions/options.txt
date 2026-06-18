@@ -1,3 +1,4 @@
 bobView:false
 key_key.sprint:key.keyboard.left.shift
 key_key.sneak:key.keyboard.left.control
+key_key.bettercombat.dodge:key.keyboard.r

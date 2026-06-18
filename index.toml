@@ -34,7 +34,7 @@ hash = "e7a876f11903bcf67b407b7ccf929ef099061a79912a051cc185ef62fd50ed65"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "6e8eafbcdf5195b3bd3fb62f2a084f30fbfe226c4473a80c47a538aee62ecba3"
+hash = "a859cde3713a46ec75ab53de5d01a31bf027fb3c0aae99c6498440e5c7c6d741"
 
 [[files]]
 file = "config/dynamictrees-server.toml"
@@ -62,7 +62,7 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 
 [[files]]
 file = "config/sparsestructures.json5"
-hash = "6afe911985685055d2c57907ab04dac25f28a2601ba5f6d913941e642b89cba5"
+hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
@@ -405,6 +405,11 @@ hash = "0dd0604d6a0ec3e4f2466f9de969e6a205df7a1a4ac59e40d4a14d616ffa355a"
 metafile = true
 
 [[files]]
+file = "mods/controlling.pw.toml"
+hash = "65c8086d2ec3d39acc7bd36c7a0306ccc43b602b38fa07d13291bc478ef7dfff"
+metafile = true
+
+[[files]]
 file = "mods/cooking-for-blockheads.pw.toml"
 hash = "9edfcf5022b68ae0234b2d5c15b710fc3f27407d84aeeb917615dffbd42c8b92"
 metafile = true
@@ -651,7 +656,7 @@ metafile = true
 
 [[files]]
 file = "mods/double-doors.pw.toml"
-hash = "99f1ddd42145295a0e53c87a4e14185c975e8b2174a53295a9021988f0748081"
+hash = "c7e3cfd32470d3e42baf3dc1dfcf9f17fb43df548d446ae32ec8a105d7604748"
 metafile = true
 
 [[files]]
@@ -1386,7 +1391,7 @@ metafile = true
 
 [[files]]
 file = "mods/rightclickharvest.pw.toml"
-hash = "87708c5cf041f2c7eede5dc1a5ee0dd517a13c0c7e8c40c359669a5ffabef7db"
+hash = "9c0d37bfbfdda77af1946da1d80aa48e7dfea9611c43d5c81c70676b1d854af6"
 metafile = true
 
 [[files]]
@@ -1402,6 +1407,11 @@ metafile = true
 [[files]]
 file = "mods/scribble.pw.toml"
 hash = "3ad87fbb20108d7aa5c89759f64d6695e5ec68553f32976f0710bd0a4d34d85b"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
 metafile = true
 
 [[files]]
@@ -1562,6 +1572,11 @@ metafile = true
 [[files]]
 file = "mods/trade-cycling.pw.toml"
 hash = "1ce973c231d9d6a7e788f5a2eb0797a0f5b8beef318d70f97931309ff7ef9abe"
+metafile = true
+
+[[files]]
+file = "mods/trample-no-more.pw.toml"
+hash = "29befa93c082c808be39f4152f72d2f7c5c7f54072d2282baac45301b818879a"
 metafile = true
 
 [[files]]
