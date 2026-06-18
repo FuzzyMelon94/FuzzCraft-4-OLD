@@ -1,0 +1,68 @@
+###########################################################################################################
+## Biome Title settings.
+###########################################################################################################
+["Traveler's Titles"."Biome Titles"]
+	"Enable Biome Titles" = false
+	"Text Fade-In Time" = 10
+	"Text Display Time" = 50
+	"Text Fade-Out Time" = 10
+	"Text Cooldown Time" = 80
+	"Default Text Color" = "ffffff"
+	"Text Size" = 2.1
+	"Display Text Shadow" = true
+	"Text Y Offset" = -33
+	"Text X Offset" = 0
+	"Blacklisted Biomes" = "[minecraft:the_end, minecraft:river, minecraft:frozen_river]"
+	"Number of Most Recent Biomes Saved" = 5
+	"Center Title" = true
+	"Reset Biome Cache When Changing Dimensions" = true
+	"Only Show Biome Titles When Exposed To Skylight" = true
+
+###########################################################################################################
+## Dimension Title settings.
+###########################################################################################################
+["Traveler's Titles"."Dimension Titles"]
+	"Enable Dimension Titles" = true
+	"Text Fade-In Time" = 10
+	"Text Display Time" = 70
+	"Text Fade-Out Time" = 20
+	"Default Text Color" = "ffffff"
+	"Text Size" = 3.0
+	"Display Text Shadow" = true
+	"Text Y Offset" = -32
+	"Text X Offset" = 0
+	"Blacklisted Dimensions" = "[]"
+	"Center Title" = true
+	"Only Show Dimension Titles When Exposed To Skylight" = false
+
+###########################################################################################################
+## Waystone title settings. Only used if the Waystones mod is installed.
+###########################################################################################################
+["Traveler's Titles"."Waystone Titles"]
+	"Enable Waystone Titles" = true
+	"Text Fade-In Time" = 10
+	"Text Display Time" = 50
+	"Text Fade-Out Time" = 10
+	"Text Cooldown Time" = 80
+	"Default Text Color" = "c2b740"
+	"Text Size" = 2.1
+	"Display Text Shadow" = true
+	"Text Y Offset" = -33
+	"Text X Offset" = 0
+	"Number of Most Recent Waystones Saved" = 3
+	"Center Title" = true
+	"Reset Waystone Cache When Changing Dimensions" = true
+	"Waystone Title Range" = 30
+	"Waystone Titles Override Biome Titles" = true
+	"Only Show Waystone Titles When Exposed To Skylight" = false
+
+###########################################################################################################
+## Sound settings.
+###########################################################################################################
+["Traveler's Titles"."Custom Sound Settings"]
+	"Biome Sound Effect Volume" = 1.0
+	"Biome Sound Effect Pitch" = 1.0
+	"Dimension Sound Effect Volume" = 1.0
+	"Dimension Sound Effect Pitch" = 1.0
+	"Waystone Sound Effect Volume" = 1.0
+	"Waystone Sound Effect Pitch" = 1.0

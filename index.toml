@@ -34,11 +34,15 @@ hash = "e7a876f11903bcf67b407b7ccf929ef099061a79912a051cc185ef62fd50ed65"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "6e8eafbcdf5195b3bd3fb62f2a084f30fbfe226c4473a80c47a538aee62ecba3"
+hash = "6964ba347d8a159625684f8e298e362b1fc15ff80ac5bc4d8d52a969187148c6"
 
 [[files]]
 file = "config/dynamictrees-server.toml"
 hash = "91deff11636cdaf66ff3b419b0b43d1aed9bd6b90dc4d3b62684ab9885c336dd"
+
+[[files]]
+file = "config/enhanced_attack_indicator-client.toml"
+hash = "5809f6fca97051d0cc8ad07c7017156b7edf4b6f272eda804b326b600f848e36"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
@@ -49,8 +53,12 @@ file = "config/ftbteams-server.snbt"
 hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
+file = "config/gravestone-server.toml"
+hash = "d37470a9acd9368d82dde1b33ed52cdbb201e81d4ea811bc3b0cbc10800ddf33"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
-hash = "fe77d984e82067a482515252a5a4d6a752ddc3b263219a4bfc967ba639eb65c1"
+hash = "363198a07a55af12f84cd889423319f6a4fff65655bcf5edca89d8362ce54548"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
@@ -63,6 +71,10 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 [[files]]
 file = "config/sparsestructures.json5"
 hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
+
+[[files]]
+file = "config/travelerstitles-neoforge-1_21.toml"
+hash = "df01808fadb66f387f9d42436830ea75516cc610fd2d537f8a34b101589ded73"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
@@ -405,6 +417,11 @@ hash = "0dd0604d6a0ec3e4f2466f9de969e6a205df7a1a4ac59e40d4a14d616ffa355a"
 metafile = true
 
 [[files]]
+file = "mods/controlling.pw.toml"
+hash = "65c8086d2ec3d39acc7bd36c7a0306ccc43b602b38fa07d13291bc478ef7dfff"
+metafile = true
+
+[[files]]
 file = "mods/cooking-for-blockheads.pw.toml"
 hash = "9edfcf5022b68ae0234b2d5c15b710fc3f27407d84aeeb917615dffbd42c8b92"
 metafile = true
@@ -530,6 +547,11 @@ hash = "dd46758c8eb82deb6dcd56a9879dc5e583ff812245ebb357fd79053a60c58871"
 metafile = true
 
 [[files]]
+file = "mods/create-ultimine.pw.toml"
+hash = "15842d4b438ac8537662f798b80621a876fc9ec7483c2917e41fc852ed07a364"
+metafile = true
+
+[[files]]
 file = "mods/create-vibrant-vaults.pw.toml"
 hash = "960645d7f385081b108208e58bbbdfc6b93288b7bd7da90e6f229a57b237234a"
 metafile = true
@@ -651,7 +673,7 @@ metafile = true
 
 [[files]]
 file = "mods/double-doors.pw.toml"
-hash = "99f1ddd42145295a0e53c87a4e14185c975e8b2174a53295a9021988f0748081"
+hash = "c7e3cfd32470d3e42baf3dc1dfcf9f17fb43df548d446ae32ec8a105d7604748"
 metafile = true
 
 [[files]]
@@ -837,6 +859,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "e717bb275a54a5caadaa7cf82bc34df3589f49402074adf93c31eaac43860313"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
 metafile = true
 
 [[files]]
@@ -1391,7 +1418,7 @@ metafile = true
 
 [[files]]
 file = "mods/rightclickharvest.pw.toml"
-hash = "87708c5cf041f2c7eede5dc1a5ee0dd517a13c0c7e8c40c359669a5ffabef7db"
+hash = "9c0d37bfbfdda77af1946da1d80aa48e7dfea9611c43d5c81c70676b1d854af6"
 metafile = true
 
 [[files]]
@@ -1402,6 +1429,11 @@ metafile = true
 [[files]]
 file = "mods/scribble.pw.toml"
 hash = "3ad87fbb20108d7aa5c89759f64d6695e5ec68553f32976f0710bd0a4d34d85b"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
 metafile = true
 
 [[files]]
@@ -1565,6 +1597,11 @@ hash = "1ce973c231d9d6a7e788f5a2eb0797a0f5b8beef318d70f97931309ff7ef9abe"
 metafile = true
 
 [[files]]
+file = "mods/trample-no-more.pw.toml"
+hash = "29befa93c082c808be39f4152f72d2f7c5c7f54072d2282baac45301b818879a"
+metafile = true
+
+[[files]]
 file = "mods/trashslot.pw.toml"
 hash = "c1e0c805d5ccd49535a6820aa8a2461a516437f90312fcadd393f928e3ce7bf2"
 metafile = true
@@ -1602,16 +1639,6 @@ metafile = true
 [[files]]
 file = "mods/upgrade-aquatic.pw.toml"
 hash = "c5ca24c184e37a29d5c6f1d244f0fd80e0f615723d35b4d0e04bcbd97d9bb8e4"
-metafile = true
-
-[[files]]
-file = "mods/veinminer-client.pw.toml"
-hash = "4c501b118370f8a6c73388787e820a9ddc96f4b63d654484e352f09704a23c77"
-metafile = true
-
-[[files]]
-file = "mods/veinminer.pw.toml"
-hash = "5c0770a75c9bf48611d0fe965d6653f6904640170b42552eb25ace717a41ee6d"
 metafile = true
 
 [[files]]
