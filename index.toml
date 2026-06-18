@@ -49,6 +49,10 @@ file = "config/ftbteams-server.snbt"
 hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 
 [[files]]
+file = "config/gravestone-server.toml"
+hash = "d37470a9acd9368d82dde1b33ed52cdbb201e81d4ea811bc3b0cbc10800ddf33"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "12f5a74e45d956d3e5ac38474543c083e3b12fb5f42fe205725eddf75ea23aac"
 
@@ -63,6 +67,10 @@ hash = "eb7703b3ce7d274267e9eed9ca0686ddbf01f84eacc4081604301d9f376ea0af"
 [[files]]
 file = "config/sparsestructures.json5"
 hash = "43c10c33299af461b2e89e2b98ced441564eefc922b29c4f2c720850af39b843"
+
+[[files]]
+file = "config/travelerstitles-neoforge-1_21.toml"
+hash = "df01808fadb66f387f9d42436830ea75516cc610fd2d537f8a34b101589ded73"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
@@ -535,6 +543,11 @@ hash = "dd46758c8eb82deb6dcd56a9879dc5e583ff812245ebb357fd79053a60c58871"
 metafile = true
 
 [[files]]
+file = "mods/create-ultimine.pw.toml"
+hash = "15842d4b438ac8537662f798b80621a876fc9ec7483c2917e41fc852ed07a364"
+metafile = true
+
+[[files]]
 file = "mods/create-vibrant-vaults.pw.toml"
 hash = "960645d7f385081b108208e58bbbdfc6b93288b7bd7da90e6f229a57b237234a"
 metafile = true
@@ -842,6 +855,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "e717bb275a54a5caadaa7cf82bc34df3589f49402074adf93c31eaac43860313"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
 metafile = true
 
 [[files]]
@@ -1617,16 +1635,6 @@ metafile = true
 [[files]]
 file = "mods/upgrade-aquatic.pw.toml"
 hash = "c5ca24c184e37a29d5c6f1d244f0fd80e0f615723d35b4d0e04bcbd97d9bb8e4"
-metafile = true
-
-[[files]]
-file = "mods/veinminer-client.pw.toml"
-hash = "4c501b118370f8a6c73388787e820a9ddc96f4b63d654484e352f09704a23c77"
-metafile = true
-
-[[files]]
-file = "mods/veinminer.pw.toml"
-hash = "5c0770a75c9bf48611d0fe965d6653f6904640170b42552eb25ace717a41ee6d"
 metafile = true
 
 [[files]]
