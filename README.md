@@ -62,3 +62,13 @@ packwiz cf add [URL|name] -y    # Add mod from CurseForge
 packwiz update --all             # Update all mods
 packwiz refresh                  # Rebuild index.toml after manual edits
 ```
+
+---
+
+## Active Issues
+
+| ID | Title | Opened | Affects |
+|---|---|---|---|
+| [00002](docs/issues/issue-00002-emi-blank-item-ui-reconnect.md) | EMI item UI blank on reconnect after first join | 2026-06-29 | Client |
+
+Full issue history (including resolved) in [`docs/issues/`](docs/issues/).

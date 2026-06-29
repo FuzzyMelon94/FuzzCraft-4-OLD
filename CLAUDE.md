@@ -11,6 +11,11 @@ fuzzcraft-4/
 ├── docs/
 │   ├── charter.md          # Vision, batch plans, issue log, progress tracker
 │   ├── watchlist.md        # Mods deferred or awaiting ports
+│   ├── issues/
+│   │   ├── _template.md                    # Blank template for new issues
+│   │   ├── issue-NNNNN-title.md            # Open issue
+│   │   ├── resolved-NNNNN-title.md         # Fixed issue
+│   │   └── ignored-NNNNN-title.md          # Won't-fix issue
 │   └── testing/
 │       ├── batch1.md       # SP test log — Batch 1
 │       ├── batch2.md       # SP test log — Batch 2
@@ -130,6 +135,49 @@ Known issues go **above** the checklist sections so the tester sees them before 
 ### Multiplayer file conventions
 
 `multiplayer.md` has one `## Batch N — <Name>` section per batch. Each section follows the same checklist conventions. The file header tracks the most recent test session at the top.
+
+---
+
+## Issues System
+
+Significant bugs and their debugging history live in `docs/issues/`. Use this system for anything that takes more than one attempt to fix or spans multiple sessions.
+
+### File naming
+
+```
+{status}-{id}-{brief-title}.md
+```
+
+- `status` — one of `issue` (open), `resolved` (fixed), `ignored` (won't fix)
+- `id` — 5-digit zero-padded integer, incremented per file regardless of status (next: check the highest existing ID and add 1)
+- `brief-title` — kebab-case, 3–5 words max
+
+Examples: `issue-00002-emi-blank-item-ui.md`, `resolved-00001-keepalive-timeout-reconnect.md`
+
+### When to create an issue file
+
+- The bug required more than one debugging attempt
+- The root cause wasn't immediately obvious
+- You spent significant time on dead ends worth recording
+- The issue spans multiple sessions
+
+Don't create files for straightforward single-step fixes — those belong in commit messages.
+
+### Lifecycle
+
+1. Create as `issue-NNNNN-title.md` using `docs/issues/_template.md`
+2. Add each attempted fix under **Attempted Fixes** as you go (most recent at top)
+3. When resolved: fill in **Solution**, update frontmatter `status` and `date_resolved`/`pack_version_resolved`, and **rename the file** from `issue-` to `resolved-`
+4. When deprioritised: fill in **Ignore Reason**, update frontmatter `status`, and rename to `ignored-`
+5. Keep `README.md`'s Active Issues table in sync whenever a file is created or its status changes
+
+### Commit convention
+
+```
+chore: open issue-NNNNN — brief title
+chore: resolve issue-NNNNN — brief title
+chore: ignore issue-NNNNN — brief title
+```
 
 ---
 
