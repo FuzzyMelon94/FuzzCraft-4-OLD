@@ -34,17 +34,17 @@ After the JEI → EMI swap, reconnecting to the server leaves the entire GUI bla
 Not yet identified.
 
 **Ruled out:**
-- Texture atlas rebuild: `mixin.perf.dynamic_resources=true` eliminates the full atlas rebuild on reconnect (reduces reconnect overhead from ~40s to ~12s) but does not fix the blank UI
+- Texture atlas rebuild: `mixin.perf.dynamic_resources=true` eliminates the full atlas rebuild on reconnect (reduces reconnect overhead from ~40s to ~12s) but does not fix the blank UI. Tested with both JEI and EMI, on and off — no effect either way. Left enabled as a genuine perf win.
 - Iris shader pipeline: Iris destroys and recreates its pipeline on every reconnect ("dimension change: overworld → overworld"), even with shaders disabled (`enableShaders=false`). Disabling shaders entirely had no effect on the blank UI
 - ImmediatelyFast: Removed from pack entirely; no effect
 - Timing: EMI finishes its full reload in ~24s; waiting 2+ minutes after completion shows no change
 - EMI data: Log confirms 176,568 recipes baked successfully on reconnect — data is present, items just don't render
+- Single-player: SP save/exit/reload works correctly. Bug is **server-specific** — triggered by the server disconnect path, not world unload/reload in general. This rules out anything purely in EMI's world-load lifecycle.
 
-**Remaining hypotheses (not yet tested):**
-- EMI itself: possible EMI rendering bug specific to reconnect (its `MinecraftClientMixin` hooks `reloadResources` and clears item stacks on disconnect; rebuild may not properly trigger a render refresh)
-- ModernFix `dynamic_resources` interaction with EMI: EMI's mixin fires on `reloadResources`; with `dynamic_resources=true` ModernFix intercepts and short-circuits that call — order of mixin execution may be confusing EMI's state machine
-- Sodium or Flywheel render pipeline state not properly reset between connects
-- Systematic mod bisect required to narrow further
+**Remaining hypotheses (priority order):**
+- Sodium render pipeline state not properly reset on server disconnect: SP exit works fine but server disconnect triggers a different teardown sequence. Sodium manages its own GUI render path; state may not reset cleanly between server connects. **Test: remove Sodium, verify reconnect.**
+- EMI itself: possible EMI rendering bug specific to the server disconnect reconnect path (its `MinecraftClientMixin` clears item stacks on disconnect; rebuild may not properly re-bind render state after a server-style world teardown). Lower priority — test after Sodium ruled out.
+- Systematic mod bisect if above don't resolve it.
 
 ---
 
