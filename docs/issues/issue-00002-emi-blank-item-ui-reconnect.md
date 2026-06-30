@@ -42,9 +42,26 @@ Not yet identified.
 - Single-player: SP save/exit/reload works correctly. Bug is **server-specific** — triggered by the server disconnect path, not world unload/reload in general. This rules out anything purely in EMI's world-load lifecycle.
 
 **Remaining hypotheses (priority order):**
-- Sodium render pipeline state not properly reset on server disconnect: SP exit works fine but server disconnect triggers a different teardown sequence. Sodium manages its own GUI render path; state may not reset cleanly between server connects. **Test: remove Sodium, verify reconnect.**
-- EMI itself: possible EMI rendering bug specific to the server disconnect reconnect path (its `MinecraftClientMixin` clears item stacks on disconnect; rebuild may not properly re-bind render state after a server-style world teardown). Lower priority — test after Sodium ruled out.
-- Systematic mod bisect if above don't resolve it.
+- EMI's `disconnect()` mixin: EMI's `MinecraftClientMixin` injects into `Minecraft.disconnect()` and clears item stacks. The issue appeared specifically after the JEI → EMI swap, suggesting EMI's disconnect/reconnect lifecycle is involved. The mixin clears state that may not be fully restored on reconnect even though EMI's reload reports success. **Test: remove EMI entirely (client-only mod, server doesn't need it) to confirm EMI is the root cause.**
+- Something else changed in the JEI → EMI swap batch that is the true cause (lower probability — need to review batch diff if EMI removal doesn't resolve it).
+
+---
+
+## Bisect Log
+
+| Removed | Result | Verdict |
+|---|---|---|
+| Sodium, Reese's Sodium Options, Iris, CreateBetterFPS | Blank UI persists | Ruled out |
+| ImmediatelyFast | Blank UI persists | Ruled out |
+| LegendaryTooltips | Blank UI persists | Ruled out |
+| ModernFix | Keepalive timeout on reconnect — can't connect at all | **Required; cannot remove** |
+
+**Log analysis findings:**
+- EMI completes its reload identically on first join and reconnect (same plugin list, same recipe count ~176k, no errors). The blank UI is not caused by EMI's data reload failing.
+- The blank affects item sprites (EMI panel, vanilla inventory) AND mod HUD icons (JourneyMap minimap, gamemode buttons) — pointing to something fundamental in the render pipeline, not EMI specifically.
+- `extra_mod_integrations_rechiseled` throws `NoClassDefFoundError` on every EMI reload (both joins) — caught and ignored by EMI, not related.
+- `paxi` throws a repository error on every reconnect — same on both joins, not reconnect-specific.
+- ModernFix manages `Worker-ResourceReload` threads; without it, reconnect resource reload takes ~3 minutes and triggers the original keepalive timeout.
 
 ---
 
