@@ -1022,11 +1022,6 @@ hash = "6d30bc2b59e01fbb620a0286fdea521d6a10790542dec8ddfb57f8063ae2dfca"
 metafile = true
 
 [[files]]
-file = "mods/legendary-tooltips.pw.toml"
-hash = "9ca14134538c66b6d8ef74107f6b15ba9487ec632d984427e84ad38aa47afa60"
-metafile = true
-
-[[files]]
 file = "mods/lets-do-addon-compat.pw.toml"
 hash = "50fcf316da46ab40812b30013f8427614c41e5778509ed117dcb304c31fc9169"
 metafile = true
