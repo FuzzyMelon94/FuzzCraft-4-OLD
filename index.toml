@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CLAUDE.md"
-hash = "2f556cb735cae659cbb8b07e53b4026ca6c6cb2d9676d878256753fde0708242"
+hash = "a754799278a0f452e384b116aa8dc4d08c9bcfb0dd4783967e35bd9011054315"
 
 [[files]]
 file = "config/almostunified/debug.json"
@@ -58,7 +58,7 @@ hash = "d37470a9acd9368d82dde1b33ed52cdbb201e81d4ea811bc3b0cbc10800ddf33"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "e38182f7639a99ac7de9fba671e51b048c3a79d3c6aa5141c414cb80c6c60929"
+hash = "df750b9c38d57c8cb285b28ff99bfdd3f91efd613795ccd9256e2963ff8d7da8"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
