@@ -11,6 +11,7 @@ fuzzcraft-4/
 ├── docs/
 │   ├── charter.md          # Vision, batch plans, issue log, progress tracker
 │   ├── watchlist.md        # Mods deferred or awaiting ports
+│   ├── filtered-logs.md    # Log Begone filter list with rationale
 │   ├── issues/
 │   │   ├── _template.md                    # Blank template for new issues
 │   │   ├── issue-NNNNN-title.md            # Open issue
@@ -135,6 +136,19 @@ Known issues go **above** the checklist sections so the tester sees them before 
 ### Multiplayer file conventions
 
 `multiplayer.md` has one `## Batch N — <Name>` section per batch. Each section follows the same checklist conventions. The file header tracks the most recent test session at the top.
+
+---
+
+## Log Filtering
+
+Log Begone filters are configured in `config/logbegone.json`. Every filter must have a corresponding entry in `docs/filtered-logs.md` with a plain-English reason — the config itself carries no context.
+
+When adding a new filter:
+1. Add the phrase/pattern to `config/logbegone.json` (both `phrases` and `regex` arrays)
+2. Add a row to the table in `docs/filtered-logs.md` explaining the source and why it's safe to suppress
+3. Run `packwiz refresh` and commit both files together
+
+When debugging an issue, consider whether any active filter could be swallowing relevant output. If so, temporarily remove it from `logbegone.json` for the debug session, then re-add it once the issue is resolved.
 
 ---
 

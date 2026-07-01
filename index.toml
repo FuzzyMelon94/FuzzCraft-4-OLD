@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CLAUDE.md"
-hash = "a754799278a0f452e384b116aa8dc4d08c9bcfb0dd4783967e35bd9011054315"
+hash = "bd68e803b7ceae939325f86e332b99ecdf04183621d1cf0f42b1b3e5edd86393"
 
 [[files]]
 file = "config/almostunified/debug.json"
@@ -55,6 +55,10 @@ hash = "b94add25024a085d72df21a541fb174276982c1dd98091525f3c8465ee3d6d5a"
 [[files]]
 file = "config/gravestone-server.toml"
 hash = "d37470a9acd9368d82dde1b33ed52cdbb201e81d4ea811bc3b0cbc10800ddf33"
+
+[[files]]
+file = "config/logbegone.json"
+hash = "7b6b4204d9e66f14e92a0f1a8a48d7cd29a65762b4b7cc066cc557164f0e9001"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
