@@ -117,14 +117,10 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 
 | State tested | Result | Verdict |
 |---|---|---|
-| B1–B6 + G–Z + A1 (advancement-plaques → crafting-tweaks) | _pending_ | _pending_ |
+| B1–B6 + G–Z + A1 (advancement-plaques → crafting-tweaks) | Blank UI on reconnect ❌ | **Bug in A1** |
+| B1–B6 + G–Z + A2 (create-power-loader → ftb-ultimine-forge) | _pending_ | _pending_ |
 
-**Branch state at session start (2026-07-01):**
-A1 mods restored from B7 merge commit (0ae6e9b1d) via `git checkout`. Pack ready to sync and test.
-- If bug appears → culprit is in A1 (bisect A1 further)
-- If no bug → culprit is in A2 (swap to A2 and bisect)
-
-### Next: Test A1 round; record result above
+### Next: Confirm A2 is clean; then bisect A1 into two halves of ~7–8
 
 ---
 
