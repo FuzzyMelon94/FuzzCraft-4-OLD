@@ -327,13 +327,13 @@ hash = "479dab388743fb59d3399d2d87a0a7dc0819a4184b74f734fa9cc1eecdd6f6f6"
 metafile = true
 
 [[files]]
-file = "mods/chatanimation.pw.toml"
-hash = "b5b46e4d9cc18c1e2c19c59a7ed58918e49fb5a6692c538e638fb52b82b023a5"
+file = "mods/chipped.pw.toml"
+hash = "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7"
 metafile = true
 
 [[files]]
-file = "mods/chipped.pw.toml"
-hash = "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7"
+file = "mods/chunks-fade-in.pw.toml"
+hash = "b04f5c83f4f4ed320b4e239be7d9d2e0f40a30b39feb08dc95f11d0028cec5ec"
 metafile = true
 
 [[files]]
