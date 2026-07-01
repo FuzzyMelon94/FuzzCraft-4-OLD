@@ -121,12 +121,13 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 | B1–B6 + G–Z + A2 (create-power-loader → ftb-ultimine-forge) | GUI works on reconnect ✅ | A2 clean — confirmed |
 | B1–B6 + G–Z + A1-1 (advancement-plaques → bow-infinity-fix, 8 mods) | GUI works on reconnect ✅ | A1-1 clean |
 | B1–B6 + G–Z + A1-2 (bridging-mod → crafting-tweaks, 7 mods) | Blank UI on reconnect ❌ | **Bug in A1-2** |
-| B1–B6 + G–Z + A1-2a (bridging-mod → chunks-fade-in, 4 mods) | _pending_ | _pending_ |
+| B1–B6 + G–Z + A1-2a (bridging-mod → chunks-fade-in, 4 mods) | Blank UI on reconnect ❌ | **Bug in A1-2a** |
+| B1–B6 + G–Z + A1-2b (clumps, controlling, crafting-tweaks) | _pending_ | _pending_ |
 
-**A1-2a:** bridging-mod, carry-on, chatanimation, chunks-fade-in
-**A1-2b:** clumps, controlling, crafting-tweaks
+**Suspect mods (A1-2a):** bridging-mod, carry-on, chatanimation, chunks-fade-in
+**Strong suspects:** chatanimation (animates chat HUD rendering), chunks-fade-in (fades chunk geometry on load — render pipeline hooks)
 
-### Next: Test A1-2a; if bug → test each of the 4 individually; if clean → bug is in A1-2b (clumps, controlling, or crafting-tweaks)
+### Next: Confirm A1-2b is clean, then test A1-2a mods individually (chatanimation and chunks-fade-in first)
 
 ---
 
