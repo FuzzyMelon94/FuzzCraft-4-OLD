@@ -118,9 +118,13 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 | State tested | Result | Verdict |
 |---|---|---|
 | B1–B6 + G–Z + A1 (advancement-plaques → crafting-tweaks) | Blank UI on reconnect ❌ | **Bug in A1** |
-| B1–B6 + G–Z + A2 (create-power-loader → ftb-ultimine-forge) | _pending_ | _pending_ |
+| B1–B6 + G–Z + A2 (create-power-loader → ftb-ultimine-forge) | GUI works on reconnect ✅ | A2 clean — confirmed |
+| B1–B6 + G–Z + A1-1 (advancement-plaques → bow-infinity-fix, 8 mods) | _pending_ | _pending_ |
 
-### Next: Confirm A2 is clean; then bisect A1 into two halves of ~7–8
+**A1-1:** advancement-plaques, attributefix, better-advancements, better-beds, better-modlist, betterdays, betterf3, bow-infinity-fix
+**A1-2:** bridging-mod, carry-on, chatanimation, chunks-fade-in, clumps, controlling, crafting-tweaks
+
+### Next: Test A1-1; if bug → bisect A1-1; if clean → bisect A1-2
 
 ---
 
