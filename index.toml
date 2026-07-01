@@ -58,7 +58,7 @@ hash = "d37470a9acd9368d82dde1b33ed52cdbb201e81d4ea811bc3b0cbc10800ddf33"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "df750b9c38d57c8cb285b28ff99bfdd3f91efd613795ccd9256e2963ff8d7da8"
+hash = "f6e74d40f4c7c9276ad4b3f536594d4236623c44be96fcc08233e3816f4dacb6"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
@@ -368,7 +368,7 @@ metafile = true
 
 [[files]]
 file = "mods/chatanimation.pw.toml"
-hash = "b5b46e4d9cc18c1e2c19c59a7ed58918e49fb5a6692c538e638fb52b82b023a5"
+hash = "9d50d6d7f9ad8bd98a117b657ff962fb16c43233047fbe02503f5738126f3e06"
 metafile = true
 
 [[files]]
@@ -528,7 +528,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-steam-n-rails-1.21.1.pw.toml"
-hash = "096b8e62fe666bc8e32d4fd5c5512dcd3e464f7f4e29979f00d8ddd2e22a931e"
+hash = "7c9a7c6b0ba555d29cdff0c2874dfee7d1cd7807f084fcf08b3820b382dc3cb8"
 metafile = true
 
 [[files]]
@@ -564,11 +564,6 @@ metafile = true
 [[files]]
 file = "mods/createaddoncompatibility.pw.toml"
 hash = "046a80051e21c0bab042ad1b7e27d42a7456fd36cfabf0454e9110ec345078fd"
-metafile = true
-
-[[files]]
-file = "mods/createbetterfps.pw.toml"
-hash = "28e720db43464fe32b9ce591fb02b824ebf691c578fb694f87a98421d3207022"
 metafile = true
 
 [[files]]
@@ -818,7 +813,7 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "9aab64fbec4cc794817026caf84e7d0dff14ba3892da94aa0e00d23c84560499"
+hash = "efc2c4fe9e2cc169aff61a6b7a41ea9bc7a22a90aadf0776b22de647ddf3cef6"
 metafile = true
 
 [[files]]
