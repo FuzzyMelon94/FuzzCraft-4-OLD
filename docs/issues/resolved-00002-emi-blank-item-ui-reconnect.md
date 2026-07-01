@@ -1,12 +1,12 @@
 ---
 id: "00002"
-status: issue
+status: resolved
 title: "EMI item UI blank on every reconnect after first join"
 date_opened: "2026-06-29"
-date_resolved: ""
+date_resolved: "2026-07-01"
 affects: client
 pack_version_opened: "0.7.4"
-pack_version_resolved: ""
+pack_version_resolved: "0.7.5"
 ---
 
 ## Summary
@@ -127,13 +127,7 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 | B1–B6 + G–Z + bridging-mod + carry-on + chatanimation | Blank UI on reconnect ❌ | **chatanimation is the culprit** |
 | B1–B6 + G–Z + bridging-mod + carry-on + chunks-fade-in | GUI works on reconnect ✅ | chunks-fade-in clean — **chatanimation confirmed as root cause** |
 | Full pack minus chatanimation | GUI works on reconnect ✅ | chatanimation definitively confirmed as root cause |
-| Full pack with chatanimation 1.2.0 | _pending_ | _pending_ |
-
-**Root cause identified:** ChatAnimation 1.1.3 mixin injects into `ChatComponent.render()` — pushes PoseStack at `@At("HEAD")` but only pops at `@At("TAIL")`. On reconnect, chat is empty/hidden so the method returns early; the pop never fires, leaving the PoseStack unbalanced for the session and corrupting all item/HUD rendering. Reported as GitHub issue #28 ("Mod breaks PoseStack when chat is empty or hidden"), closed June 30 2026 after 1.2.0 released June 27.
-
-**Fix:** Update chatanimation 1.1.3 → 1.2.0 (released 2026-06-27). Pack was built before the fix landed.
-
-### Next: Test full pack with chatanimation 1.2.0 — if clean, resolve issue
+| Full pack with chatanimation 1.2.0 | GUI works on reconnect ✅ | **Issue resolved** |
 
 ---
 
@@ -195,7 +189,11 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 
 ## Solution
 
-_Pending._
+**Root cause:** ChatAnimation 1.1.3 mixin injects into `ChatComponent.render()` and pushes a PoseStack transform at `@At("HEAD")` but only pops it at `@At("TAIL")`. On reconnect the chat is empty/hidden, so the method returns early and the pop never fires — leaving the PoseStack permanently unbalanced for that session. This corrupts all subsequent item and HUD rendering (EMI panel, creative inventory, JourneyMap HUD icons), explaining why everything was invisible but still interactable.
+
+Identified via batch bisect across all 7 batches, narrowed to ChatAnimation through binary search within B7 A–F group (10 bisect rounds total). Root cause confirmed against [ChatAnimation GitHub issue #28](https://github.com/Ezzenix/ChatAnimation/issues/28) ("Mod breaks PoseStack when chat is empty or hidden"), which was fixed and closed 2026-06-30.
+
+**Fix:** Updated ChatAnimation 1.1.3 → 1.2.0 (released 2026-06-27). The pack was built on 1.1.3 from December 2025, predating the fix. Full pack with 1.2.0 confirmed clean on reconnect at v0.7.5.
 
 ---
 
