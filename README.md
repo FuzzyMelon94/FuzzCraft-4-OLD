@@ -69,6 +69,7 @@ packwiz refresh                  # Rebuild index.toml after manual edits
 
 | ID | Title | Opened | Affects |
 |---|---|---|---|
-| — | No open issues | | |
+| [00004](docs/issues/issue-00004-rechiseled-emi-integration-broken.md) | Rechiseled EMI integration fails — NoClassDefFoundError | 2026-07-01 | Client |
+| [00005](docs/issues/issue-00005-legendary-monsters-javelin-no-attributes.md) | Legendary Monsters resurrected_javelin has no attributes | 2026-07-01 | Both |
 
 Full issue history (including resolved) in [`docs/issues/`](docs/issues/).

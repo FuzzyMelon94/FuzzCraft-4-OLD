@@ -1,0 +1,20 @@
+{
+  "logbegone": {
+    "phrases": [
+      "Disconnecting VANILLA connection attempt",
+      "Channels ",
+      "Received updated config value for",
+      "constructing map region data for",
+      "reading data from",
+      "[Dev] Creative tab railways:"
+    ],
+    "regex": [
+      "Disconnecting VANILLA connection attempt",
+      "Channels ",
+      "Received updated config value for",
+      "constructing map region data for",
+      "reading data from",
+      "\\[Dev\\] Creative tab railways:"
+    ]
+  }
+}
