@@ -11,6 +11,7 @@ fuzzcraft-4/
 ├── docs/
 │   ├── charter.md          # Vision, batch plans, issue log, progress tracker
 │   ├── watchlist.md        # Mods deferred or awaiting ports
+│   ├── investigate.md      # Mods to evaluate for future batches
 │   ├── filtered-logs.md    # Log Begone filter list with rationale
 │   ├── issues/
 │   │   ├── _template.md                    # Blank template for new issues
@@ -136,6 +137,15 @@ Known issues go **above** the checklist sections so the tester sees them before 
 ### Multiplayer file conventions
 
 `multiplayer.md` has one `## Batch N — <Name>` section per batch. Each section follows the same checklist conventions. The file header tracks the most recent test session at the top.
+
+---
+
+## Mod Investigation List
+
+`docs/investigate.md` tracks mods Tom wants to evaluate for future batches. Mods go here instead of being added immediately — never add mods mid-testing or while open issues are unresolved.
+
+- If Tom mentions a mod he's interested in during any session (bug fixing, testing, optimisation, etc.), add it to `docs/investigate.md` rather than acting on it.
+- If a session ends with no open issues, no pending fixes, and nothing else to do, proactively suggest reviewing `docs/investigate.md` as the next step.
 
 ---
 
