@@ -125,9 +125,10 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 | B1–B6 + G–Z + A1-2b (clumps, controlling, crafting-tweaks) | GUI works on reconnect ✅ | A1-2b clean — confirmed |
 | B1–B6 + G–Z + bridging-mod + carry-on (A1-2a minus suspects) | GUI works on reconnect ✅ | bridging-mod + carry-on clean |
 | B1–B6 + G–Z + bridging-mod + carry-on + chatanimation | Blank UI on reconnect ❌ | **chatanimation is the culprit** |
-| B1–B6 + G–Z + bridging-mod + carry-on + chunks-fade-in | _pending_ | _pending_ |
+| B1–B6 + G–Z + bridging-mod + carry-on + chunks-fade-in | GUI works on reconnect ✅ | chunks-fade-in clean — **chatanimation confirmed as root cause** |
+| Full pack minus chatanimation | _pending_ | _pending_ |
 
-### Next: Confirm chunks-fade-in is clean → chatanimation identified as root cause; resolve issue
+### Next: If full pack minus chatanimation is clean → remove chatanimation, restore full pack, resolve issue
 
 ---
 
