@@ -69,6 +69,6 @@ packwiz refresh                  # Rebuild index.toml after manual edits
 
 | ID | Title | Opened | Affects |
 |---|---|---|---|
-| [00002](docs/issues/issue-00002-emi-blank-item-ui-reconnect.md) | EMI item UI blank on reconnect after first join | 2026-06-29 | Client |
+| — | No open issues | | |
 
 Full issue history (including resolved) in [`docs/issues/`](docs/issues/).

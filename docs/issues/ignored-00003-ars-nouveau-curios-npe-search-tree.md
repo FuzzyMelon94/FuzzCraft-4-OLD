@@ -1,6 +1,6 @@
 ---
 id: "00003"
-status: issue
+status: ignored
 title: "Ars Nouveau + Curios NPE during SessionSearchTrees build"
 date_opened: "2026-06-30"
 date_resolved: ""
@@ -39,16 +39,16 @@ This is an Ars Nouveau bug — `appendHoverText` should guard against null level
 
 ## Attempted Fixes
 
-_None attempted yet. Low priority — bug is silent and has no user-visible effect._
+_None attempted. Upstream bug — no fix available on our end._
 
 ---
 
 ## Solution
 
-_Pending._
+_N/A — ignored._
 
 ---
 
 ## Ignore Reason
 
-N/A
+Upstream Ars Nouveau bug with no workaround available on our end. The error is caught silently — no crash, no user-visible effect. Will revisit only if Ars Nouveau ships a fix, or if the error is ever linked to a real symptom.
