@@ -105,7 +105,26 @@ advancement-plaques, attributefix, better-advancements, better-beds, better-modl
 Working tree is at B1–B6 + B7 second half (G–Z) + shared deps — a known-clean baseline.
 Next session: add B7 A–F mods back and bisect within them (split ~32 mods into two groups of ~16).
 
-### Next: Bisect within B7 A–F
+### Bisect within B7 A–F (debug/00002-emi-blank-ui-reconnect branch, 2026-07-01)
+
+Split 32 A–F mods (31 to add; collective already present as shared dep) into two halves:
+
+**Group A1 (15 mods — advancement-plaques → crafting-tweaks):**
+advancement-plaques, attributefix, better-advancements, better-beds, better-modlist, betterdays, betterf3, bow-infinity-fix, bridging-mod, carry-on, chatanimation, chunks-fade-in, clumps, controlling, crafting-tweaks
+
+**Group A2 (16 mods — create-power-loader → ftb-ultimine-forge):**
+create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-tweaks, double-doors, durability-tooltip, dynamic-fps, easy-magic, easy-villagers, emoji-type, enchantment-descriptions, enhanced-attack-indicator, equipment-compare, explorers-compass, ftb-ultimine-forge
+
+| State tested | Result | Verdict |
+|---|---|---|
+| B1–B6 + G–Z + A1 (advancement-plaques → crafting-tweaks) | _pending_ | _pending_ |
+
+**Branch state at session start (2026-07-01):**
+A1 mods restored from B7 merge commit (0ae6e9b1d) via `git checkout`. Pack ready to sync and test.
+- If bug appears → culprit is in A1 (bisect A1 further)
+- If no bug → culprit is in A2 (swap to A2 and bisect)
+
+### Next: Test A1 round; record result above
 
 ---
 
