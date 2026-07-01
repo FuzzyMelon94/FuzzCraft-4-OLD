@@ -122,12 +122,10 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 | B1–B6 + G–Z + A1-1 (advancement-plaques → bow-infinity-fix, 8 mods) | GUI works on reconnect ✅ | A1-1 clean |
 | B1–B6 + G–Z + A1-2 (bridging-mod → crafting-tweaks, 7 mods) | Blank UI on reconnect ❌ | **Bug in A1-2** |
 | B1–B6 + G–Z + A1-2a (bridging-mod → chunks-fade-in, 4 mods) | Blank UI on reconnect ❌ | **Bug in A1-2a** |
-| B1–B6 + G–Z + A1-2b (clumps, controlling, crafting-tweaks) | _pending_ | _pending_ |
+| B1–B6 + G–Z + A1-2b (clumps, controlling, crafting-tweaks) | GUI works on reconnect ✅ | A1-2b clean — confirmed |
+| B1–B6 + G–Z + bridging-mod + carry-on (A1-2a minus suspects) | _pending_ | _pending_ |
 
-**Suspect mods (A1-2a):** bridging-mod, carry-on, chatanimation, chunks-fade-in
-**Strong suspects:** chatanimation (animates chat HUD rendering), chunks-fade-in (fades chunk geometry on load — render pipeline hooks)
-
-### Next: Confirm A1-2b is clean, then test A1-2a mods individually (chatanimation and chunks-fade-in first)
+### Next: If clean → one of chatanimation/chunks-fade-in is the culprit; test each individually
 
 ---
 
