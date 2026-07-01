@@ -126,9 +126,14 @@ create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-twea
 | B1–B6 + G–Z + bridging-mod + carry-on (A1-2a minus suspects) | GUI works on reconnect ✅ | bridging-mod + carry-on clean |
 | B1–B6 + G–Z + bridging-mod + carry-on + chatanimation | Blank UI on reconnect ❌ | **chatanimation is the culprit** |
 | B1–B6 + G–Z + bridging-mod + carry-on + chunks-fade-in | GUI works on reconnect ✅ | chunks-fade-in clean — **chatanimation confirmed as root cause** |
-| Full pack minus chatanimation | _pending_ | _pending_ |
+| Full pack minus chatanimation | GUI works on reconnect ✅ | chatanimation definitively confirmed as root cause |
+| Full pack with chatanimation 1.2.0 | _pending_ | _pending_ |
 
-### Next: If full pack minus chatanimation is clean → remove chatanimation, restore full pack, resolve issue
+**Root cause identified:** ChatAnimation 1.1.3 mixin injects into `ChatComponent.render()` — pushes PoseStack at `@At("HEAD")` but only pops at `@At("TAIL")`. On reconnect, chat is empty/hidden so the method returns early; the pop never fires, leaving the PoseStack unbalanced for the session and corrupting all item/HUD rendering. Reported as GitHub issue #28 ("Mod breaks PoseStack when chat is empty or hidden"), closed June 30 2026 after 1.2.0 released June 27.
+
+**Fix:** Update chatanimation 1.1.3 → 1.2.0 (released 2026-06-27). Pack was built before the fix landed.
+
+### Next: Test full pack with chatanimation 1.2.0 — if clean, resolve issue
 
 ---
 
