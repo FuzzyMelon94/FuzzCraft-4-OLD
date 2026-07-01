@@ -22,7 +22,7 @@ Target: client stably below 8GB RAM (ideally ~6GB), server comfortably within a 
 ## Items
 
 ### OPT-001 — JVM flags (client + server)
-**Status:** `ready`  
+**Status:** `done`  
 **Priority:** High — single biggest win, no mod changes required  
 **Impact:** Memory cap enforcement, reduced GC stuttering
 
@@ -41,6 +41,8 @@ Apply these flags in the launcher (client) and Pterodactyl startup (server). The
 `-Xmx6G` on the client hard-caps the Java heap. OS + native memory adds ~1–2GB on top, so real usage should sit around 7–7.5GB. Reduce to `-Xmx5G` if players report instability on lower-spec machines.
 
 **Notes:** `-Dfml.readTimeout=180` on client prevents connection timeouts on slow-loading servers. Server flags omit this — not needed headless.
+
+**Result:** Applied and confirmed stable. Running well with no memory complaints. Simulation distance set to 8, view distance to 10 on the server — tested fine, keeping these values.
 
 ---
 
