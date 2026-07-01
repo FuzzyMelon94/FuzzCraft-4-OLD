@@ -75,12 +75,37 @@ All removed mods were re-added after each test. Branch was returned to full pack
 - `paxi` throws a repository error on every reconnect — same on both joins, not reconnect-specific.
 - ModernFix manages `Worker-ResourceReload` threads; without it, reconnect resource reload takes ~3 minutes and triggers keepalive timeout.
 
-### Next: Batch bisect
+### Batch bisect (debug/00002-emi-blank-ui-reconnect branch, 2026-07-01)
 
-Since all tested mods have been ruled out and the bug could originate from any batch (first server test was during batch 7), the next step is a full batch bisect:
-1. Test on vanilla NeoForge + no mods (or earliest batch state) — confirm reconnect works
-2. Add each batch cumulatively, test reconnect after each
-3. Identify which batch introduces the blank UI, then bisect within that batch's mod list
+Binary search across all 7 batches using `git checkout <batch-end-commit> -- mods/` to snap the mods directory to each state, then `packwiz refresh`. Both client and server synced from `packwiz serve` each round.
+
+| State tested | Result | Verdict |
+|---|---|---|
+| B1–B4 only (203 mods) | GUI works on reconnect ✅ | Bug not in B1–B4 |
+| B1–B5 (227 mods) | GUI works on reconnect ✅ | Bug not in B5 |
+| B1–B6 (262 mods) | GUI works on reconnect ✅ | Bug not in B6 |
+| B1–B7 (333 mods, EMI not JEI) | Blank UI on reconnect ❌ | **Bug is in B7** |
+| B1–B6 + B7 first half (A–F) | Blank UI on reconnect ❌ | Bug in B7 A–F group |
+| B1–B6 + B7 second half (G–Z) | GUI works on reconnect ✅ | B7 G–Z group is clean |
+
+**B7 first half (A–F) — suspect mod list:**
+advancement-plaques, attributefix, better-advancements, better-beds, better-modlist, betterdays, betterf3, bow-infinity-fix, bridging-mod, carry-on, chatanimation, chunks-fade-in, clumps, collective, controlling, crafting-tweaks, create-power-loader, create-ultimine, crops-love-rain, cut-through, despawn-tweaks, double-doors, durability-tooltip, dynamic-fps, easy-magic, easy-villagers, emoji-type, enchantment-descriptions, enhanced-attack-indicator, equipment-compare, explorers-compass, ftb-ultimine-forge
+
+**Infrastructure notes for continuing the bisect:**
+- JEI causes keepalive timeout with full pack — **use EMI** (infrastructure swap, not content)
+- `packet-fixer` required to connect with B6+ mods
+- Server `view-distance` and `simulation-distance` must be set to 6 in `server.properties`
+- Server ModernFix: `mixin.perf.dynamic_resources=false` (prevents ClientLevel crash in Worker-ResourceReload threads)
+- Pack ModernFix: `mixin.perf.clear_mixin_classinfo=false` (prevents JEI API class crash in EMI's JEMI compat layer)
+- `balm` must be `side = "both"` (was client-only in B4 state — server crashes without it)
+- Every Compat (`every-compat` + `stone-zone`) removed — too RAM-heavy for bisect
+- Minimum 10GB RAM needed with B6+ mods loaded
+
+**Branch state at session end (2026-07-01):**
+Working tree is at B1–B6 + B7 second half (G–Z) + shared deps — a known-clean baseline.
+Next session: add B7 A–F mods back and bisect within them (split ~32 mods into two groups of ~16).
+
+### Next: Bisect within B7 A–F
 
 ---
 
