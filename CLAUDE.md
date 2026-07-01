@@ -12,6 +12,7 @@ fuzzcraft-4/
 │   ├── charter.md          # Vision, batch plans, issue log, progress tracker
 │   ├── watchlist.md        # Mods deferred or awaiting ports
 │   ├── investigate.md      # Mods to evaluate for future batches
+│   ├── optimisation.md     # Optimisation tracker (JVM, config, mod audit)
 │   ├── filtered-logs.md    # Log Begone filter list with rationale
 │   ├── issues/
 │   │   ├── _template.md                    # Blank template for new issues
