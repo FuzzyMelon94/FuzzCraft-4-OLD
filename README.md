@@ -53,6 +53,12 @@ In established worlds with many loaded chunks, 10 GB (10240 MB) is the safer cap
 
 ---
 
+## Server Setup
+
+Copy [`server.properties.sample`](server.properties.sample) to your server root as `server.properties` before first launch (or diff it against an existing file). It documents all settings that differ from vanilla defaults and why — simulation distance, spawn protection, flight, difficulty, etc.
+
+---
+
 ## Development
 
 ```bash

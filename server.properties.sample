@@ -1,0 +1,36 @@
+# FuzzCraft 4 — Recommended server.properties
+#
+# Copy this file to your server root as `server.properties` before first launch,
+# or diff it against your existing file and apply the settings below.
+#
+# Only settings that differ from vanilla defaults are included here.
+# All other settings should be left at their Minecraft defaults.
+
+# Prevent rubber-banding when flying (Elytra, creative flight, modded flight).
+# Required for any pack with flight mechanics.
+allow-flight=true
+
+# Normal difficulty is appropriate for this pack's combat mods
+# (Born in Chaos, Legendary Monsters, Mutant Monsters, Savage & Ravage).
+# Easy makes the combat content feel trivial.
+difficulty=normal
+
+# Reduce simulation distance from the vanilla default (10) to ease server tick load.
+# Confirmed stable at this value — players won't notice the difference in practice.
+simulation-distance=8
+
+# View distance kept at 10 — provides good visual range without excessive chunk send overhead.
+view-distance=10
+
+# Disable spawn protection — it blocks building near spawn on a trusted friend group server.
+spawn-protection=0
+
+# Async chunk writes — reduces I/O stalls during chunk saves on modern hardware.
+sync-chunk-writes=false
+
+# Disable the watchdog crash on long ticks — the server will lag rather than crash,
+# which is preferable during heavy worldgen or GC events.
+max-tick-time=-1
+
+# Pack identity
+motd=FuzzCraft 4
