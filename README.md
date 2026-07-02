@@ -22,15 +22,17 @@ If you've played before and a mod was removed from the pack, delete it manually 
 
 ## Java & Memory
 
-**Recommended allocation: 8192 MB (8 GB).** The pack runs well at this ceiling — performance mods (FerriteCore, ModernFix, EntityCulling, ImmediatelyFast) keep memory pressure low, and G1GC collects more aggressively at 8 GB than at larger allocations.
+**Recommended allocation: 8192 MB (8 GB).** The pack runs well at this ceiling — performance mods (FerriteCore, ModernFix, EntityCulling, ImmediatelyFast) keep memory pressure low.
 
 In Prism: **Edit Instance → Settings → Java → Override memory → 8192 MB**
 
-If you experience GC pauses or stuttering, add these JVM arguments under **Edit Instance → Settings → Java → JVM arguments**:
+Add these JVM arguments under **Edit Instance → Settings → Java → JVM arguments**:
 
 ```
--XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
+-XX:+UseZGC -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem
 ```
+
+ZGC (Java 21+) is a concurrent garbage collector that eliminates GC pause stuttering. It's particularly recommended with Distant Horizons, which generates LOD data in the background and benefits from low-latency collection.
 
 In established worlds with many loaded chunks, 10 GB (10240 MB) is the safer cap.
 
@@ -49,7 +51,8 @@ In established worlds with many loaded chunks, 10 GB (10240 MB) is the safer cap
 | 5c | Dimensions — Underground & Quirky | ✅ SP Tested |
 | 6 | Building & Decoration | ✅ SP Tested |
 | 7 | QoL & Final Compat | ✅ Complete |
-| 8 | Questing & Polish | ⬜ Not started |
+| 8 | QoL Extras | ✅ Complete |
+| 9 | Questing | ⬜ Not started |
 
 ---
 
