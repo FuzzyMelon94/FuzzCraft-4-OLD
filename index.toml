@@ -451,6 +451,11 @@ hash = "ebc4237417524e557b8dfc39dd8dbe884c9b99ecae0ceaa234426c61fa9449e8"
 metafile = true
 
 [[files]]
+file = "mods/create-additional-logistics.pw.toml"
+hash = "ba904d5c6a361b648fa7df9ecb8133ef6d1cdc596edb0be128b5562ebbdc14ae"
+metafile = true
+
+[[files]]
 file = "mods/create-ars-nouveau-compat.pw.toml"
 hash = "73249ff37dd30a44acefdff237891c84708f8f3f795e715b92e9eb25b6c226c6"
 metafile = true
@@ -663,6 +668,11 @@ metafile = true
 [[files]]
 file = "mods/dimensional-pockets-ii.pw.toml"
 hash = "c40e5aa68e58a34a64c7e3d3637556e2a0c2d4485624d4f1b4264378427d09f3"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "7c76639f902707fb69ee6f32372b47de56a8d52ae1c5d152673566b8afd0e023"
 metafile = true
 
 [[files]]
@@ -1241,6 +1251,11 @@ hash = "5da18814472be5dc93a21886983646da3a7236413800075ac75229be82d114fa"
 metafile = true
 
 [[files]]
+file = "mods/notenoughrecipebook.pw.toml"
+hash = "923c7963daf75a6c675655b9433282e1260289837a53f02d2b2e72c14e0762dd"
+metafile = true
+
+[[files]]
 file = "mods/nullscape.pw.toml"
 hash = "dcfbfa39abeaba554c2c5323f9b9a3ec58dfc386aca2d237f73948abdbdc7125"
 metafile = true
@@ -1421,6 +1436,11 @@ hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
 metafile = true
 
 [[files]]
+file = "mods/shatterbyte-lib.pw.toml"
+hash = "83af110edfdb0b5fdaeffda4d1df9d8f946a10257b054017a3ca065517f6a6ef"
+metafile = true
+
+[[files]]
 file = "mods/silent-gear.pw.toml"
 hash = "087ba9ed2ea4bfbf8e8ec6fafae467f4b4e8d262f46f8066e3f84dc5e231ec21"
 metafile = true
@@ -1558,6 +1578,11 @@ metafile = true
 [[files]]
 file = "mods/tidal-towns.pw.toml"
 hash = "0ccb1c696758d7935d02dd5160987cab8d3594ab24f89deb01c28f9e596094e7"
+metafile = true
+
+[[files]]
+file = "mods/toastbegone.pw.toml"
+hash = "a4baef234f249a012dfb922578f2f9122a75c74ddc3dca9caebdb92cbd49cfb4"
 metafile = true
 
 [[files]]
@@ -1727,4 +1752,4 @@ metafile = true
 
 [[files]]
 file = "server.properties.sample"
-hash = "4d87a95f8c63154b4255d211186058f9fb2b20ba2a767a3ec1b4874691637ec0"
+hash = "d76013db2078679d4d6dfc7a55ff82e7d96e6791314e652ac23c936901bdfd01"
