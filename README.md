@@ -22,9 +22,9 @@ If you've played before and a mod was removed from the pack, delete it manually 
 
 ## Java & Memory
 
-**Recommended allocation: 8192 MB (8 GB).** The pack runs well at this ceiling — performance mods (FerriteCore, ModernFix, EntityCulling, ImmediatelyFast) keep memory pressure low.
+**Recommended allocation: 6144–8192 MB (6–8 GB).** Distant Horizons generates LOD data in the background, so 6 GB is the practical minimum — 8 GB is preferred if your machine allows it.
 
-In Prism: **Edit Instance → Settings → Java → Override memory → 8192 MB**
+In Prism: **Edit Instance → Settings → Java → Override memory → 6144 MB** (or 8192 MB if available)
 
 Add these JVM arguments under **Edit Instance → Settings → Java → JVM arguments**:
 
