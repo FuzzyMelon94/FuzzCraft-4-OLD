@@ -62,7 +62,7 @@ hash = "7b6b4204d9e66f14e92a0f1a8a48d7cd29a65762b4b7cc066cc557164f0e9001"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "f6e74d40f4c7c9276ad4b3f536594d4236623c44be96fcc08233e3816f4dacb6"
+hash = "d0c656861f961300ac444a47ec6cd42b2a69a0a715a39e4bd5bdda688444cae2"
 
 [[files]]
 file = "config/paxi/datapacks/ctov-farmers-delight-compat-2.1.jar"
@@ -1724,3 +1724,7 @@ metafile = true
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "6a1556a0e4fcb411b33efafc3382b4abd9a6e671f140dc0d42e9aad2808e24f3"
 metafile = true
+
+[[files]]
+file = "server.properties.sample"
+hash = "4d87a95f8c63154b4255d211186058f9fb2b20ba2a767a3ec1b4874691637ec0"

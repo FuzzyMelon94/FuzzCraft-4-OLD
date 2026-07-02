@@ -47,18 +47,17 @@ Apply these flags in the launcher (client) and Pterodactyl startup (server). The
 ---
 
 ### OPT-002 — ModernFix config audit
-**Status:** `ready`  
+**Status:** `done`  
 **Priority:** Medium — `dynamic_resources` is already enabled; check remaining options  
 **Impact:** Startup memory, chunk loading performance
 
-`dynamic_resources` defers texture/model loading until first use rather than loading everything at startup. Already enabled. Additional settings to verify are set correctly:
+- `mixin.perf.dynamic_resources` — already enabled (defers texture/model loading to first use)
+- `mixin.perf.faster_item_rendering` — enabled (speeds up item render caching)
+- `mixin.bugfix.chunk_deadlock` — default true, no action needed
+- `mixin.perf.remove_spawn_chunks` — not available in this ModernFix version
+- `mixin.perf.ingredient_item_deduplication` — already enabled (reduces EMI load time)
 
-- `mixin.perf.faster_item_rendering` — speeds up item render caching
-- `mixin.perf.remove_spawn_chunks` — disables vanilla spawn chunk force-loading (FTB Chunks handles this)
-- `mixin.perf.dynamic_resources.enabled` — confirm true
-- `mixin.bugfix.chunk_deadlock` — prevents rare deadlock on large modpacks
-
-Check `config/modernfix-common.toml` and enable any that aren't on. Test: confirm world loads cleanly after change.
+**Result:** `faster_item_rendering` added. All available options confirmed.
 
 ---
 
@@ -70,6 +69,8 @@ Check `config/modernfix-common.toml` and enable any that aren't on. Test: confir
 EntityCulling skips rendering entities that are behind walls or outside view. The default distance thresholds may be set wider than needed for a pack this dense with mob content.
 
 Check `config/entityculling.toml` — specifically `maxEntityRenderDistanceSquared` and any per-entity-type overrides. Tighten conservatively and test in a mob-dense area. Compare with Spark's entity render timing before/after.
+
+**Note:** `config/entityculling.toml` does not exist yet — it is generated on first game launch. Action this after the file has been generated.
 
 ---
 
@@ -89,16 +90,11 @@ Rechiseled has unique features (connected textures + Create automation) that Chi
 ---
 
 ### OPT-005 — Spark profiling session
-**Status:** `noted`  
+**Status:** `done`  
 **Priority:** High — should be done before and after any significant change  
 **Impact:** Identifies actual bottlenecks; prevents optimising the wrong things
 
-Spark is already in the pack. Once the pack is at a stable baseline with real player sessions running, run a profiling session to get actual data on:
-- Which mods are consuming the most memory (heap dump)
-- TPS bottlenecks on the server
-- Client-side tick/render hotspots
-
-Use `/spark heapdump` for memory and `/spark profiler` for CPU/tick analysis. Compare against targets before committing to further optimisation.
+**Result:** Server and client profiles both captured (2026-07-02). Client was healthy — 70% render thread idle time, 165fps with shaders. Server showed a 2890ms max tick spike (likely GC at high heap) but median MSPT was 17ms and TPS was stable. No client-side mod bottleneck identified. Original FPS spikes were transient — consistent with dynamic resource loading on first world join. Monitor server max-tick spikes under multi-player load.
 
 ---
 
