@@ -22,19 +22,17 @@ If you've played before and a mod was removed from the pack, delete it manually 
 
 ## Java & Memory
 
-**Recommended allocation: 6144–8192 MB (6–8 GB).** Distant Horizons generates LOD data in the background, so 6 GB is the practical minimum — 8 GB is preferred if your machine allows it.
+**Recommended allocation: 4096–6144 MB (4–6 GB).** 4 GB is the practical minimum; 6 GB gives comfortable headroom.
 
-In Prism: **Edit Instance → Settings → Java → Override memory → 6144 MB** (or 8192 MB if available)
+In Prism: **Edit Instance → Settings → Java → Override memory → 4096 MB** (or 6144 MB if available)
 
 Add these JVM arguments under **Edit Instance → Settings → Java → JVM arguments**:
 
 ```
--XX:+UseZGC -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem
+-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+DisableExplicitGC -XX:G1NewSizePercent=20 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
 ```
 
-ZGC (Java 21+) is a concurrent garbage collector that eliminates GC pause stuttering. It's particularly recommended with Distant Horizons, which generates LOD data in the background and benefits from low-latency collection.
-
-In established worlds with many loaded chunks, 10 GB (10240 MB) is the safer cap.
+G1GC is the recommended collector for modded Minecraft at 4–6 GB heap sizes. It returns unused memory to the OS more aggressively than ZGC and has lower overhead at this allocation range. (ZGC was previously recommended for Distant Horizons, which has since been removed.)
 
 ---
 
