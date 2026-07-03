@@ -367,11 +367,6 @@ hash = "9d50d6d7f9ad8bd98a117b657ff962fb16c43233047fbe02503f5738126f3e06"
 metafile = true
 
 [[files]]
-file = "mods/chipped.pw.toml"
-hash = "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7"
-metafile = true
-
-[[files]]
 file = "mods/chunks-fade-in.pw.toml"
 hash = "b04f5c83f4f4ed320b4e239be7d9d2e0f40a30b39feb08dc95f11d0028cec5ec"
 metafile = true
@@ -1234,11 +1229,6 @@ metafile = true
 [[files]]
 file = "mods/oh-the-biomes-weve-gone.pw.toml"
 hash = "fdaa22d49ee4987c2d0c012e24c7b44d50a653519767d18371e8d778c188f184"
-metafile = true
-
-[[files]]
-file = "mods/oh-the-trees-youll-grow.pw.toml"
-hash = "5a59ebe515dbf2b637ac23bedeb33e545675668a0a454c5d6edd4d207a458844"
 metafile = true
 
 [[files]]
