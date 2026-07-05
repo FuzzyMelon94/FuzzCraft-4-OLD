@@ -6,6 +6,13 @@ See [docs/charter.md](docs/charter.md) for the full project charter.
 
 ---
 
+> [!IMPORTANT]
+> This repo has been archived.
+> 
+> The modpack grew too large for the server's hardware, a [post-mortem](/docs/post-mortem.md) can be found in the docs folder and details the shortcomings.
+
+---
+
 ## Player Setup (Prism Launcher)
 
 1. Create a new instance — **Minecraft 1.21.1**, loader **NeoForge 21.1.233**
